@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Network on Le Quoc Trong BLOG</title>
+    <link>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/network/</link>
+    <description>Recent content in Network on Le Quoc Trong BLOG</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 20 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://github.com/lequoctrong/LeQuocTrong_Blog/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Networking #1: Hiểu về Socket và ServerSocket</title>
+      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-1/</link>
+      <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-1/</guid>
+      <description>Khái niệm cơ bản nhất trong lập trình mạng mà sinh viên IT cần nắm.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on Le Quoc Trong BLOG</title>
+    <link>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/hugo/</link>
+    <description>Recent content in Hugo on Le Quoc Trong BLOG</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://github.com/lequoctrong/LeQuocTrong_Blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tổng kết: Mình đã xây dựng Blog này như thế nào?</title>
+      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-9/</link>
+      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-9/</guid>
+      <description>&lt;p&gt;Vậy là mình đã hoàn thành yêu cầu xây dựng Blog cá nhân bằng &lt;strong&gt;Hugo&lt;/strong&gt; và &lt;strong&gt;GitHub Pages&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;các-bước-mình-đã-thực-hiện&#34;&gt;Các bước mình đã thực hiện:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Cài đặt:&lt;/strong&gt; Cài Git và Hugo Extended.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Khởi tạo:&lt;/strong&gt; Dùng lệnh &lt;code&gt;hugo new site&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theme:&lt;/strong&gt; Sử dụng theme PaperMod vì tính tối giản và đẹp mắt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content:&lt;/strong&gt; Viết các bài chia sẻ về Java và JS bằng Markdown.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deploy:&lt;/strong&gt; Đẩy code lên GitHub và bật GitHub Pages.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Link source code của mình: &lt;a href=&#34;https://github.com/lequoctrong/LeQuocTrong_Blog&#34;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
