@@ -1,0 +1,28 @@
+baseURL = 'https://github.com/lequoctrong/LeQuocTrong_Blog'
+publishDir = 'docs'
+languageCode = 'vi'
+title = 'Le Quoc Trong BLOG'
+theme = "PaperMod"
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "light"
+
+[menu]
+  [[menu.main]]
+    name = "Trang Chủ"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Bài Viết"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Profile"
+    url = "/about/"
+    weight = 3
+publishDir = "docs"
