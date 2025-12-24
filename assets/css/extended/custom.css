@@ -1,0 +1,193 @@
+/* ================================================================= */
+/* PHONG CÁCH: GLASS LUXURY - FULL OPTION (BẢN NHỎ GỌN) */
+/* ================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+    letter-spacing: -0.01em; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.breadcrumbs { display: none !important; }
+
+/* --- 1. DANH SÁCH BÀI VIẾT (LIST) --- */
+body.list .main:has(.page-header) {
+    column-count: 2;        
+    column-gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px; 
+}
+
+/* Ẩn tiêu đề và nội dung thừa */
+body.list .main:has(.page-header) .entry-content, 
+body.list .main:has(.page-header) .entry-footer,
+body.list .main:has(.page-header) .entry-isdraft,
+body.list .page-header { display: none !important; }
+
+/* Thẻ bài viết */
+body.list .main:has(.page-header) .post-entry {
+    break-inside: avoid;
+    margin-bottom: 30px;
+    background: var(--entry); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border); 
+    border-radius: 4px; 
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+body.list .main:has(.page-header) .post-entry::before {
+    content: ""; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
+    background: var(--primary); transform: scaleY(0); transition: transform 0.3s ease;
+}
+
+body.list .main:has(.page-header) .post-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary);
+}
+body.list .main:has(.page-header) .post-entry:hover::before { transform: scaleY(1); }
+
+body.list .main:has(.page-header) .entry-title {
+    font-size: 18px; font-weight: 800; margin: 0; color: var(--primary);
+    text-transform: uppercase; letter-spacing: 0.5px;
+}
+body.list .main:has(.page-header) .entry-title a { text-decoration: none; color: inherit; }
+
+/* --- 2. BÀI CHI TIẾT (SINGLE) --- */
+body.single .post-single { max-width: 800px !important; margin: 0 auto; }
+body.single .post-content { text-align: justify; font-size: 18px; line-height: 1.8; }
+body.single .post-title {
+    text-align: center; font-size: 40px; font-weight: 800; letter-spacing: -1px;
+    margin-bottom: 10px; text-transform: uppercase;
+}
+body.single .post-meta {
+    text-align: center; margin-bottom: 50px; border-bottom: 1px solid var(--border);
+    padding-bottom: 25px; font-family: monospace; text-transform: uppercase; font-size: 13px;
+}
+
+/* Mục lục */
+.toc {
+    display: block !important; background: #1d1e20 !important; border: 1px solid #333 !important;
+    border-left: 5px solid var(--primary) !important; border-radius: 8px !important;
+    padding: 20px !important; margin: 30px 0 !important;
+}
+.toc summary {
+    font-size: 18px !important; font-weight: 800 !important; text-transform: uppercase !important;
+    color: var(--primary) !important;
+}
+.toc .inner a {
+    font-family: 'Inter', sans-serif !important; font-size: 15px !important; color: #b0b0b0 !important;
+    text-decoration: none !important; display: block; padding: 5px 0; transition: all 0.2s;
+}
+.toc .inner a:hover { color: #fff !important; transform: translateX(8px); }
+
+/* ================================================================= */
+/* PHẦN ĐIỀU HƯỚNG PREV/NEXT: NHỎ GỌN & KHÍT NHAU */
+/* ================================================================= */
+
+.paginav {
+    display: flex !important;
+    justify-content: center; /* Căn giữa */
+    gap: 10px !important;    /* Khoảng cách 2 nút rất nhỏ (khít) */
+    margin-top: 60px !important;
+    padding-top: 30px !important;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.paginav a {
+    /* Kích thước NHỎ GỌN (40px) */
+    width: 40px !important; 
+    height: 40px !important;
+    padding: 0 !important;
+    
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 6px; /* Bo góc nhỏ hơn xíu cho hợp với size bé */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px; /* Khoảng cách giữa mũi tên và số cũng thu nhỏ lại */
+    
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    
+    /* Ẩn chữ cũ */
+    font-size: 0 !important;
+    line-height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Ẩn rác */
+.paginav a span, .paginav a br { display: none !important; }
+
+/* Hover */
+.paginav a:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* --- MŨI TÊN --- */
+.paginav a::before {
+    font-size: 14px !important; /* Mũi tên nhỏ lại */
+    color: #999; 
+    display: block !important;
+    line-height: 1 !important;
+}
+.paginav .prev::before { content: "❮"; }
+.paginav .next::before { content: "❯"; }
+.paginav a:hover::before { color: rgba(255,255,255,0.7); }
+
+/* --- SỐ --- */
+.paginav a::after {
+    font-size: 15px !important; /* Số nhỏ lại cho vừa ô 40px */
+    font-weight: 700 !important;
+    font-family: 'Inter', sans-serif !important;
+    color: var(--primary);
+    line-height: 1 !important;
+    display: block !important;
+}
+.paginav a:hover::after { color: #fff !important; }
+
+/* ĐẢO CHIỀU NEXT */
+.paginav .next { flex-direction: row-reverse !important; }
+
+/* --- MAP SỐ --- */
+.paginav a[href*="bai-viet-1/"]::after, .paginav a[href*="bai-viet-1."]::after { content: "1"; }
+.paginav a[href*="bai-viet-2"]::after { content: "2"; }
+.paginav a[href*="bai-viet-3"]::after { content: "3"; }
+.paginav a[href*="bai-viet-4"]::after { content: "4"; }
+.paginav a[href*="bai-viet-5"]::after { content: "5"; }
+.paginav a[href*="bai-viet-6"]::after { content: "6"; }
+.paginav a[href*="bai-viet-7"]::after { content: "7"; }
+.paginav a[href*="bai-viet-8"]::after { content: "8"; }
+.paginav a[href*="bai-viet-9"]::after { content: "9"; }
+.paginav a[href*="bai-viet-10"]::after { content: "10"; font-size: 13px !important; }
+
+.paginav a:not([href*="bai-viet-"])::after { content: "●"; font-size: 10px !important; }
+
+/* MOBILE */
+@media (max-width: 768px) {
+    body.list .main:has(.page-header) { column-count: 1; }
+}
+/* --- MỤC LỤC (ĐÃ ẨN) --- */
+.toc {
+    display: none !important;
+}

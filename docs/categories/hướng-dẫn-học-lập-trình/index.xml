@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hướng Dẫn Học Lập Trình on Lê Quốc Trọng</title>
+    <link>http://localhost:1313/LeQuocTrong_Blog/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/</link>
+    <description>Recent content in Hướng Dẫn Học Lập Trình on Lê Quốc Trọng</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Wed, 24 Dec 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/LeQuocTrong_Blog/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-h%E1%BB%8Dc-l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Series Java &amp; JavaScript #1] Java và JavaScript: Sự khác biệt quan trọng cần biết</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-1/</link>
+      <pubDate>Wed, 24 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-1/</guid>
+      <description>Hướng dẫn chi tiết về sự khác biệt giữa Java và JavaScript – hai ngôn ngữ lập trình thường bị nhầm lẫn. Bài đầu tiên trong series học Java &amp;amp; JavaScript từ cơ bản.</description>
+    </item>
+  </channel>
+</rss>

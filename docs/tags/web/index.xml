@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Web on Le Quoc Trong BLOG</title>
-    <link>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/web/</link>
+    <link>http://localhost:1313/lequoctrong/LeQuocTrong_Blog/tags/web/</link>
     <description>Recent content in Web on Le Quoc Trong BLOG</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Thu, 21 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://github.com/lequoctrong/LeQuocTrong_Blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/lequoctrong/LeQuocTrong_Blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript: Gọi API bằng Fetch (Thay thế XMLHttpRequest)</title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-4/</link>
+      <link>http://localhost:1313/lequoctrong/LeQuocTrong_Blog/posts/bai-4/</link>
       <pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-4/</guid>
+      <guid>http://localhost:1313/lequoctrong/LeQuocTrong_Blog/posts/bai-4/</guid>
       <description>&lt;p&gt;Là dân lập trình mạng, việc gửi HTTP Request là chuyện cơm bữa. Trong JavaScript hiện đại, chúng ta không dùng &lt;code&gt;XMLHttpRequest&lt;/code&gt; nữa mà dùng &lt;code&gt;fetch&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;ví-dụ-lấy-dữ-liệu-github&#34;&gt;Ví dụ lấy dữ liệu Github&lt;/h2&gt;
 &lt;p&gt;Đoạn code JS này giúp mình lấy thông tin profile Github của chính mình:&lt;/p&gt;

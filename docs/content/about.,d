@@ -1,0 +1,159 @@
+---
+title: "About Me"
+layout: "page"
+url: "/about"
+summary: "Professional Profile"
+---
+
+<div class="about-container">
+    <!-- Giới thiệu -->
+    <section class="intro-section">
+        <h2 class="section-title">WHO AM I?</h2>
+        <p class="bio-text">
+            Xin chào, tôi là <strong>Lê Quốc Trọng</strong>. 👋
+        </p>
+        <p class="bio-text">
+            Tôi là sinh viên chuyên ngành Công Nghệ Thông Tin tại <strong>HUTECH University</strong>. 
+            Tôi có niềm đam mê lớn với việc xây dựng phần mềm (Software Engineering) và Hệ thống mạng (Networking).
+        </p>
+        <p class="bio-text">
+            Triết lý làm việc của tôi là <em>"Build Quietly. Ship Confidently"</em>. Tôi tập trung vào việc viết code sạch, tối ưu hiệu năng và hiểu rõ bản chất hoạt động bên dưới của hệ thống (Under the hood).
+        </p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Tech Stack -->
+    <section class="skills-section">
+        <h2 class="section-title">TECH STACK</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>☕ Java Ecosystem</h3>
+                <ul>
+                    <li>Java Core (OOP, Collections, Threads)</li>
+                    <li>Spring Boot / MVC</li>
+                    <li>Hibernate / JPA</li>
+                    <li>Maven / Gradle</li>
+                </ul>
+            </div>
+            
+            <div class="skill-card">
+                <h3>🌐 Networking & Web</h3>
+                <ul>
+                    <li>Socket Programming (TCP/UDP)</li>
+                    <li>RESTful APIs Design</li>
+                    <li>HTML5 / CSS3 / JavaScript</li>
+                    <li>HTTP / Protocol Analysis</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>🛠️ Tools & Database</h3>
+                <ul>
+                    <li>Git / GitHub / GitLab</li>
+                    <li>MySQL / PostgreSQL</li>
+                    <li>Docker Basic</li>
+                    <li>IntelliJ IDEA / VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Education -->
+    <section class="education-section">
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="edu-item">
+            <div class="edu-year">2021 - Present</div>
+            <div class="edu-detail">
+                <h4>HUTECH University</h4>
+                <p class="edu-degree">Kỹ sư Công Nghệ Thông Tin</p>
+                <p class="edu-desc">Chuyên ngành: Công nghệ phần mềm & Mạng máy tính.</p>
+                <p class="edu-desc">GPA: Khá/Giỏi (Đang cập nhật)</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CSS -->
+<style>
+    .about-container {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        line-height: 1.6;
+        margin-top: 2rem;
+        color: inherit;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-left: 5px solid #2c9c91;
+        padding-left: 15px;
+    }
+
+    .bio-text {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        opacity: 0.9;
+    }
+
+    .divider {
+        margin: 3rem 0;
+        border: 0;
+        border-top: 1px solid rgba(128, 128, 128, 0.3);
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        padding: 1.5rem;
+        border-radius: 8px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        border-color: #2c9c91;
+    }
+
+    .skill-card h3 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #2c9c91;
+    }
+
+    .skill-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skill-card li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+    }
+    
+    .skill-card li::before {
+        content: "•";
+        color: #2c9c91;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+</style>

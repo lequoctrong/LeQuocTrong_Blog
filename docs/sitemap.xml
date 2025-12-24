@@ -2,57 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/hugo/</loc>
-    <lastmod>2023-12-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-1/</loc>
+    <lastmod>2025-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/</loc>
-    <lastmod>2023-12-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-2/</loc>
+    <lastmod>2025-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/</loc>
-    <lastmod>2023-12-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-3/</loc>
+    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/project/</loc>
-    <lastmod>2023-12-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-4/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/</loc>
-    <lastmod>2023-12-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-5/</loc>
+    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-9/</loc>
-    <lastmod>2023-12-24T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-6/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/about/</loc>
-    <lastmod>2023-12-23T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-7/</loc>
+    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/javascript/</loc>
-    <lastmod>2023-12-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-8/</loc>
+    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-4/</loc>
-    <lastmod>2023-12-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-9/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/web/</loc>
-    <lastmod>2023-12-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-10/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/java/</loc>
-    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/java/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-1/</loc>
-    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/tags/network/</loc>
-    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/posts/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-2/</loc>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/server/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-3/</loc>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-5/</loc>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/thread/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-6/</loc>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/best-practice/</loc>
+    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-7/</loc>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/javascript/</loc>
+    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-8/</loc>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/json/</loc>
+    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/lequoctrong/LeQuocTrong_Blog/categories/</loc>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/theory/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/network/</loc>
+    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/file-transfer/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/socket/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/tags/async/</loc>
+    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/contact/</loc>
+  </url><url>
+    <loc>http://localhost:1313/LeQuocTrong_Blog/content/</loc>
   </url>
 </urlset>

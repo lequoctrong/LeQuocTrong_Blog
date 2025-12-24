@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>So Sánh on Lê Quốc Trọng</title>
+    <link>http://localhost:1313/LeQuocTrong_Blog/tags/so-s%C3%A1nh/</link>
+    <description>Recent content in So Sánh on Lê Quốc Trọng</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Wed, 24 Dec 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/LeQuocTrong_Blog/tags/so-s%C3%A1nh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java và JavaScript: Chúng khác nhau thế nào? Đừng nhầm lẫn nữa!</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-1/</link>
+      <pubDate>Wed, 24 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-1/</guid>
+      <description>Giải thích rõ ràng sự khác biệt giữa Java và JavaScript – hai ngôn ngữ thường bị nhầm lẫn vì tên gọi tương tự.</description>
+    </item>
+  </channel>
+</rss>

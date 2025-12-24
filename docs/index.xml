@@ -1,260 +1,96 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Le Quoc Trong BLOG</title>
-    <link>https://github.com/lequoctrong/LeQuocTrong_Blog/</link>
-    <description>Recent content on Le Quoc Trong BLOG</description>
+    <title>Lê Quốc Trọng</title>
+    <link>http://localhost:1313/LeQuocTrong_Blog/</link>
+    <description>Recent content on Lê Quốc Trọng</description>
     <generator>Hugo -- 0.153.2</generator>
-    <language>vi</language>
-    <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://github.com/lequoctrong/LeQuocTrong_Blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>vi-vn</language>
+    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/LeQuocTrong_Blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tổng kết: Mình đã xây dựng Blog này như thế nào?</title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-9/</link>
-      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-9/</guid>
-      <description>&lt;p&gt;Vậy là mình đã hoàn thành yêu cầu xây dựng Blog cá nhân bằng &lt;strong&gt;Hugo&lt;/strong&gt; và &lt;strong&gt;GitHub Pages&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;các-bước-mình-đã-thực-hiện&#34;&gt;Các bước mình đã thực hiện:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Cài đặt:&lt;/strong&gt; Cài Git và Hugo Extended.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Khởi tạo:&lt;/strong&gt; Dùng lệnh &lt;code&gt;hugo new site&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Theme:&lt;/strong&gt; Sử dụng theme PaperMod vì tính tối giản và đẹp mắt.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Content:&lt;/strong&gt; Viết các bài chia sẻ về Java và JS bằng Markdown.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Deploy:&lt;/strong&gt; Đẩy code lên GitHub và bật GitHub Pages.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Link source code của mình: &lt;a href=&#34;https://github.com/lequoctrong/LeQuocTrong_Blog&#34;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;</description>
+      <title>Bài 1: Làm sao biết máy mình đang dùng IP gì trong Java?</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-1/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-1/</guid>
+      <description>Sử dụng class InetAddress để định danh máy tính.</description>
     </item>
     <item>
-      <title>Về Lê Quốc Trọng</title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/about/</link>
-      <pubDate>Sat, 23 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/about/</guid>
-      <description>&lt;h2 id=&#34;-xin-chào-mình-là-lê-quốc-trọng&#34;&gt;👋 Xin chào, mình là &lt;strong&gt;Lê Quốc Trọng&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Sinh viên &lt;strong&gt;Công nghệ Thông tin&lt;/strong&gt;, yêu thích &lt;strong&gt;Hệ thống mạng&lt;/strong&gt; và &lt;strong&gt;Lập trình Java&lt;/strong&gt;.&lt;br&gt;
-Mình đặc biệt quan tâm đến cách các hệ thống &lt;strong&gt;Client – Server&lt;/strong&gt; hoạt động và giao tiếp với nhau.&lt;/p&gt;
-&lt;p&gt;Blog này là nơi mình ghi lại quá trình học tập, thử nghiệm, sửa lỗi và những kinh nghiệm rút ra trong quá trình học lập trình mạng.&lt;/p&gt;</description>
+      <title>Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-2/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-2/</guid>
+      <description>Hiểu về khái niệm Port (Cổng) để tránh xung đột khi chạy phần mềm.</description>
     </item>
     <item>
-      <title>JavaScript: Gọi API bằng Fetch (Thay thế XMLHttpRequest)</title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-4/</link>
-      <pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-4/</guid>
-      <description>&lt;p&gt;Là dân lập trình mạng, việc gửi HTTP Request là chuyện cơm bữa. Trong JavaScript hiện đại, chúng ta không dùng &lt;code&gt;XMLHttpRequest&lt;/code&gt; nữa mà dùng &lt;code&gt;fetch&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;ví-dụ-lấy-dữ-liệu-github&#34;&gt;Ví dụ lấy dữ liệu Github&lt;/h2&gt;
-&lt;p&gt;Đoạn code JS này giúp mình lấy thông tin profile Github của chính mình:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;[https://api.github.com/users/lequoctrong](https://api.github.com/users/lequoctrong)&amp;#39;&lt;/span&gt;; &lt;span style=&#34;color:#75715e&#34;&gt;// Thay user
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;fetch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  .&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;response&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;json&lt;/span&gt;()) &lt;span style=&#34;color:#75715e&#34;&gt;// Chuyển dữ liệu về JSON
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  .&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt; =&amp;gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GitHub ID: &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;login&lt;/span&gt;);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;URL: &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;html_url&lt;/span&gt;);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  })
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  .&lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt; =&amp;gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Lỗi:&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;));
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <title>Bài 3: Callback Hell trong JavaScript và cách né tránh</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-3/</link>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-3/</guid>
+      <description>Viết code JS lồng nhau quá nhiều sẽ tạo ra thảm họa.</description>
     </item>
     <item>
-      <title>Java Networking #1: Hiểu về Socket và ServerSocket</title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-1/</link>
-      <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-1/</guid>
-      <description>Khái niệm cơ bản nhất trong lập trình mạng mà sinh viên IT cần nắm.</description>
+      <title>Bài 4: Hướng dẫn gửi File ảnh qua Socket trong Java</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-4/</link>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-4/</guid>
+      <description>Gửi text thì dễ, gửi file nhị phân (ảnh, nhạc) thì phải dùng FileInputStream.</description>
     </item>
     <item>
-      <title></title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-2/</link>
+      <title>Bài 5: WebSocket - Công nghệ sau các ứng dụng Chat Realtime</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-5/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-5/</guid>
+      <description>Tại sao Facebook, Zalo lại dùng WebSocket thay vì HTTP thông thường?</description>
+    </item>
+    <item>
+      <title>Bài 6: Phân biệt Blocking IO và Non-Blocking IO</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-6/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-6/</guid>
+      <description>Khái niệm quan trọng để tối ưu hiệu năng Server.</description>
+    </item>
+    <item>
+      <title>Bài 7: Xử lý dữ liệu JSON trong JavaScript</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-7/</link>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-7/</guid>
+      <description>Hai hàm quan trọng nhất khi làm việc với API.</description>
+    </item>
+    <item>
+      <title>Bài 8: Xử lý ngoại lệ (Exception) khi lập trình mạng</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-8/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-8/</guid>
+      <description>Mạng rớt, Server sập&amp;hellip; làm sao để chương trình không bị Crash?</description>
+    </item>
+    <item>
+      <title>Bài 9: Đa luồng (Multithreading) - Cách để Server tiếp 100 khách cùng lúc</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-9/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-9/</guid>
+      <description>Nếu không có Đa luồng, Server của bạn chỉ phục vụ được đúng 1 người, người thứ 2 sẽ bị treo. Tại sao?</description>
+    </item>
+    <item>
+      <title>Bài 10: Tổng kết và Đánh giá kết quả Đồ án môn Lập trình mạng</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-10/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-10/</guid>
+      <description>Báo cáo tổng kết quá trình thực hiện, các kết quả đạt được và kiến thức tích lũy từ đồ án xây dựng Blog cá nhân.</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-2/</guid>
-      <description>&lt;h3 id=&#34;file-2-contentpostsbai-2md&#34;&gt;File 2: &lt;code&gt;content/posts/bai-2.md&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;(Chủ đề: Client kết nối Server)&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Java Networking #2: Xây dựng mô hình Client - Server đơn giản&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2023-12-20
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: false
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [&amp;#34;Java&amp;#34;, &amp;#34;Tutorial&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;author: &amp;#34;Lê Quốc Trọng&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Ở bài trước mình đã tạo Server. Hôm nay mình sẽ viết code cho phía &lt;span style=&#34;font-weight:bold&#34;&gt;**Client**&lt;/span&gt; để kết nối vào Server đó.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Code Client
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Client cần biết 2 thứ:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;1.&lt;/span&gt; IP của Server (đang chạy máy mình nên là &lt;span style=&#34;color:#e6db74&#34;&gt;`localhost`&lt;/span&gt;).
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;2.&lt;/span&gt; Port của Server (bài trước mình đặt là &lt;span style=&#34;color:#e6db74&#34;&gt;`5000`&lt;/span&gt;).
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```java
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;import java.net.*;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;import java.io.*;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;public class SimpleClient {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    public static void main(String[] args) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        try {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            // Kết nối đến Server
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            Socket s = new Socket(&amp;#34;localhost&amp;#34;, 5000);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            System.out.println(&amp;#34;Đã kết nối thành công tới Server!&amp;#34;);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            s.close();
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        } catch (Exception e) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            System.out.println(e);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/about/</guid>
+      <description>Professional Profile</description>
     </item>
     <item>
-      <title></title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-3/</link>
+      <title>Contact</title>
+      <link>http://localhost:1313/LeQuocTrong_Blog/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-3/</guid>
-      <description>&lt;h3 id=&#34;file-3-contentpostsbai-3md&#34;&gt;File 3: &lt;code&gt;content/posts/bai-3.md&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;(Chủ đề: TCP và UDP)&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Lý thuyết: Khi nào dùng TCP, khi nào dùng UDP?&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2023-12-21
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: false
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [&amp;#34;Network&amp;#34;, &amp;#34;Theory&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;author: &amp;#34;Lê Quốc Trọng&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Trong quá trình học Lập trình mạng, mình hay bị nhầm lẫn giữa hai giao thức này. Đây là cách mình nhớ chúng:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## TCP (Transmission Control Protocol)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; **Đặc điểm:** Tin cậy, đảm bảo dữ liệu đến nơi và đúng thứ tự. Có bước &amp;#34;bắt tay 3 bước&amp;#34;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; **Ứng dụng:** Web (HTTP), Email, File Transfer.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; **Java Class:** &lt;span style=&#34;color:#e6db74&#34;&gt;`Socket`&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;`ServerSocket`&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## UDP (User Datagram Protocol)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; **Đặc điểm:** Nhanh, &amp;#34;bắn và quên&amp;#34; (fire and forget), không quan tâm dữ liệu có đến nơi hay không.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; **Ứng dụng:** Game online, Video call, Livestream.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; **Java Class:** &lt;span style=&#34;color:#e6db74&#34;&gt;`DatagramSocket`&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;`DatagramPacket`&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;**Kết luận:** Nếu viết ứng dụng chat, mình chọn TCP. Nếu viết game bắn súng, mình chọn UDP.
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-5/</guid>
-      <description>&lt;h3 id=&#34;file-5-contentpostsbai-5md&#34;&gt;File 5: &lt;code&gt;content/posts/bai-5.md&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;(Chủ đề: Async/Await)&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;JavaScript: Tại sao phải dùng Async/Await?&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2023-12-22
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: false
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [&amp;#34;JavaScript&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;author: &amp;#34;Lê Quốc Trọng&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Trong lập trình mạng, độ trễ (latency) là điều không tránh khỏi. Nếu code chạy tuần tự (synchronous), giao diện web sẽ bị đơ khi chờ server trả lời.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Để giải quyết, ES6 cung cấp &lt;span style=&#34;color:#e6db74&#34;&gt;`async/await`&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Viết lại code Fetch API
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Đây là cách mình viết code gọn hơn bài trước:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```javascript
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;async function getUserInfo() {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    try {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        let res = await fetch(&amp;#39;[&lt;span style=&#34;color:#f92672&#34;&gt;https://api.github.com/users/lequoctrong&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://api.github.com/users/lequoctrong&lt;/span&gt;)&amp;#39;);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        let data = await res.json();
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        console.log(&amp;#34;Dữ liệu nhận được: &amp;#34;, data);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    } catch (err) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        console.log(&amp;#34;Có lỗi xảy ra: &amp;#34; + err);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;getUserInfo();
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-6/</guid>
-      <description>&lt;h3 id=&#34;file-6-contentpostsbai-6md&#34;&gt;File 6: &lt;code&gt;content/posts/bai-6.md&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;(Chủ đề: Multithreading)&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Java Networking #3: Xử lý đa luồng cho Server&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2023-12-22
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: false
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [&amp;#34;Java&amp;#34;, &amp;#34;Advanced&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;author: &amp;#34;Lê Quốc Trọng&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Vấn đề của bài 1 là Server chỉ phục vụ được 1 người tại 1 thời điểm. Để phục vụ hàng trăm người cùng lúc, ta cần &lt;span style=&#34;font-weight:bold&#34;&gt;**Multithreading**&lt;/span&gt; (Đa luồng).
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Cách thực hiện
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Mỗi khi có Client kết nối (&lt;span style=&#34;color:#e6db74&#34;&gt;`accept()`&lt;/span&gt;), ta sẽ ném Client đó cho một &lt;span style=&#34;color:#e6db74&#34;&gt;`Thread`&lt;/span&gt; riêng để xử lý.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```java
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;while (true) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Socket socket = server.accept();
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    System.out.println(&amp;#34;Client mới kết nối: &amp;#34; + socket);
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    // Tạo luồng mới cho client này
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Thread t = new Thread(new ClientHandler(socket));
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    t.start();
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-7/</guid>
-      <description>&lt;h3 id=&#34;file-7-contentpostsbai-7md&#34;&gt;File 7: &lt;code&gt;content/posts/bai-7.md&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;(Chủ đề: JSON)&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Kiến thức chung: JSON - Ngôn ngữ chung của Internet&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2023-12-23
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: false
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [&amp;#34;Theory&amp;#34;, &amp;#34;JavaScript&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;author: &amp;#34;Lê Quốc Trọng&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Khi Java Server nói chuyện với JavaScript Client, chúng không hiểu nhau trực tiếp. Chúng cần một định dạng trung gian. Đó là &lt;span style=&#34;font-weight:bold&#34;&gt;**JSON (JavaScript Object Notation)**&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Cấu trúc JSON
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Nó rất giống Object của JS, nhưng key phải nằm trong dấu ngoặc kép.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```json
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;#34;sinh_vien&amp;#34;: &amp;#34;Lê Quốc Trọng&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;#34;mssv&amp;#34;: &amp;#34;XXXXXXXX&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;#34;ky_nang&amp;#34;: [&amp;#34;Java&amp;#34;, &amp;#34;Network&amp;#34;, &amp;#34;Git&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://github.com/lequoctrong/LeQuocTrong_Blog/posts/bai-8/</guid>
-      <description>&lt;h3 id=&#34;file-8-contentpostsbai-8md&#34;&gt;File 8: &lt;code&gt;content/posts/bai-8.md&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;(Chủ đề: Các lỗi thường gặp)&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Chia sẻ kinh nghiệm: Các lỗi thường gặp khi code Socket&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2023-12-23
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: false
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [&amp;#34;Java&amp;#34;, &amp;#34;Tips&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;author: &amp;#34;Lê Quốc Trọng&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Trong quá trình làm đồ án này, mình đã gặp (và fix) vô số lỗi. Dưới đây là những lỗi phổ biến:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;1.&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;**BindException: Address already in use**&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; *Nguyên nhân:* Cổng (Port) bạn định chạy đã có chương trình khác chiếm dụng.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; *Cách sửa:* Đổi số port khác (VD: từ 5000 sang 5001).
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;2.&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;**ConnectException: Connection refused**&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; *Nguyên nhân:* Client cố kết nối nhưng Server chưa chạy.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; *Cách sửa:* Luôn nhớ chạy file Server trước, Client sau.
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;3.&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;**Lỗi Encoding (Tiếng Việt bị lỗi)**&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#66d9ef&#34;&gt;*&lt;/span&gt; *Cách sửa:* Luôn sử dụng &lt;span style=&#34;color:#e6db74&#34;&gt;`UTF-8`&lt;/span&gt; khi đọc/ghi dữ liệu qua Stream.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/contact/</guid>
+      <description>Get in touch</description>
     </item>
   </channel>
 </rss>

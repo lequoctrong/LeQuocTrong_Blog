@@ -1,28 +1,62 @@
-baseURL = 'https://github.com/lequoctrong/LeQuocTrong_Blog'
-publishDir = 'docs'
-languageCode = 'vi'
-title = 'Le Quoc Trong BLOG'
+baseURL = "https://lequoctrong.github.io/LeQuocTrong_Blog/"
+languageCode = "vi-vn"
+title = "Lê Quốc Trọng"
 theme = "PaperMod"
+publishDir = "docs"
 
 [params]
+  defaultTheme = "auto" # Tự động theo giao diện máy người dùng (Sáng/Tối)
   ShowReadingTime = true
-  ShowShareButtons = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  defaultTheme = "light"
+  ShowToc = true # Hiện mục lục bài viết (Rất chuyên nghiệp cho blog kỹ thuật)
+  author = "Lê Quốc Trọng"
+  description = "Portfolio và Blog chia sẻ kiến thức Lập trình mạng, Java Backend."
 
+  # --- CẤU HÌNH PROFILE (Trang chủ) ---
+  [params.profileMode]
+    enabled = true
+    title = "Hi, I'm Lê Quốc Trọng 👋"
+    subtitle = "Java Backend Developer | Network Engineer"
+    imageUrl = "avatar1.jpg" # Đảm bảo file a2.jpg nằm trong thư mục static
+    imageTitle = "Lê Quốc Trọng"
+    imageWidth = 150
+    imageHeight = 150
+
+# --- MENU ĐIỀU HƯỚNG (Chuẩn Professional) ---
 [menu]
   [[menu.main]]
-    name = "Trang Chủ"
+    identifier = "home"
+    name = "Trang chủ"
     url = "/"
-    weight = 1
+    weight = 10
 
   [[menu.main]]
-    name = "Bài Viết"
-    url = "/posts/"
-    weight = 2
+    identifier = "about"
+    name = "Giới thiệu"
+    url = "/about"
+    weight = 20
 
   [[menu.main]]
-    name = "Profile"
-    url = "/about/"
-    weight = 3
-publishDir = "docs"
+    identifier = "blog"
+    name = "Blog" # Đổi tên từ "Bài Viết" sang BLOG cho đồng bộ
+    url = "/posts"
+    weight = 60
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Liên hệ"
+    url = "/contact"
+    weight = 70
+
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  canonifyURLs = true
+  relativeURLs = false
+
+  
