@@ -7,10 +7,10 @@
             <a href="{{ "" | absURL }}">Lê Quốc Trọng</a>
         </div>
         <ul class="luxury-menu">
-            <li><a href="{{ "" | absURL }}" class="active">Trang chủ</a></li>
-            <li><a href="{{ "about" | absURL }}">Giới thiệu</a></li>
-            <li><a href="{{ "posts" | absURL }}">Blog</a></li>
-            <li><a href="{{ "contact" | absURL }}">Liên hệ</a></li>
+            <li><a href="{{ "" | absURL }}" class="active">TRANG CHỦ</a></li>
+            <li><a href="{{ "about" | absURL }}">GIỚI THIỆU</a></li>
+            <li><a href="{{ "posts" | absURL }}">BLOG</a></li>
+            <li><a href="{{ "contact" | absURL }}">LIÊN HỆ</a></li>
         </ul>
     </nav>
 </header>
@@ -46,7 +46,7 @@
         </div>
 
         <div class="image-side">
-            <div class="image-container reveal-image">
+            <div class="image-mask reveal-image">
                 <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng">
             </div>
         </div>
@@ -55,71 +55,57 @@
 
 <style>
     /* DIỆT TAM GIÁC XANH VÀ RÁC THEME */
-    footer, .footer, .nav, .header, .logo-switches { display: none !important; }
+    footer, .footer, .nav, .header, .logo-switches, #top-link { display: none !important; }
     body, html { background: #fff !important; margin: 0; padding: 0; overflow: hidden; }
 
-    /* MENU */
+    /* MENU THANH MẢNH */
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #fff; padding: 25px 0; display: flex; justify-content: center;
+        background: #fff; padding: 35px 0; display: flex; justify-content: center;
     }
     .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
-    .luxury-logo a { font-family: sans-serif; font-size: 18px; font-weight: 800; color: #000; text-decoration: none; }
-    .luxury-menu { display: flex; list-style: none; gap: 35px; }
-    .luxury-menu a { color: #000; text-decoration: none; font-family: sans-serif; font-size: 13px; font-weight: 400; }
+    .luxury-logo a { font-family: -apple-system, sans-serif; font-size: 18px; font-weight: 800; color: #000; text-decoration: none; letter-spacing: -0.5px; }
+    .luxury-menu { display: flex; list-style: none; gap: 40px; margin: 0; }
+    .luxury-menu a { color: #000; text-decoration: none; font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 1px; }
+    .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; }
 
     /* LAYOUT */
     .full-screen-wrapper { width: 100vw; height: 100vh; }
     .split-container { display: flex; height: 100%; }
-    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 8%; background: #fff; z-index: 20; }
-    .content-box { max-width: 450px; width: 100%; }
+    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 5vw; background: #fff; z-index: 20; }
+    .content-box { max-width: 500px; width: 100%; }
 
-    /* TYPOGRAPHY NHỎ SANG */
+    /* CHỮ NHỎ SANG TRỌNG */
     .main-title { 
-        font-family: 'Montserrat', sans-serif; font-size: 58px; 
+        font-family: 'Montserrat', sans-serif; font-size: 65px; 
         font-weight: 900; line-height: 0.82; margin: 0 0 40px 0; 
-        text-transform: uppercase; letter-spacing: -3px; color: #1a1a1a;
+        text-transform: uppercase; letter-spacing: -4px; color: #1a1a1a;
     }
-    .overflow-hidden { overflow: hidden; display: block; }
-    .outlined { color: transparent; -webkit-text-stroke: 1.2px #1a1a1a; display: inline-block; }
+    .overflow-hidden { overflow: hidden; }
+    .outlined { color: transparent; -webkit-text-stroke: 1.5px #1a1a1a; display: inline-block; }
 
-    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
-    .description-block { border-left: 4px solid #1a1a1a; padding-left: 20px; margin-top: 30px; }
-    .job-title { font-size: 12px; font-weight: 900; margin-bottom: 8px; }
-    .bio { font-size: 12px; line-height: 1.8; color: #888; max-width: 300px; }
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; color: #bbb; letter-spacing: 6px; margin-bottom: 20px; }
+    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; margin-top: 30px; }
+    .job-title { font-size: 14px; font-weight: 900; margin-bottom: 10px; color: #000; }
+    .bio { font-size: 13px; line-height: 1.8; color: #777; max-width: 350px; }
 
-    /* ẢNH */
     .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
-    .image-container { width: 100%; height: 100%; }
+    .image-mask { width: 100%; height: 100%; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; }
 
-    /* ---------- HIỆU ỨNG CHẠY (ANIMATIONS) ---------- */
-    
-    /* Chữ trồi lên từ dưới */
+    /* HIỆU ỨNG CHẠY (REVEAL) */
     .reveal-up {
-        display: inline-block;
-        opacity: 0;
-        transform: translateY(110%);
+        display: inline-block; opacity: 0; transform: translateY(110%);
         animation: revealAnimation 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         animation-delay: var(--delay);
     }
+    @keyframes revealAnimation { to { opacity: 1; transform: translateY(0); } }
 
-    @keyframes revealAnimation {
-        from { opacity: 0; transform: translateY(110%); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Ảnh trượt nhẹ và hiện hình */
     .reveal-image {
-        opacity: 0;
-        transform: scale(1.08) translateX(30px);
+        opacity: 0; transform: scale(1.05) translateX(30px);
         animation: imageAnimation 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         animation-delay: 0.4s;
     }
-
-    @keyframes imageAnimation {
-        from { opacity: 0; transform: scale(1.08) translateX(30px); }
-        to { opacity: 1; transform: scale(1) translateX(0); }
-    }
+    @keyframes imageAnimation { to { opacity: 1; transform: scale(1) translateX(0); } }
 </style>
 {{ end }}
