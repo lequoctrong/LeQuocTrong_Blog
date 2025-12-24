@@ -112,9 +112,9 @@
     </nav>
 </header>
 <main class="main">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 
 <header class="luxury-header">
     <nav class="luxury-nav">
@@ -122,10 +122,10 @@
             <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">Lê Quốc Trọng</a>
         </div>
         <ul class="luxury-menu">
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">HOME</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">ABOUT</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">TRANG CHỦ</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">GIỚI THIỆU</a></li>
             <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts">BLOG</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">CONTACT</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">LIÊN HỆ</a></li>
         </ul>
     </nav>
 </header>
@@ -134,28 +134,34 @@
     <div class="split-container">
         <div class="text-side">
             <div class="content-box">
-                <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
+                <div class="overflow-hidden">
+                    <p class="top-tag reveal-up" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
+                </div>
                 
                 <h1 class="main-title">
-                    <div class="line"><span class="reveal-item" style="--delay: 0.2s">BUILD</span></div>
-                    <div class="line"><span class="reveal-item" style="--delay: 0.3s">QUIETLY.</span></div>
-                    <div class="line"><span class="reveal-item outlined" style="--delay: 0.4s">SHIP</span></div>
-                    <div class="line"><span class="reveal-item outlined" style="--delay: 0.5s">CONFIDEN</span></div>
-                    <div class="line"><span class="reveal-item outlined" style="--delay: 0.6s">TLY.</span></div>
+                    <div class="overflow-hidden"><span class="reveal-up" style="--delay: 0.2s">BUILD</span></div>
+                    <div class="overflow-hidden"><span class="reveal-up" style="--delay: 0.3s">QUIETLY.</span></div>
+                    <div class="overflow-hidden"><span class="reveal-up outlined" style="--delay: 0.4s">SHIP</span></div>
+                    <div class="overflow-hidden"><span class="reveal-up outlined" style="--delay: 0.5s">CONFIDEN</span></div>
+                    <div class="overflow-hidden"><span class="reveal-up outlined" style="--delay: 0.6s">TLY.</span></div>
                 </h1>
 
-                <div class="description-block reveal-item" style="--delay: 0.8s">
-                    <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
-                    <p class="bio">
-                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
-                        Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
-                    </p>
+                <div class="description-block">
+                    <div class="overflow-hidden">
+                        <h3 class="job-title reveal-up" style="--delay: 0.8s">JAVA BACKEND & NETWORK ENGINEER</h3>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p class="bio reveal-up" style="--delay: 0.9s">
+                            Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
+                            Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="image-side">
-            <div class="image-wrapper reveal-image">
+            <div class="image-mask reveal-image">
                 <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng">
             </div>
         </div>
@@ -174,12 +180,15 @@
      
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #fff; padding: 30px 0; display: flex; justify-content: center;
+        background: #fff; padding: 25px 0; display: flex; justify-content: center;
     }
-    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
-    .luxury-logo a { font-family: sans-serif; font-size: 18px; font-weight: 800; color: #000; text-decoration: none; text-transform: uppercase; }
-    .luxury-menu { display: flex; list-style: none; gap: 40px; margin: 0; }
-    .luxury-menu a { color: #000; text-decoration: none; font-family: sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 1px; }
+    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+    .luxury-logo a { font-family: -apple-system, sans-serif; font-size: 18px; font-weight: 800; color: #000; text-decoration: none; text-transform: uppercase; }
+    
+     
+    .luxury-menu { display: flex !important; list-style: none !important; gap: 30px; margin: 0; padding: 0; }
+    .luxury-menu li { list-style: none !important; }
+    .luxury-menu a { color: #000; text-decoration: none; font-family: -apple-system, sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 1px; }
     .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; }
 
      
@@ -188,26 +197,25 @@
     .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 10%; background: #fff; z-index: 20; }
     .content-box { max-width: 450px; width: 100%; }
 
-    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; color: #bbb; letter-spacing: 6px; margin-bottom: 20px; }
-
-     
     .main-title { 
         font-family: 'Montserrat', sans-serif !important; 
-        font-size: 58px; font-weight: 900 !important; line-height: 0.82; 
-        margin: 0 0 45px 0; text-transform: uppercase; letter-spacing: -4px; color: #1a1a1a;
+        font-size: 56px;  
+        font-weight: 900 !important; line-height: 0.82; 
+        margin: 0 0 40px 0; text-transform: uppercase; letter-spacing: -3.5px; color: #1a1a1a;
     }
-    .line { overflow: hidden; } 
-    .outlined { color: transparent !important; -webkit-text-stroke: 1.5px #1a1a1a; display: inline-block; }
+    .overflow-hidden { overflow: hidden; }
+    .outlined { color: transparent !important; -webkit-text-stroke: 1.3px #1a1a1a; display: inline-block; }
 
-    .description-block { border-left: 5px solid #1a1a1a; padding-left: 20px; margin-top: 30px; }
-    .job-title { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 900; margin-bottom: 8px; }
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
+    .description-block { border-left: 4px solid #1a1a1a; padding-left: 20px; margin-top: 30px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 900; margin-bottom: 10px; }
     .bio { font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 1.8; color: #888; max-width: 320px; }
 
-    .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
-    .image-side img { width: 100%; height: 100%; object-fit: cover; }
-
      
-    .reveal-item {
+    .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
+    .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .reveal-up {
         display: inline-block; opacity: 0; transform: translateY(110%);
         animation: revealUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         animation-delay: var(--delay);
