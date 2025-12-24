@@ -17,6 +17,7 @@
 
 <div class="full-screen-wrapper">
     <div class="split-container">
+        
         <div class="text-side">
             <div class="content-box">
                 <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
@@ -44,22 +45,21 @@
                 <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng">
             </div>
         </div>
+        
     </div>
 </div>
 
 <style>
-    /* 1. TRIỆT HẠ TAM GIÁC XANH VÀ RÁC THEME */
-    footer, .footer, .nav, .header, .logo-switches, #top-link, .top-link { 
-        display: none !important; 
-    }
+    /* 1. DIỆT RÁC VÀ TAM GIÁC XANH */
+    footer, .footer, .nav, .header, .logo-switches, #top-link, .top-link { display: none !important; }
     body, html { 
         background: #ffffff !important; 
         margin: 0 !important; 
         padding: 0 !important; 
-        overflow: hidden !important; /* Diệt tam giác xanh bằng cách chặn cuộn trang */
+        overflow: hidden !important; /* Diệt tam giác xanh */
     }
 
-    /* 2. MENU TIẾNG VIỆT THANH MẢNH */
+    /* 2. MENU LUXURY CHUẨN */
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
         background: #fff; padding: 25px 0; display: flex; justify-content: center;
@@ -67,41 +67,44 @@
     .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
     .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -1px; }
     
-    .luxury-menu { display: flex !important; list-style: none !important; gap: 30px; margin: 0; padding: 0; }
-    .luxury-menu li { list-style: none !important; }
+    .luxury-menu { display: flex !important; list-style: none !important; gap: 35px; margin: 0; padding: 0; }
     .luxury-menu a { 
         color: #000; text-decoration: none; font-family: sans-serif; 
-        font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+        font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+        transition: 0.3s;
     }
-    .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; }
+    .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; padding-bottom: 3px; }
 
-    /* 3. TYPOGRAPHY & CÂN XỨNG CHỮ */
-    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
-    .split-container { display: flex; height: 100%; }
+    /* 3. LAYOUT CÂN XỨNG */
+    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; position: relative; }
+    .split-container { display: flex; height: 100%; width: 100%; }
     
-    /* Căn chỉnh khối chữ lọt lòng giữa khoảng trắng */
-    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 10%; background: #fff; z-index: 10; }
-    .content-box { max-width: 450px; width: 100%; padding-right: 60px; } /* padding-right lớn chặn chữ đè ảnh */
+    .text-side { 
+        flex: 1; display: flex; justify-content: center; align-items: center; 
+        background: #fff; z-index: 10; padding: 0 40px; 
+    }
+    /* Chỉnh max-width và căn giữa khối nội dung bên trái */
+    .content-box { max-width: 420px; width: 100%; }
 
     .main-title { 
         font-family: 'Montserrat', sans-serif !important; 
-        font-size: 55px; /* Size nhỏ gọn sang */
-        font-weight: 900; line-height: 0.85; margin: 0 0 40px 0; 
-        text-transform: uppercase; letter-spacing: -4px; color: #1a1a1a;
+        font-size: 52px; /* Size nhỏ gọn sang */
+        font-weight: 900; line-height: 0.85; margin: 0 0 35px 0; 
+        text-transform: uppercase; letter-spacing: -3.5px; color: #1a1a1a;
     }
     .line-wrapper { overflow: hidden; } 
     .outlined { color: transparent !important; -webkit-text-stroke: 1.2px #1a1a1a; display: inline-block; }
 
-    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
-    .description-block { border-left: 4px solid #1a1a1a; padding-left: 20px; margin-top: 30px; }
-    .job-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 900; margin-bottom: 8px; }
-    .bio { font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 1.8; color: #888; max-width: 300px; }
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; color: #bbb; letter-spacing: 5px; margin-bottom: 18px; }
+    .description-block { border-left: 4px solid #1a1a1a; padding-left: 20px; margin-top: 25px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 900; margin-bottom: 6px; }
+    .bio { font-family: 'Montserrat', sans-serif; font-size: 11px; line-height: 1.8; color: #888; max-width: 280px; }
 
-    /* 4. ẢNH VÀ HIỆU ỨNG TRƯỢT MƯỢT */
-    .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
+    /* 4. PHẦN ẢNH CÂN ĐỐI */
+    .image-side { flex: 1.1; background: #f9f9f9; overflow: hidden; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    /* HIỆU ỨNG REVEAL CHUẨN LUXURY */
+    /* HIỆU ỨNG MƯỢT */
     .reveal-item {
         display: inline-block; opacity: 0; transform: translateY(100%);
         animation: revealUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -110,7 +113,7 @@
     @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
 
     .reveal-image {
-        opacity: 0; animation: fadeIn 1.8s ease forwards; animation-delay: 0.3s;
+        opacity: 0; animation: fadeIn 2s ease forwards; animation-delay: 0.4s;
     }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
