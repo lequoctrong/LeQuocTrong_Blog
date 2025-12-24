@@ -59,7 +59,7 @@
         overflow: hidden !important; /* Diệt tam giác xanh bằng cách chặn cuộn trang */
     }
 
-    /* 2. MENU TIẾNG VIỆT, NẰM NGANG CHUẨN */
+    /* 2. MENU TIẾNG VIỆT THANH MẢNH */
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
         background: #fff; padding: 25px 0; display: flex; justify-content: center;
@@ -75,13 +75,13 @@
     }
     .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; }
 
-    /* 3. TYPOGRAPHY NHỎ SANG TRỌNG */
+    /* 3. TYPOGRAPHY & CÂN XỨNG CHỮ */
     .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
     .split-container { display: flex; height: 100%; }
     
-    /* Cân xứng chữ: padding-left đẩy khối chữ vào giữa khoảng trắng */
+    /* Căn chỉnh khối chữ lọt lòng giữa khoảng trắng */
     .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 10%; background: #fff; z-index: 10; }
-    .content-box { max-width: 450px; width: 100%; padding-right: 50px; } /* padding-right chặn không cho chữ đè ảnh */
+    .content-box { max-width: 450px; width: 100%; padding-right: 60px; } /* padding-right lớn chặn chữ đè ảnh */
 
     .main-title { 
         font-family: 'Montserrat', sans-serif !important; 
@@ -97,11 +97,11 @@
     .job-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 900; margin-bottom: 8px; }
     .bio { font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 1.8; color: #888; max-width: 300px; }
 
-    /* 4. ẢNH CÂN XỨNG VÀ HIỆU ỨNG */
+    /* 4. ẢNH VÀ HIỆU ỨNG TRƯỢT MƯỢT */
     .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    /* HIỆU ỨNG CHẠY MƯỢT */
+    /* HIỆU ỨNG REVEAL CHUẨN LUXURY */
     .reveal-item {
         display: inline-block; opacity: 0; transform: translateY(100%);
         animation: revealUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
