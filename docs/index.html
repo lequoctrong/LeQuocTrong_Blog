@@ -120,10 +120,10 @@
             <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">Lê Quốc Trọng</a>
         </div>
         <ul class="luxury-menu">
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">HOME</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">ABOUT</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts">BLOG</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">CONTACT</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">Trang chủ</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">Giới thiệu</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts">Blog</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">Liên hệ</a></li>
         </ul>
     </nav>
 </header>
@@ -133,7 +133,6 @@
         <div class="text-side">
             <div class="content-box">
                 <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
-                
                 <h1 class="main-title">
                     <div class="line"><span class="reveal-item" style="--delay: 0.2s">BUILD</span></div>
                     <div class="line"><span class="reveal-item" style="--delay: 0.3s">QUIETLY.</span></div>
@@ -141,7 +140,6 @@
                     <div class="line"><span class="reveal-item outlined" style="--delay: 0.5s">CONFIDEN</span></div>
                     <div class="line"><span class="reveal-item outlined" style="--delay: 0.6s">TLY.</span></div>
                 </h1>
-
                 <div class="description-block reveal-item" style="--delay: 0.8s">
                     <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
                     <p class="bio">
@@ -151,7 +149,6 @@
                 </div>
             </div>
         </div>
-
         <div class="image-side">
             <div class="image-wrapper reveal-image">
                 <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng">
@@ -168,45 +165,45 @@
      
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #fff; padding: 35px 0; display: flex; justify-content: center;
+        background: #fff; padding: 25px 0; display: flex; justify-content: center;
     }
     .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
-    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -0.5px; }
+    
+    .luxury-logo a { 
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+        font-size: 22px; font-weight: 700; color: #000; text-decoration: none; 
+    }
     .luxury-menu { display: flex; list-style: none; gap: 30px; margin: 0; }
-    .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1px; }
+    .luxury-menu a { 
+        color: #000; text-decoration: none; 
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+        font-size: 14px; font-weight: 400; 
+    }
+    .luxury-menu a.active { font-weight: 700; border-bottom: 1px solid #000; }
 
      
     .full-screen-wrapper { width: 100vw; height: 100vh; }
     .split-container { display: flex; height: 100%; }
+    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 10%; background: #fff; z-index: 10; }
+    .content-box { max-width: 450px; width: 100%; }
 
-    .text-side { 
-        flex: 1; display: flex; justify-content: center; align-items: center; 
-        padding-left: 10%; background: #fff; z-index: 10;
-    }
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
     
-    .content-box { max-width: 450px; width: 100%; }  
-
-    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; color: #bbb; letter-spacing: 5px; margin-bottom: 25px; }
-
-     
     .main-title { 
         font-family: 'Montserrat', sans-serif;
         font-size: 55px;  
-        font-weight: 900; 
-        line-height: 0.85; 
-        margin: 0 0 45px 0; text-transform: uppercase;
+        font-weight: 900; line-height: 0.85; 
+        margin: 0 0 40px 0; text-transform: uppercase;
         letter-spacing: -3px; color: #1a1a1a;
     }
     .line { overflow: hidden; } 
     .outlined { color: transparent; -webkit-text-stroke: 1.2px #1a1a1a; display: inline-block; }
 
     .description-block { border-left: 4px solid #1a1a1a; padding-left: 20px; margin-top: 30px; }
-    .job-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 900; margin-bottom: 8px; letter-spacing: 0.2px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 900; margin-bottom: 8px; }
     .bio { font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 1.8; color: #888; max-width: 300px; }
 
-     
     .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
-    .image-wrapper { width: 100%; height: 100%; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; }
 
      
@@ -223,13 +220,13 @@
 
     .reveal-image {
         opacity: 0;
-        transform: scale(1.05) translateX(20px);
+        transform: scale(1.05);
         animation: imageFade 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         animation-delay: 0.3s;
     }
     @keyframes imageFade {
-        from { opacity: 0; transform: scale(1.05) translateX(20px); }
-        to { opacity: 1; transform: scale(1) translateX(0); }
+        from { opacity: 0; transform: scale(1.05); }
+        to { opacity: 1; transform: scale(1); }
     }
 </style>
 
