@@ -1,17 +1,7 @@
 ---
 title: "About Me"
-layout: "page"
 url: "/about"
-summary: "Professional Profile"
-showToc: false
-showPostNavLinks: false
-showSocial: false
-showBreadcrumbs: false
-showReadingTime: false
-showAuthor: false
-showDate: false
-editPost:
-  disabled: true
+layout: "single"
 ---
 
 <div class="story-container">
@@ -33,7 +23,7 @@ editPost:
       <div class="narrative-content">
         <p class="animated-element delay-6">Chào bạn, cảm ơn vì đã ghé thăm góc nhỏ này. Mình tên là Lê Quốc Trọng, hiện đang là sinh viên chuyên ngành <strong>Công Nghệ Thông Tin</strong>. Thú thật, mình không phải là một "ngôi sao" trong lớp, cũng chẳng phải thiên tài có thể viết code nhoay nhoáy từ năm cấp hai. Hành trình của mình bắt đầu khá muộn và chậm rãi, được xây đắp từ những sự tò mò đơn sơ nhất về thế giới kỹ thuật số.</p>
 
-        <p class="animated-element delay-7">Mình chọn đi sâu vào <strong>Lập trình mạng (Network Programming)</strong> và <strong>Java&JavaScript</strong> - những mảng kiến thức khô khan nhưng đầy tính logic. Có những đêm thức trắng chỉ để sửa một lỗi Socket ngớ ngẩn, hay những lúc muốn bỏ cuộc vì sự phức tạp của các luồng dữ liệu. Nhưng chính những khoảnh khắc "vỡ lẽ" sau khi sửa được lỗi đã giữ chân mình lại với nghề.</p>
+        <p class="animated-element delay-7">Mình chọn đi sâu vào <strong>Lập trình mạng (Network Programming)</strong> và <strong>Java & JavaScript</strong> - những mảng kiến thức khô khan nhưng đầy tính logic. Có những đêm thức trắng chỉ để sửa một lỗi Socket ngớ ngẩn, hay những lúc muốn bỏ cuộc vì sự phức tạp của các luồng dữ liệu. Nhưng chính những khoảnh khắc "vỡ lẽ" sau khi sửa được lỗi đã giữ chân mình lại với nghề.</p>
 
         <p class="animated-element delay-8">Trang blog này ra đời không mang tham vọng dạy dỗ ai cả. Nó đơn thuần là cuốn nhật ký ghi chép lại những gì mình may mắn học được, và cả những sai lầm ngớ ngẩn mình đã mắc phải. Mình tin rằng, thừa nhận sự thiếu sót của bản thân chính là cách nhanh nhất để trưởng thành.</p>
       </div>
@@ -47,21 +37,20 @@ editPost:
 </div>
 
 <style>
-/* 1. XÓA NỀN XÁM CỦA MENU MẶC ĐỊNH THEME */
+/* 1. XÓA RÁC THEME ĐỂ GIỮ FORM GỐC */
 .nav, header, .header, nav, body, .main, main {
     background-color: #ffffff !important; 
     background: #ffffff !important;
 }
 
-/* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Mulish:wght@300;400;600&display=swap');
-
-/* XÓA CÁC THÀNH PHẦN THỪA CỦA PAPERMOD TRÊN TRANG NÀY */
 header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-buttons, .toc, footer.page-footer { 
   display: none !important; 
 }
 
-/* 2. KHUNG BAO NGOÀI */
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Mulish:wght@300;400;600&display=swap');
+
+/* 2. KHUNG BAO NGOÀI (Y CHANG CŨ) */
 .story-container {
   width: 100vw;
   position: relative;
@@ -73,11 +62,10 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   min-height: 100vh;
   background: #fff;
   overflow: hidden;
-  /* Đẩy nội dung xuống dưới thanh Menu ngang */
-  padding-top: 80px; 
+  padding-top: 60px; /* Chừa chỗ cho menu */
 }
 
-/* 3. CỘT ẢNH */
+/* 3. CỘT ẢNH (BÊN TRÁI) */
 .visual-side {
   flex: 5; 
   background-color: #f8f9fa;
@@ -85,6 +73,7 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   justify-content: flex-end; 
   align-items: flex-start; 
   padding-top: 60px; 
+  padding-bottom: 40px;
   padding-right: 60px;
 }
 
@@ -93,6 +82,7 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   max-width: 380px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   border-radius: 4px;
+  overflow: hidden;
   background: #fff;
   padding: 10px;
 }
@@ -102,31 +92,79 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   height: auto;
   display: block;
   filter: grayscale(20%);
-  transition: 0.5s;
+  transition: filter 0.5s;
 }
 
 .photo-frame:hover img {
     filter: grayscale(0%);
 }
 
-/* 4. CỘT CHỮ */
+/* 4. CỘT CHỮ (BÊN PHẢI) */
 .text-side {
   flex: 6; 
   display: flex;
-  padding: 60px 80px; 
+  justify-content: flex-start;
+  align-items: flex-start; 
+  padding: 60px 80px 60px 80px; 
   background: #fff;
 }
 
-.text-wrapper { max-width: 700px; }
+.text-wrapper {
+  max-width: 700px;
+}
+
+.intro-label {
+  font-family: 'Mulish', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
 
 .main-title {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   color: #222;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
 }
 
-/* ANIMATION - GIỮ NGUYÊN FORM CỦA MÀY */
+.subtitle {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.separator {
+  width: 60px;
+  height: 2px;
+  background-color: #222;
+  margin-bottom: 40px;
+}
+
+.narrative-content p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.signature-quote {
+  margin-top: 40px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+  text-align: right;
+}
+
+/* 5. ANIMATION */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }

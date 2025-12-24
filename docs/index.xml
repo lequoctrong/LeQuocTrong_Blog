@@ -83,7 +83,24 @@
       <link>https://lequoctrong.github.io/LeQuocTrong_Blog/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/about/</guid>
-      <description>Professional Profile</description>
+      <description>&lt;div class=&#34;story-container&#34;&gt;
+  
+  &lt;div class=&#34;visual-side&#34;&gt;
+    &lt;div class=&#34;photo-frame animated-element delay-1&#34;&gt;
+      &lt;img src=&#34;anh3.jpg&#34; alt=&#34;Lê Quốc Trọng&#34; onerror=&#34;this.src=&#39;https://lequoctrong.github.io/LeQuocTrong_Blog/anh3.jpg&#39;&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;text-side&#34;&gt;
+    &lt;div class=&#34;text-wrapper&#34;&gt;
+      &lt;h4 class=&#34;intro-label animated-element delay-2&#34;&gt;LỜI TỰ BẠCH&lt;/h4&gt;
+      &lt;h1 class=&#34;main-title animated-element delay-3&#34;&gt;Lê Quốc Trọng&lt;/h1&gt;
+      &lt;p class=&#34;subtitle animated-element delay-4&#34;&gt;Một sinh viên IT bình thường tại HUTECH&lt;/p&gt;
+      
+      &lt;div class=&#34;separator animated-element delay-5&#34;&gt;&lt;/div&gt;
+
+      &lt;div class=&#34;narrative-content&#34;&gt;
+        &lt;p class=&#34;animated-element delay-6&#34;&gt;Chào bạn, cảm ơn vì đã ghé thăm góc nhỏ này. Mình tên là Lê Quốc Trọng, hiện đang là sinh viên chuyên ngành &lt;strong&gt;Công Nghệ Thông Tin&lt;/strong&gt;. Thú thật, mình không phải là một &#34;ngôi sao&#34; trong lớp, cũng chẳng phải thiên tài có thể viết code nhoay nhoáy từ năm cấp hai. Hành trình của mình bắt đầu khá muộn và chậm rãi, được xây đắp từ những sự tò mò đơn sơ nhất về thế giới kỹ thuật số.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
