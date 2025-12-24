@@ -57,6 +57,6 @@ publishDir = "docs"
       unsafe = true
 
   canonifyURLs = true
-  relativeURLs = false
+  relativeURLs = true
 
   
