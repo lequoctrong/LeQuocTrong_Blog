@@ -6,7 +6,6 @@
     <nav class="luxury-nav">
         <div class="luxury-logo">
             <a href="{{ "" | absURL }}">Lê Quốc Trọng</a>
-            <span class="theme-icon">🌙</span>
         </div>
         <ul class="luxury-menu">
             <li><a href="{{ "" | absURL }}" class="active">Trang chủ</a></li>
@@ -52,19 +51,23 @@
 </div>
 
 <style>
-    /* DIỆT RÁC THEME */
+    /* CSS RESET & DIỆT RÁC THEME */
     footer, .footer, .nav, .header, .logo-switches { display: none !important; }
-    body, html { background: #fff !important; margin: 0; padding: 0; overflow: hidden; }
+    body, html { 
+        background: #fff !important; 
+        margin: 0; padding: 0; 
+        overflow: hidden; /* Giữ form cố định 1 màn hình */
+    }
 
-    /* MENU SANG TRỌNG */
+    /* MENU STYLE */
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
         background: #fff; padding: 25px 0; display: flex; justify-content: center;
     }
-    .luxury-nav { width: 100%; max-width: 1300px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
-    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: #000; text-decoration: none; text-transform: uppercase; letter-spacing: -1px; }
+    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: #000; text-decoration: none; text-transform: uppercase; letter-spacing: -1px; }
     .luxury-menu { display: flex; list-style: none; gap: 30px; margin: 0; }
-    .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+    .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
 
     /* LAYOUT CHIA ĐÔI */
     .full-screen-wrapper { width: 100vw; height: 100vh; }
@@ -72,45 +75,53 @@
 
     .text-side { 
         flex: 1; display: flex; justify-content: center; align-items: center; 
-        padding-left: 80px; background: #fff; z-index: 10;
+        padding-left: 100px; background: #fff; z-index: 10;
     }
     
-    .content-box { max-width: 650px; }
+    .content-box { 
+        max-width: 700px; 
+        width: 100%;
+        padding-right: 50px; /* Chặn không cho chữ đè vào ảnh */
+    }
 
-    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 500; color: #aaa; letter-spacing: 4px; margin-bottom: 20px; }
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; color: #999; letter-spacing: 5px; margin-bottom: 15px; text-transform: uppercase; }
 
-    /* TYPOGRAPHY GIỐNG ẢNH 100% */
+    /* TYPOGRAPHY CHUẨN 100% THEO ẢNH */
     .main-title { 
         font-family: 'Montserrat', sans-serif;
-        font-size: 110px; /* Cực to */
-        font-weight: 900; 
-        line-height: 0.8; /* Ép dòng sát rạt */
-        margin: 0 0 40px 0; 
+        font-size: 105px; /* Cực đại */
+        font-weight: 900; /* Dày nhất có thể */
+        line-height: 0.78; /* Ép dòng sát rạt như ảnh mẫu */
+        margin: 0 0 45px 0; 
         text-transform: uppercase;
-        letter-spacing: -6px; /* Chữ dính vào nhau */
+        letter-spacing: -7px; /* Ép chữ dính vào nhau */
         color: #1a1a1a;
     }
 
     .outlined { 
         display: inline-block;
         color: transparent; 
-        -webkit-text-stroke: 2px #1a1a1a; /* Nét outline dày hơn */
+        -webkit-text-stroke: 2.5px #1a1a1a; /* Nét viền đậm đà */
+        letter-spacing: -5px;
     }
 
-    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; }
-    .job-title { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; color: #000; margin-bottom: 8px; letter-spacing: -0.5px; }
-    .bio { font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 1.5; color: #666; font-weight: 400; }
+    /* KHỐI INFO PHÍA DƯỚI */
+    .description-block { border-left: 6px solid #1a1a1a; padding-left: 30px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 900; color: #000; margin-bottom: 10px; letter-spacing: -0.5px; }
+    .bio { font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 1.6; color: #666; font-weight: 400; max-width: 400px; }
 
-    .image-side { flex: 1; background: #eee; }
+    /* PHẦN ẢNH */
+    .image-side { flex: 1.1; background: #f5f5f5; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; }
 
-    .custom-footer { position: fixed; bottom: 20px; width: 100%; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 10px; color: #ccc; }
+    /* FOOTER */
+    .custom-footer { position: fixed; bottom: 20px; width: 100%; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 10px; color: #ddd; z-index: 100; }
 
     /* ANIMATION */
-    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    .animate-item { opacity: 0; animation: slideUp 0.8s ease-out forwards; animation-delay: var(--delay); }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-item { opacity: 0; animation: slideUp 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation-delay: var(--delay); }
 
-    /* RESPONSIVE */
-    @media (max-width: 1200px) { .main-title { font-size: 80px; letter-spacing: -4px; } }
+    /* RESPONSIVE CHO MÀN HÌNH NHỎ */
+    @media (max-width: 1400px) { .main-title { font-size: 85px; letter-spacing: -5px; } }
 </style>
 {{ end }}
