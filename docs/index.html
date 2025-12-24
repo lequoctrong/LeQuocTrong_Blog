@@ -112,120 +112,271 @@
     </nav>
 </header>
 <main class="main">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 
-<header class="luxury-header">
-    <nav class="luxury-nav">
-        <div class="luxury-logo">
-            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">LÊ QUỐC TRỌNG</a>
+
+<nav class="top-nav">
+  <div class="nav-container">
+    <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="nav-logo">LÊ QUỐC TRỌNG</a>
+    <ul class="nav-links">
+      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">Trang chủ</a></li>
+      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">Giới thiệu</a></li>
+      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts">Blog</a></li>
+      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/projects">Dự án</a></li>
+      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">Liên hệ</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero-wrapper" id="home">
+  <div class="hero-container">
+    <div class="hero-text">
+      <div class="hero-content">
+        <p class="subtitle animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG</p>
+        <h1 class="hero-title">
+          <span class="line animate-item" style="--delay: 0.4s">BUILD</span>
+          <span class="line animate-item" style="--delay: 0.6s">QUIETLY.</span>
+          <span class="line highlighted animate-item" style="--delay: 0.8s">SHIP</span>
+          <span class="line highlighted animate-item" style="--delay: 1.0s">CONFIDENTLY.</span>
+        </h1>
+        <div class="hero-desc animate-item" style="--delay: 1.2s">
+          <p class="job">Lập trình viên Java & JavaScript</p>
+          <p class="bio">
+            Sinh viên Công nghệ Thông tin tại <strong>HUTECH</strong>.<br>
+            Xây dựng hệ thống vững chắc và kết nối thế giới qua code sạch sẽ, hiệu quả.
+          </p>
         </div>
-        <ul class="luxury-menu">
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">TRANG CHỦ</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">GIỚI THIỆU</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts">BLOG</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">LIÊN HỆ</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div class="full-screen-wrapper">
-    <div class="split-container">
-        
-        <div class="text-side">
-            <div class="content-box">
-                <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
-                
-                <h1 class="main-title">
-                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.2s">BUILD</span></div>
-                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.3s">QUIETLY.</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.4s">SHIP</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.5s">CONFIDEN</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.6s">TLY.</span></div>
-                </h1>
-
-                <div class="description-block reveal-item" style="--delay: 0.8s">
-                    <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
-                    <p class="bio">
-                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
-                        Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
-                    </p>
-                </div>
-            </div>
+        <div class="hero-cta animate-item" style="--delay: 1.4s">
+          <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/projects" class="btn-primary">Xem dự án</a>
+          <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact" class="btn-secondary">Liên hệ</a>
         </div>
-
-        <div class="image-side">
-            <div class="image-inner reveal-image">
-                <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng">
-            </div>
-        </div>
-        
+      </div>
     </div>
+    <div class="hero-image animate-image">
+      <img src="/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng">
+    </div>
+  </div>
+
+  <div class="custom-footer">
+    <span>© 2025 Lê Quốc Trọng | Portfolio</span> · <span>Powered by Hugo & PaperMod</span>
+  </div>
 </div>
 
 <style>
-     
-    footer, .footer, .nav, .header, .logo-switches, #top-link, .top-link { display: none !important; }
-    body, html { 
-        background: #ffffff !important; 
-        margin: 0 !important; 
-        padding: 0 !important; 
-        overflow: hidden !important; 
-    }
+   
+  footer, .footer { display: none !important; }
+  body { overflow-x: hidden; }
 
-     
-    .luxury-header {
-        position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #fff; padding: 25px 0; display: flex; justify-content: center;
-    }
-    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
-    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -1px; }
-    
-    .luxury-menu { display: flex !important; list-style: none !important; gap: 35px; margin: 0; padding: 0; }
-    .luxury-menu a { 
-        color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; 
-        font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .luxury-menu a.active { border-bottom: 2.5px solid #000; padding-bottom: 3px; }
+   
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInScale {
+    from { opacity: 0; transform: scale(1.05); }
+    to { opacity: 1; transform: scale(1); }
+  }
 
-     
-    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
-    .split-container { display: flex; height: 100%; width: 100%; }
-    
-    .text-side { 
-        flex: 1.1; display: flex; justify-content: flex-end; align-items: center; 
-        background: #fff; z-index: 10; padding-right: 80px; 
-    }
-    .content-box { max-width: 550px; width: 100%; }
+  .animate-item {
+    opacity: 0;
+    animation: fadeUp 1.2s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    animation-delay: var(--delay);
+  }
+  .animate-image {
+    opacity: 0;
+    animation: fadeInScale 1.8s ease-out forwards;
+    animation-delay: 0.4s;
+  }
 
-     
-    .main-title { 
-        font-family: 'Montserrat', sans-serif !important; 
-        font-size: 85px;  
-        font-weight: 900; line-height: 0.82; margin: 0 0 40px 0; 
-        text-transform: uppercase; letter-spacing: -6px; color: #1a1a1a;
-    }
-    .line-wrapper { overflow: hidden; } 
-    .outlined { color: transparent !important; -webkit-text-stroke: 2px #1a1a1a; display: inline-block; }
+   
+  .top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    padding: 20px 0;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+  }
+  .nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -1px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    color: #000;
+  }
 
-    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
-    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; margin-top: 35px; }
-    .job-title { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 900; margin-bottom: 10px; color: #000; }
-    .bio { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.6; color: #666; max-width: 400px; }
+   
+  .hero-wrapper {
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #fff;
+    padding-top: 100px;  
+  }
+  .hero-container {
+    display: flex;
+    height: calc(100% - 100px);
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+  .hero-text, .hero-image {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .hero-text {
+    justify-content: flex-end;
+    padding-right: 60px;
+  }
+  .hero-content {
+    max-width: 600px;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 500;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(5rem, 9vw, 8rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -4px;
+    margin-bottom: 60px;
+  }
+  .hero-title .line {
+    display: block;
+  }
+  .highlighted {
+    background: linear-gradient(180deg, transparent 62%, #e0e0e0 62%);
+    padding: 0 10px;
+    display: inline-block;
+  }
+  .job {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  .bio {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 500px;
+  }
+  .hero-cta {
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+  }
+  .btn-primary, .btn-secondary {
+    padding: 14px 32px;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  .btn-primary {
+    background: #000;
+    color: #fff;
+  }
+  .btn-primary:hover { background: #333; transform: translateY(-3px); }
+  .btn-secondary {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+  }
+  .btn-secondary:hover { background: #000; color: #fff; transform: translateY(-3px); }
 
-     
-    .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
-    .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1s ease;
+  }
+  .hero-image:hover img {
+    transform: scale(1.03);
+  }
 
-     
-    .reveal-item {
-        display: inline-block; opacity: 0; transform: translateY(100%);
-        animation: revealUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        animation-delay: var(--delay);
-    }
-    @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
+   
+  .custom-footer {
+    position: fixed;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    pointer-events: none;
+  }
+  .custom-footer span {
+    background: rgba(255,255,255,0.95);
+    color: #666;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    pointer-events: auto;
+    margin: 0 10px;
+    display: inline-block;
+  }
 
-    .reveal-image { opacity: 0; animation: fadeIn 1.5s ease forwards; animation-delay: 0.4s; }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+   
+  @media (max-width: 1024px) {
+    .hero-container { padding: 0 40px; }
+    .hero-text { padding-right: 40px; }
+  }
+  @media (max-width: 960px) {
+    .nav-links { gap: 20px; }
+    .hero-wrapper { height: auto; min-height: 100vh; }
+    .hero-container { flex-direction: column-reverse; padding: 0 30px; }
+    .hero-text, .hero-image { height: auto; justify-content: center; }
+    .hero-image { height: 50vh; margin-bottom: 60px; }
+    .hero-text { text-align: center; padding: 60px 0; }
+    .hero-content { max-width: 100%; }
+    .hero-cta { justify-content: center; }
+    .hero-title { font-size: clamp(4rem, 12vw, 6rem); }
+  }
 </style>
 
     </main>
