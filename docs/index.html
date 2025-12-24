@@ -134,7 +134,6 @@
         <div class="text-side">
             <div class="content-box">
                 <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
-                
                 <h1 class="main-title">
                     <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.2s">BUILD</span></div>
                     <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.3s">QUIETLY.</span></div>
@@ -142,7 +141,6 @@
                     <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.5s">CONFIDEN</span></div>
                     <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.6s">TLY.</span></div>
                 </h1>
-
                 <div class="description-block reveal-item" style="--delay: 0.8s">
                     <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
                     <p class="bio">
@@ -174,20 +172,16 @@
     }
     .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
     .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -1px; }
-    
     .luxury-menu { display: flex !important; list-style: none !important; gap: 35px; }
     .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; }
     .luxury-menu a.active { border-bottom: 2.5px solid #000; padding-bottom: 3px; }
 
      
-    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
-    .split-container { display: flex; height: 100%; width: 100%; }
+    .full-screen-wrapper { width: 100vw; height: 100vh; }
+    .split-container { display: flex; height: 100%; }
     
-    .text-side { 
-        flex: 4.5; display: flex; justify-content: flex-end; align-items: center; 
-        padding-right: 80px; background: #fff;
-    }
-    .content-box { max-width: 550px; width: 100%; }
+    .text-side { flex: 4.5; display: flex; justify-content: flex-end; align-items: center; padding-right: 80px; }
+    .content-box { max-width: 550px; }
 
     .main-title { 
         font-family: 'Montserrat', sans-serif !important; 
@@ -197,20 +191,26 @@
     .line-wrapper { overflow: hidden; } 
     .outlined { color: transparent !important; -webkit-text-stroke: 2px #1a1a1a; display: inline-block; }
 
-    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
-    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; margin-top: 35px; }
-    .job-title { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 900; color: #000; }
-    .bio { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.6; color: #666; max-width: 400px; }
-
      
-    .image-side { flex: 5.5; background: #f9f9f9; overflow: hidden; }
+    .image-side { 
+        flex: 5.5; 
+        background: #f9f9f9; 
+        overflow: hidden; 
+    }
     .image-side img { 
         width: 100%; 
         height: 100%; 
         object-fit: cover; 
-        object-position: top;  
+         
+        object-position: 50% 25%; 
         display: block; 
     }
+
+     
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
+    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; margin-top: 35px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 900; color: #000; }
+    .bio { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.6; color: #666; max-width: 400px; }
 
      
     .reveal-item {
