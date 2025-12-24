@@ -18,123 +18,110 @@ layout: "single"
     </nav>
 </header>
 
-<div class="luxury-about-container">
-  
-  <div class="about-text-side">
-    <div class="about-content-box">
-      <h4 class="about-label animated-item delay-1">LỜI TỰ BẠCH</h4>
-      
-      <h1 class="about-name-title">
-        <div class="reveal-hider"><span class="animated-item delay-2">LÊ QUỐC</span></div>
-        <div class="reveal-hider"><span class="animated-item delay-3">TRỌNG.</span></div>
-      </h1>
+<div class="full-screen-wrapper">
+    <div class="split-container">
+        
+        <div class="text-side">
+            <div class="content-box">
+                <p class="top-tag reveal-item" style="--delay: 0.1s">LỜI TỰ BẠCH</p>
+                <h1 class="main-title">
+                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.2s">GIỚI</span></div>
+                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.3s">THIỆU.</span></div>
+                </h1>
+                
+                <div class="description-block reveal-item" style="--delay: 0.5s">
+                    <h3 class="job-title">LÊ QUỐC TRỌNG — HUTECH IT STUDENT</h3>
+                    <div class="bio-scroll-area">
+                        <p class="bio">
+                            Chào bạn, mình hiện đang là sinh viên chuyên ngành <strong>Công Nghệ Thông Tin</strong>. Hành trình của mình được xây đắp từ những sự tò mò đơn sơ nhất về thế giới kỹ thuật số.
+                        </p>
+                        <p class="bio">
+                            Mình chọn đi sâu vào <strong>Lập trình mạng</strong> và <strong>Java & JavaScript</strong>. Những đêm thức trắng sửa lỗi Socket đã giữ chân mình lại với nghề.
+                        </p>
+                        <p class="bio">
+                            Blog này là cuốn nhật ký ghi chép lại những gì mình học được và cả những sai lầm để trưởng thành hơn.
+                        </p>
+                    </div>
+                </div>
 
-      <p class="about-sub animated-item delay-4">Sinh viên IT tại HUTECH — Chuyên sâu Network & Java</p>
-      
-      <div class="about-line animated-item delay-5"></div>
+                <div class="signature-quote reveal-item" style="--delay: 0.8s">
+                    "Giữ tâm thế của người mới bắt đầu."
+                </div>
+            </div>
+        </div>
 
-      <div class="about-story">
-        <p class="animated-item delay-6">Chào bạn, cảm ơn vì đã ghé thăm góc nhỏ này. Mình tên là Lê Quốc Trọng, hiện đang là sinh viên chuyên ngành <strong>Công Nghệ Thông Tin</strong>. Thú thật, mình không phải là một "ngôi sao" trong lớp, hành trình của mình được xây đắp từ những sự tò mò đơn sơ nhất về thế giới kỹ thuật số.</p>
-
-        <p class="animated-item delay-7">Mình chọn đi sâu vào <strong>Lập trình mạng (Network Programming)</strong> và <strong>Java & JavaScript</strong>. Có những đêm thức trắng chỉ để sửa một lỗi Socket ngớ ngẩn, nhưng chính những khoảnh khắc "vỡ lẽ" đó đã giữ chân mình lại với nghề.</p>
-
-        <p class="animated-item delay-8">Trang blog này ra đời là cuốn nhật ký ghi chép lại những gì mình học được, và cả những sai lầm mình đã mắc phải. Thừa nhận sự thiếu sót chính là cách nhanh nhất để trưởng thành.</p>
-      </div>
-
-      <div class="about-quote animated-item delay-9">
-        "Giữ tâm thế của người mới bắt đầu, để luôn khao khát học hỏi."
-      </div>
+        <div class="image-side">
+            <div class="image-inner reveal-image">
+                <img src="anh3.jpg" alt="Lê Quốc Trọng" onerror="this.src='/LeQuocTrong_Blog/anh3.jpg'">
+            </div>
+        </div>
+        
     </div>
-  </div>
-
-  <div class="about-visual-side">
-    <div class="about-photo-wrapper animated-image">
-      <img src="anh3.jpg" alt="Lê Quốc Trọng" onerror="this.src='/LeQuocTrong_Blog/anh3.jpg'">
-    </div>
-  </div>
-
 </div>
 
 <style>
-/* 1. ÉP FONT VÀ RESET THEME GỐC */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+    /* RESET VÀ DIỆT RÁC THEME */
+    footer, .footer, .nav, .header, .logo-switches, #top-link, header.page-header { display: none !important; }
+    body, html { background: #fff !important; margin: 0; padding: 0; overflow: hidden; }
 
-footer, .footer, .nav, .header, .logo-switches, #top-link, .top-link, header.page-header { 
-    display: none !important; 
-}
+    /* MENU ĐỒNG BỘ TRANG CHỦ */
+    .luxury-header {
+        position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
+        background: #fff; padding: 25px 0; display: flex; justify-content: center;
+    }
+    .luxury-nav { 
+        width: 100%; max-width: 1300px; display: flex; justify-content: space-between; 
+        align-items: center; padding: 0 100px; /* Thẳng hàng với khối chữ */
+    }
+    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -1px; }
+    .luxury-menu { display: flex !important; list-style: none !important; gap: 40px; }
+    .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; }
+    .luxury-menu a.active { border-bottom: 2.5px solid #000; padding-bottom: 3px; }
 
-body, html { 
-    background: #ffffff !important; 
-    margin: 0 !important; 
-    padding: 0 !important;
-}
+    /* LAYOUT CHIA ĐÔI Y CHANG HOME */
+    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
+    .split-container { display: flex; height: 100%; width: 100%; }
+    
+    .text-side { 
+        flex: 4.5; display: flex; justify-content: flex-end; align-items: center; 
+        padding-right: 80px; background: #fff;
+    }
+    .content-box { max-width: 500px; width: 100%; }
 
-/* 2. MENU ĐỒNG BỘ TRANG CHỦ */
-.luxury-header {
-    position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-    background: #fff; padding: 25px 0; display: flex; justify-content: center;
-}
-.luxury-nav { 
-    width: 100%; max-width: 1300px; display: flex; justify-content: space-between; 
-    align-items: center; padding: 0 100px; /* Lùi vào theo khối chữ */
-}
-.luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -1px; }
-.luxury-menu { display: flex !important; list-style: none !important; gap: 40px; }
-.luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; }
-.luxury-menu a.active { border-bottom: 2.5px solid #000; padding-bottom: 3px; }
+    /* TYPOGRAPHY GẮT */
+    .main-title { 
+        font-family: 'Montserrat', sans-serif !important; 
+        font-size: 75px; font-weight: 900; line-height: 0.82; 
+        margin: 0 0 35px 0; text-transform: uppercase; letter-spacing: -5px; color: #1a1a1a;
+    }
+    .line-wrapper { overflow: hidden; } 
 
-/* 3. KHUNG BAO NGOÀI */
-.luxury-about-container {
-    width: 100vw; height: 100vh; display: flex; background: #fff; overflow: hidden;
-}
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; color: #bbb; letter-spacing: 5px; margin-bottom: 15px; }
+    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; margin-top: 30px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 900; margin-bottom: 15px; color: #000; }
+    .bio { font-family: 'Montserrat', sans-serif; font-size: 13px; line-height: 1.6; color: #666; margin-bottom: 10px; }
+    
+    .signature-quote {
+        margin-top: 25px; font-family: 'Montserrat', sans-serif; font-style: italic;
+        font-size: 13px; font-weight: 600; color: #999;
+    }
 
-/* 4. CỘT CHỮ LÙI VÀO SÂU */
-.about-text-side {
-    flex: 4.5; display: flex; justify-content: flex-end; align-items: center;
-    padding-right: 80px; padding-top: 50px;
-}
-.about-content-box { max-width: 480px; width: 100%; }
+    /* FIX LẤY THÂN NGƯỜI */
+    .image-side { flex: 5.5; background: #f9f9f9; overflow: hidden; }
+    .image-side img { 
+        width: 100%; height: 100%; object-fit: cover; 
+        object-position: center 15%; /* Hiện trọn vai và thân */
+        display: block; 
+    }
 
-.about-label { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 5px; color: #bbb; margin-bottom: 15px; }
-
-/* TIÊU ĐỀ GẮT */
-.about-name-title {
-    font-family: 'Montserrat', sans-serif !important; 
-    font-size: 75px; font-weight: 900 !important; line-height: 0.82; 
-    margin: 0 0 30px 0; letter-spacing: -5px; color: #1a1a1a;
-}
-
-.about-sub { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: #444; margin-bottom: 25px; }
-.about-line { width: 50px; height: 4px; background: #1a1a1a; margin-bottom: 30px; }
-.about-story p { font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 1.7; color: #666; margin-bottom: 15px; text-align: justify; }
-.about-quote { font-family: 'Montserrat', sans-serif; font-style: italic; font-size: 13px; font-weight: 600; color: #999; border-left: 3px solid #eee; padding-left: 20px; }
-
-/* 5. CỘT ẢNH LẤY TRỌN THÂN NGƯỜI */
-.about-visual-side { flex: 5.5; background: #f9f9f9; overflow: hidden; }
-.about-photo-wrapper { width: 100%; height: 100%; }
-.about-photo-wrapper img {
-    width: 100%; height: 100%; object-fit: cover; 
-    object-position: center 15%; /* Fix "mất thân" */
-    display: block;
-}
-
-/* ANIMATIONS */
-.reveal-hider { overflow: hidden; }
-@keyframes revealUp { from { transform: translateY(110%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-.animated-item { display: inline-block; animation: revealUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards; opacity: 0; }
-.animated-image { opacity: 0; animation: fadeIn 1.5s ease forwards; animation-delay: 0.5s; }
-@keyframes fadeIn { to { opacity: 1; } }
-
-.delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; }
-.delay-3 { animation-delay: 0.3s; } .delay-4 { animation-delay: 0.4s; }
-.delay-5 { animation-delay: 0.5s; } .delay-6 { animation-delay: 0.6s; }
-.delay-7 { animation-delay: 0.7s; } .delay-8 { animation-delay: 0.8s; }
-.delay-9 { animation-delay: 0.9s; }
-
-@media (max-width: 1000px) {
-    .luxury-about-container { flex-direction: column-reverse; height: auto; }
-    .about-text-side { padding: 60px 30px; justify-content: center; }
-    .about-name-title { font-size: 55px; }
-    .about-visual-side { height: 400px; }
-}
+    /* HIỆU ỨNG REVEAL */
+    .reveal-item {
+        display: inline-block; opacity: 0; transform: translateY(100%);
+        animation: revealUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: var(--delay);
+    }
+    @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
+    .reveal-image { opacity: 0; animation: fadeIn 1.5s ease forwards; animation-delay: 0.4s; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
+{{ end }}
