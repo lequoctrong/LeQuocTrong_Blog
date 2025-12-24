@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="light">
 
-<head><meta charset="utf-8">
+<head><script src="/LeQuocTrong_Blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=LeQuocTrong_Blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080? | Lê Quốc Trọng</title>
 <meta name="keywords" content="Network, Theory">
 <meta name="description" content="Hiểu về khái niệm Port (Cổng) để tránh xung đột khi chạy phần mềm.">
 <meta name="author" content="Lê Quốc Trọng">
-<link rel="canonical" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-2/">
+<link rel="canonical" href="http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-2/">
 <link crossorigin="anonymous" href="/LeQuocTrong_Blog/assets/css/stylesheet.912b4e4856ba75533330ddab05c396f8c957c3f5993f1a1b22c8f3c151bb4e7a.css" integrity="sha256-kStOSFa6dVMzMN2rBcOW&#43;MlXw/WZPxobIsjzwVG7Tno=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lequoctrong.github.io/LeQuocTrong_Blog/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lequoctrong.github.io/LeQuocTrong_Blog/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lequoctrong.github.io/LeQuocTrong_Blog/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lequoctrong.github.io/LeQuocTrong_Blog/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lequoctrong.github.io/LeQuocTrong_Blog/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/LeQuocTrong_Blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/LeQuocTrong_Blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/LeQuocTrong_Blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/LeQuocTrong_Blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/LeQuocTrong_Blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-2/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -33,81 +33,13 @@
         document.querySelector("html").dataset.theme = 'dark';
     }
 
-</script><meta property="og:url" content="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-2/">
-  <meta property="og:site_name" content="Lê Quốc Trọng">
-  <meta property="og:title" content="Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?">
-  <meta property="og:description" content="Hiểu về khái niệm Port (Cổng) để tránh xung đột khi chạy phần mềm.">
-  <meta property="og:locale" content="vi-vn">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-12-16T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-12-16T00:00:00+00:00">
-    <meta property="article:tag" content="Network">
-    <meta property="article:tag" content="Theory">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?">
-<meta name="twitter:description" content="Hiểu về khái niệm Port (Cổng) để tránh xung đột khi chạy phần mềm.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://lequoctrong.github.io/LeQuocTrong_Blog/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?",
-      "item": "https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-2/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?",
-  "name": "Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?",
-  "description": "Hiểu về khái niệm Port (Cổng) để tránh xung đột khi chạy phần mềm.",
-  "keywords": [
-    "Network", "Theory"
-  ],
-  "articleBody": "Nếu IP là địa chỉ nhà, thì Port chính là số phòng. Một máy tính có thể chạy nhiều chương trình mạng (Web, Game, Chat…), mỗi chương trình phải có một Port riêng.\nCác loại Port phổ biến Port 80: Dành cho Web (HTTP). Port 443: Dành cho Web bảo mật (HTTPS). Port 3306: Dành cho MySQL Database. Lỗi thường gặp: “Address already in use” Lỗi này xảy ra khi bạn cố mở Server ở một Port đang bị thằng khác chiếm dụng. =\u003e Cách sửa: Đổi sang số khác, ví dụ đổi từ 8080 sang 9999.\n",
-  "wordCount" : "97",
-  "inLanguage": "en",
-  "datePublished": "2025-12-16T00:00:00Z",
-  "dateModified": "2025-12-16T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Lê Quốc Trọng"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-2/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Lê Quốc Trọng",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lequoctrong.github.io/LeQuocTrong_Blog/favicon.ico"
-    }
-  }
-}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" accesskey="h" title="Lê Quốc Trọng (Alt + H)">Lê Quốc Trọng</a>
+            <a href="http://localhost:1313/LeQuocTrong_Blog/" accesskey="h" title="Lê Quốc Trọng (Alt + H)">Lê Quốc Trọng</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -133,22 +65,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" title="Trang chủ">
+                <a href="http://localhost:1313/LeQuocTrong_Blog/" title="Trang chủ">
                     <span>Trang chủ</span>
                 </a>
             </li>
             <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about/" title="Giới thiệu">
+                <a href="http://localhost:1313/LeQuocTrong_Blog/about/" title="Giới thiệu">
                     <span>Giới thiệu</span>
                 </a>
             </li>
             <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/" title="Blog">
+                <a href="http://localhost:1313/LeQuocTrong_Blog/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact/" title="Liên hệ">
+                <a href="http://localhost:1313/LeQuocTrong_Blog/contact/" title="Liên hệ">
                     <span>Liên hệ</span>
                 </a>
             </li>
@@ -159,7 +91,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">Home</a>&nbsp;»&nbsp;<a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/LeQuocTrong_Blog/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/LeQuocTrong_Blog/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?
     </h1>
@@ -200,16 +132,16 @@ Một máy tính có thể chạy nhiều chương trình mạng (Web, Game, Cha
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/network/">Network</a></li>
-      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/theory/">Theory</a></li>
+      <li><a href="http://localhost:1313/LeQuocTrong_Blog/tags/network/">Network</a></li>
+      <li><a href="http://localhost:1313/LeQuocTrong_Blog/tags/theory/">Theory</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-1/">
+  <a class="prev" href="http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-1/">
     <span class="title">« Prev</span>
     <br>
     <span>Bài 1: Làm sao biết máy mình đang dùng IP gì trong Java?</span>
   </a>
-  <a class="next" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-3/">
+  <a class="next" href="http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-3/">
     <span class="title">Next »</span>
     <br>
     <span>Bài 3: Callback Hell trong JavaScript và cách né tránh</span>
@@ -221,7 +153,7 @@ Một máy tính có thể chạy nhiều chương trình mạng (Web, Game, Cha
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">Lê Quốc Trọng</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/LeQuocTrong_Blog/">Lê Quốc Trọng</a></span> · 
 
     <span>
         Powered by

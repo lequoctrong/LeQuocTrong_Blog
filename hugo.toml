@@ -60,4 +60,4 @@ publishDir = "docs"
 # --- FIX LỖI MẤT CSS TRÊN GITHUB PAGES ---
 # Hai dòng này là "cứu cánh" để web không bị list đen thui
 canonifyURLs = true
-relativeURLs = false
+relativeURLs = true

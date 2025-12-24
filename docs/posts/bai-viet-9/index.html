@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="light">
 
-<head><meta charset="utf-8">
+<head><script src="/LeQuocTrong_Blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=LeQuocTrong_Blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Bài 9: Đa luồng (Multithreading) - Cách để Server tiếp 100 khách cùng lúc | Lê Quốc Trọng</title>
 <meta name="keywords" content="Java, Thread, Server">
 <meta name="description" content="Nếu không có Đa luồng, Server của bạn chỉ phục vụ được đúng 1 người, người thứ 2 sẽ bị treo. Tại sao?">
 <meta name="author" content="Lê Quốc Trọng">
-<link rel="canonical" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-9/">
+<link rel="canonical" href="http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-9/">
 <link crossorigin="anonymous" href="/LeQuocTrong_Blog/assets/css/stylesheet.912b4e4856ba75533330ddab05c396f8c957c3f5993f1a1b22c8f3c151bb4e7a.css" integrity="sha256-kStOSFa6dVMzMN2rBcOW&#43;MlXw/WZPxobIsjzwVG7Tno=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lequoctrong.github.io/LeQuocTrong_Blog/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lequoctrong.github.io/LeQuocTrong_Blog/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lequoctrong.github.io/LeQuocTrong_Blog/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lequoctrong.github.io/LeQuocTrong_Blog/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lequoctrong.github.io/LeQuocTrong_Blog/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/LeQuocTrong_Blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/LeQuocTrong_Blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/LeQuocTrong_Blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/LeQuocTrong_Blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/LeQuocTrong_Blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-9/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-9/">
 <noscript>
     <style>
         #theme-toggle,
@@ -33,82 +33,13 @@
         document.querySelector("html").dataset.theme = 'dark';
     }
 
-</script><meta property="og:url" content="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-9/">
-  <meta property="og:site_name" content="Lê Quốc Trọng">
-  <meta property="og:title" content="Bài 9: Đa luồng (Multithreading) - Cách để Server tiếp 100 khách cùng lúc">
-  <meta property="og:description" content="Nếu không có Đa luồng, Server của bạn chỉ phục vụ được đúng 1 người, người thứ 2 sẽ bị treo. Tại sao?">
-  <meta property="og:locale" content="vi-vn">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-12-23T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-12-23T00:00:00+00:00">
-    <meta property="article:tag" content="Java">
-    <meta property="article:tag" content="Thread">
-    <meta property="article:tag" content="Server">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bài 9: Đa luồng (Multithreading) - Cách để Server tiếp 100 khách cùng lúc">
-<meta name="twitter:description" content="Nếu không có Đa luồng, Server của bạn chỉ phục vụ được đúng 1 người, người thứ 2 sẽ bị treo. Tại sao?">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://lequoctrong.github.io/LeQuocTrong_Blog/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Bài 9: Đa luồng (Multithreading) - Cách để Server tiếp 100 khách cùng lúc",
-      "item": "https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-9/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Bài 9: Đa luồng (Multithreading) - Cách để Server tiếp 100 khách cùng lúc",
-  "name": "Bài 9: Đa luồng (Multithreading) - Cách để Server tiếp 100 khách cùng lúc",
-  "description": "Nếu không có Đa luồng, Server của bạn chỉ phục vụ được đúng 1 người, người thứ 2 sẽ bị treo. Tại sao?",
-  "keywords": [
-    "Java", "Thread", "Server"
-  ],
-  "articleBody": "Nếu bạn chạy code Server cơ bản, khi Client A kết nối, Server sẽ bận nói chuyện với A. Lúc này Client B kết nối tới sẽ bị “quay đều” (treo) cho đến khi A thoát ra. =\u003e Để khắc phục, ta phải dùng Thread (Luồng).\nMô hình Server Đa luồng Tưởng tượng Server là một ông chủ quán (Main Thread):\nÔng chủ đứng ở cửa (socket.accept()). Khách A tới =\u003e Ông chủ thuê nhân viên 1 ra tiếp A. Ông chủ quay lại cửa đứng chờ tiếp. Khách B tới =\u003e Ông chủ thuê nhân viên 2 ra tiếp B. Code minh họa (Java) while (true) { // 1. Chờ khách tới (Main Thread bị block ở đây) Socket clientSocket = serverSocket.accept(); // 2. Có khách! Tạo một luồng riêng (Nhân viên) để xử lý Thread t = new Thread(new Runnable() { @Override public void run() { xuLyCongViec(clientSocket); // Nhân viên làm việc ở đây } }); // 3. Đẩy nhân viên ra làm việc, ông chủ quay lại vòng lặp chờ khách mới t.start(); } ",
-  "wordCount" : "177",
-  "inLanguage": "en",
-  "datePublished": "2025-12-23T00:00:00Z",
-  "dateModified": "2025-12-23T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Lê Quốc Trọng"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-9/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Lê Quốc Trọng",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lequoctrong.github.io/LeQuocTrong_Blog/favicon.ico"
-    }
-  }
-}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" accesskey="h" title="Lê Quốc Trọng (Alt + H)">Lê Quốc Trọng</a>
+            <a href="http://localhost:1313/LeQuocTrong_Blog/" accesskey="h" title="Lê Quốc Trọng (Alt + H)">Lê Quốc Trọng</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -134,22 +65,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" title="Trang chủ">
+                <a href="http://localhost:1313/LeQuocTrong_Blog/" title="Trang chủ">
                     <span>Trang chủ</span>
                 </a>
             </li>
             <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about/" title="Giới thiệu">
+                <a href="http://localhost:1313/LeQuocTrong_Blog/about/" title="Giới thiệu">
                     <span>Giới thiệu</span>
                 </a>
             </li>
             <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/" title="Blog">
+                <a href="http://localhost:1313/LeQuocTrong_Blog/posts/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact/" title="Liên hệ">
+                <a href="http://localhost:1313/LeQuocTrong_Blog/contact/" title="Liên hệ">
                     <span>Liên hệ</span>
                 </a>
             </li>
@@ -160,7 +91,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">Home</a>&nbsp;»&nbsp;<a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/LeQuocTrong_Blog/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/LeQuocTrong_Blog/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Bài 9: Đa luồng (Multithreading) - Cách để Server tiếp 100 khách cùng lúc
     </h1>
@@ -216,17 +147,17 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/java/">Java</a></li>
-      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/thread/">Thread</a></li>
-      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/server/">Server</a></li>
+      <li><a href="http://localhost:1313/LeQuocTrong_Blog/tags/java/">Java</a></li>
+      <li><a href="http://localhost:1313/LeQuocTrong_Blog/tags/thread/">Thread</a></li>
+      <li><a href="http://localhost:1313/LeQuocTrong_Blog/tags/server/">Server</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-8/">
+  <a class="prev" href="http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-8/">
     <span class="title">« Prev</span>
     <br>
     <span>Bài 8: Xử lý ngoại lệ (Exception) khi lập trình mạng</span>
   </a>
-  <a class="next" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-10/">
+  <a class="next" href="http://localhost:1313/LeQuocTrong_Blog/posts/bai-viet-10/">
     <span class="title">Next »</span>
     <br>
     <span>Bài 10: Tổng kết và Đánh giá kết quả Đồ án môn Lập trình mạng</span>
@@ -238,7 +169,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">Lê Quốc Trọng</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/LeQuocTrong_Blog/">Lê Quốc Trọng</a></span> · 
 
     <span>
         Powered by
