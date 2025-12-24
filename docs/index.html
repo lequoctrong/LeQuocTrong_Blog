@@ -112,117 +112,62 @@
     </nav>
 </header>
 <main class="main">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<div class="luxury-about-wrapper">
+    <header class="luxury-header-fix">
+        <nav class="luxury-nav-fix">
+            <div class="luxury-logo-fix"><a href="/">LÊ QUỐC TRỌNG</a></div>
+            <ul class="luxury-menu-fix">
+                <li><a href="/">TRANG CHỦ</a></li>
+                <li><a href="/about" class="active">GIỚI THIỆU</a></li>
+                <li><a href="/posts">BLOG</a></li>
+                <li><a href="/contact">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header class="luxury-header">
-    <nav class="luxury-nav">
-        <div class="luxury-logo">
-            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">LÊ QUỐC TRỌNG</a>
-        </div>
-        <ul class="luxury-menu">
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">TRANG CHỦ</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">GIỚI THIỆU</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts">BLOG</a></li>
-            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">LIÊN HỆ</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div class="full-screen-wrapper">
-    <div class="split-container">
-        
-        <div class="text-side">
-            <div class="content-box">
-                <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
-                <h1 class="main-title">
-                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.2s">BUILD</span></div>
-                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.3s">QUIETLY.</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.4s">SHIP</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.5s">CONFIDEN</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.6s">TLY.</span></div>
+    <div class="luxury-split-layout">
+        <div class="luxury-text-side">
+            <div class="luxury-content">
+                <p class="luxury-label reveal-anim" style="--d: 0.1s">LỜI TỰ BẠCH</p>
+                <h1 class="luxury-main-title">
+                    <div class="hider"><span class="reveal-anim" style="--d: 0.2s">GIỚI</span></div>
+                    <div class="hider"><span class="reveal-anim" style="--d: 0.3s">THIỆU.</span></div>
                 </h1>
-                <div class="description-block reveal-item" style="--delay: 0.8s">
-                    <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
-                    <p class="bio">
-                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
-                        Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
-                    </p>
+                <div class="luxury-bio reveal-anim" style="--d: 0.5s">
+                    <h3 class="luxury-job">LÊ QUỐC TRỌNG — HUTECH IT STUDENT</h3>
+                    <div class="markdown-text"></div>
                 </div>
             </div>
         </div>
-
-        <div class="image-side">
-            <div class="image-inner reveal-image">
-                <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng">
+        <div class="luxury-image-side">
+            <div class="luxury-img-frame image-anim">
+                <img src="/anh3.jpg" alt="Lê Quốc Trọng">
             </div>
         </div>
-        
     </div>
 </div>
 
 <style>
-     
-    footer, .footer, .nav, .header, .logo-switches, #top-link { display: none !important; }
-    body, html { background: #fff !important; margin: 0; padding: 0; overflow: hidden; }
+    header:not(.luxury-header-fix), footer, .nav, .logo-switches, #top-link, .breadcrumbs, .page-header { display: none !important; }
+    html, body { background: #fff !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; height: 100vh !important; }
 
-     
-    .luxury-header {
-        position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #fff; padding: 25px 0; display: flex; justify-content: center;
-    }
-    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
-    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -1px; }
-    .luxury-menu { display: flex !important; list-style: none !important; gap: 35px; }
-    .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; }
-    .luxury-menu a.active { border-bottom: 2.5px solid #000; padding-bottom: 3px; }
+    .luxury-header-fix { position: fixed !important; top: 0 !important; width: 100% !important; z-index: 99999 !important; background: #fff !important; padding: 25px 0 !important; display: flex !important; justify-content: center !important; }
+    .luxury-nav-fix { width: 100% !important; max-width: 1300px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 0 100px !important; }
+    .luxury-logo-fix a { font-family: 'Montserrat', sans-serif !important; font-size: 20px !important; font-weight: 900 !important; color: #000 !important; text-decoration: none !important; }
+    .luxury-menu-fix { display: flex !important; list-style: none !important; gap: 40px !important; margin: 0 !important; padding: 0 !important; }
+    .luxury-menu-fix a { color: #000 !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; font-weight: 700 !important; text-transform: uppercase !important; }
 
-     
-    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
-    .split-container { display: flex; height: 100%; width: 100%; }
-    
-    .text-side { 
-        flex: 4.5; display: flex; justify-content: flex-end; align-items: center; 
-        padding-right: 80px; background: #fff;
-    }
-    .content-box { max-width: 550px; width: 100%; }
+    .luxury-split-layout { display: flex !important; width: 100% !important; height: 100% !important; }
+    .luxury-text-side { flex: 4.5 !important; display: flex !important; justify-content: flex-end !important; align-items: center !important; padding-right: 80px !important; }
+    .luxury-content { max-width: 480px !important; width: 100% !important; }
+    .luxury-main-title { font-family: 'Montserrat', sans-serif !important; font-size: 75px !important; font-weight: 900 !important; line-height: 0.82 !important; margin: 0 0 35px 0 !important; letter-spacing: -5px !important; }
+    .markdown-text { font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.6 !important; color: #666 !important; }
 
-    .main-title { 
-        font-family: 'Montserrat', sans-serif !important; 
-        font-size: 85px; font-weight: 900; line-height: 0.82; 
-        margin: 0 0 40px 0; text-transform: uppercase; letter-spacing: -6px; color: #1a1a1a;
-    }
-    .line-wrapper { overflow: hidden; } 
-    .outlined { color: transparent !important; -webkit-text-stroke: 2px #1a1a1a; display: inline-block; }
+    .luxury-image-side { flex: 5.5 !important; background: #f9f9f9 !important; overflow: hidden !important; }
+    .luxury-img-frame img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center 15% !important; display: block !important; }
 
-     
-    .image-side { 
-        flex: 5.5; 
-        background: #f9f9f9; 
-        overflow: hidden; 
-    }
-    .image-side img { 
-        width: 70%; 
-        height: 50%; 
-        object-fit: cover; 
-         
-        object-position: center 15%; 
-        display: block; 
-    }
-
-     
-    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
-    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; margin-top: 35px; }
-    .job-title { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 900; color: #000; }
-    .bio { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.6; color: #666; max-width: 400px; }
-
-    .reveal-item {
-        display: inline-block; opacity: 0; transform: translateY(100%);
-        animation: revealUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        animation-delay: var(--delay);
-    }
-    @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
-    .reveal-image { opacity: 0; animation: fadeIn 1.5s ease forwards; animation-delay: 0.4s; }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes revealUp { from { transform: translateY(110%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    .reveal-anim { display: inline-block !important; animation: revealUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards !important; opacity: 0 !important; animation-delay: var(--d) !important; }
 </style>
 
     </main>

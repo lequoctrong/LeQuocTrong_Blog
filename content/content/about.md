@@ -1,7 +1,7 @@
 ---
 title: "Giới Thiệu"
 url: "/about"
-layout: "about-luxury"
+layout: "single"
 ---
 
 Chào bạn, mình hiện là sinh viên chuyên ngành **Công Nghệ Thông Tin** tại **HUTECH**. Hành trình của mình bắt đầu từ sự tò mò về thế giới kỹ thuật số.
