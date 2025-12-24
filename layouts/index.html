@@ -1,245 +1,187 @@
 {{ define "main" }}
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <div class="full-screen-wrapper">
-    <div class="split-container">
-        
-        <div class="text-side">
-            <div class="content-box">
-                <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG </p>
-                
-                <h1 class="main-title animate-item" style="--delay: 0.4s">
-                    BUILD QUIETLY.<br>
-                    <span class="outlined">SHIP CONFIDENTLY.</span>
-                </h1>
-
-                <div class="description-block animate-item" style="--delay: 0.6s">
-                    <h3 class="job-title">Java & JavaScript</h3>
-                    <p class="bio">
-                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>. <br>
-                        Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
-                    </p>
-                </div>
-            </div>
+  <div class="split-container">
+    <div class="text-side">
+      <div class="content-box">
+        <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG</p>
+        <h1 class="main-title animate-item" style="--delay: 0.4s">
+          BUILD QUIETLY.<br>
+          <span class="highlighted">SHIP CONFIDENTLY.</span>
+        </h1>
+        <div class="description-block animate-item" style="--delay: 0.6s">
+          <h3 class="job-title">Java & JavaScript Developer</h3>
+          <p class="bio">
+            Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
+            Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
+          </p>
         </div>
-
-        <div class="image-side animate-image">
-            <img src="{{ "anhdaidien.jpg" | relURL }}" alt="Lê Quốc Trọng Portrait">
-        </div>
-
-        <div class="custom-footer animate-item" style="--delay: 1s">
-            <span>&copy; 2025 Lê Quốc Trọng | Portfolio</span> · 
-            <span>Powered by Hugo & PaperMod</span>
-        </div>
-        
+      </div>
     </div>
+    <div class="image-side animate-image">
+      <img src="{{ "anhdaidien.jpg" | relURL }}" alt="Lê Quốc Trọng Portrait">
+    </div>
+    <div class="custom-footer animate-item" style="--delay: 1s">
+      <span>© 2025 Lê Quốc Trọng | Portfolio</span> · <span>Powered by Hugo & PaperMod</span>
+    </div>
+  </div>
 </div>
 
 <style>
-    /* --- PHẦN ANIMATION MỚI THÊM VÀO --- */
+  /* Animation */
+  @keyframes slideUpFade {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(40px) scale(1.05); }
+    to { opacity: 1; transform: translateX(0) scale(1); }
+  }
 
-    /* Định nghĩa hiệu ứng trượt lên */
-    @keyframes slideUpFade {
-        from {
-            opacity: 0;
-            transform: translateY(40px); /* Bắt đầu ở dưới thấp */
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0); /* Về vị trí chuẩn */
-        }
-    }
+  .animate-item {
+    opacity: 0;
+    animation: slideUpFade 1s ease-out forwards;
+    animation-delay: var(--delay, 0s);
+  }
+  .animate-image {
+    opacity: 0;
+    animation: slideInRight 1.4s ease-out forwards;
+    animation-delay: 0.3s;
+  }
 
-    /* Định nghĩa hiệu ứng ảnh trượt từ phải sang */
-    @keyframes slideInRight {
-        from {
-            opacity: 0;
-            transform: translateX(50px) scale(1.1); /* Hơi phóng to và dịch sang phải */
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0) scale(1);
-        }
-    }
+  /* General */
+  footer, .footer { display: none !important; }
+  .full-screen-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #ffffff;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+  .split-container {
+    display: flex;
+    height: 100%;
+  }
 
-    /* Class áp dụng cho Text */
-    .animate-item {
-        opacity: 0; /* Ẩn mặc định */
-        animation: slideUpFade 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
-        animation-delay: var(--delay, 0s); /* Delay theo biến set trong HTML */
-    }
+  /* Text side - Sang trọng hơn, font elegant */
+  .text-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    color: #1e1e1e;
+  }
+  .content-box {
+    max-width: 600px;
+    width: 100%;
+  }
+  .top-tag {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  .main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 700;
+    line-height: 0.95;
+    margin: 0 0 50px 0;
+    letter-spacing: -3px;
+  }
+  .highlighted {
+    display: inline-block;
+    background: linear-gradient(180deg, transparent 60%, #e0e0e0 60%);
+    padding: 0 8px;
+    line-height: 1.2;
+  }
+  .description-block {
+    padding-left: 30px;
+    border-left: 3px solid #333;
+  }
+  .job-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: #000;
+    letter-spacing: 1px;
+  }
+  .bio {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 0;
+  }
 
-    /* Class áp dụng cho Ảnh */
-    .animate-image {
-        opacity: 0;
-        animation: slideInRight 1.2s ease-out forwards;
-        animation-delay: 0.2s;
-    }
+  /* Image side - Cân xứng hơn (50/50 thực sự) */
+  .image-side {
+    flex: 1;
+    position: relative;
+    background: #f5f5f5;
+    overflow: hidden;
+  }
+  .image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease;
+  }
+  .image-side:hover img {
+    transform: scale(1.05);
+  }
 
-    /* --- KẾT THÚC PHẦN ANIMATION --- */
+  /* Footer */
+  .custom-footer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  .custom-footer span {
+    background: rgba(255, 255, 255, 0.95);
+    color: #666;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    pointer-events: auto;
+    display: inline-block;
+    margin: 0 8px;
+  }
 
-    footer, .footer { display: none !important; }
-
-    .custom-footer {
-        position: fixed;
-        bottom: 15px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 9999;
-        pointer-events: none;
-    }
-
-    .custom-footer span {
-        background: rgba(255, 255, 255, 0.9);
-        color: #555;
-padding: 5px 12px;
-        border-radius: 20px;
-        font-size: 11px;
-        font-family: sans-serif;
-        font-weight: 500;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        pointer-events: auto;
-        display: inline-block;
-    }
-
-    .full-screen-wrapper {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        background: #fff;
-        overflow: hidden;
-    }
-
-    .split-container {
-        display: flex;
-        height: 100%;
-        font-family: 'Montserrat', sans-serif;
-    }
-
+  /* Responsive - Mobile: ảnh trên, text dưới, cân đối */
+  @media (max-width: 960px) {
+    .full-screen-wrapper { height: auto; min-height: 100vh; }
+    .split-container { flex-direction: column; }
+    .text-side, .image-side { flex: none; }
+    .image-side { height: 60vh; }
     .text-side {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end; 
-        align-items: center; 
-        padding: 60px;
-        padding-bottom: 80px; 
-        background-color: #ffffff;
-        color: #1a1a1a;
-        z-index: 10;
+      padding: 60px 30px;
+      text-align: center;
+      justify-content: center;
     }
-
-    .content-box {
-        max-width: 550px;
-        width: 100%;
-        padding-right: 40px;
-    }
-
-    .top-tag {
-        font-size: 14px;
-        letter-spacing: 3px;
-        color: #888;
-        font-weight: 500;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
-
-    .main-title {
-        font-size: clamp(3.5rem, 6vw, 5.5rem);
-        font-weight: 900;
-        line-height: 0.95;
-        margin: 0 0 40px 0;
-        text-transform: uppercase;
-        letter-spacing: -2px;
-    }
-
-    .outlined {
-        color: transparent;
-        -webkit-text-stroke: 2px #1a1a1a;
-    }
-
+    .content-box { max-width: 100%; }
     .description-block {
-        border-left: 4px solid #1a1a1a;
-        padding-left: 25px;
-        margin-bottom: 40px;
+      border-left: none;
+      border-top: 3px solid #333;
+      padding-left: 0;
+      padding-top: 30px;
     }
-
-    .job-title {
-        font-size: 1.2rem;
-        font-weight: 700;
-        margin: 0 0 10px 0;
-        text-transform: uppercase;
-        color: #000;
-    }
-
-    .bio {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #555;
-        margin: 0;
-    }
-
-    .image-side {
-        flex: 1.1;
-        position: relative;
-        background-color: #f0f0f0;
-        overflow: hidden;
-    }
-
-    .image-side img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-    }
-
-    @media (max-width: 960px) {
-        .full-screen-wrapper {
-            height: auto;
-            min-height: 100vh;
-            overflow: visible;
-        }
-
-        .split-container {
-            flex-direction: column-reverse;
-        }
-
-        .image-side {
-            height: 50vh;
-            flex: none;
-            /* Reset animation delay on mobile so image loads quickly */
-            animation-delay: 0s; 
-        }
-
-        .text-side {
-            justify-content: center;
-            padding: 40px 20px;
-            padding-bottom: 100px;
-        }
-
-        .content-box {
-            padding-right: 0;
-            text-align: center;
-        }
-
-        .description-block {
-            border-left: none;
-            border-top: 3px solid #1a1a1a;
-            padding-left: 0;
-padding-top: 20px;
-            margin-top: 30px;
-        }
-
-        .custom-footer {
-            bottom: 10px;
-        }
-    }
+    .main-title { font-size: clamp(3rem, 10vw, 5rem); }
+  }
 </style>
-
 {{ end }}
