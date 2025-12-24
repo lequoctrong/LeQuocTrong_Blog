@@ -2,86 +2,17 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
 
-<style>
-    /* DIỆT TẬN GỐC TAM GIÁC XANH VÀ LỖI THEME */
-    footer, .footer, .page-footer, #top-link, .top-link { 
-        display: none !important; 
-        height: 0 !important;
-    }
-    body, html, .main, main { 
-        background-color: #ffffff !important;
-        margin: 0; padding: 0;
-        overflow-x: hidden;
-    }
-    .nav, .header, .logo-switches { display: none !important; }
-
-    /* STYLE MENU */
-    .luxury-header {
-        position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #ffffff; padding: 20px 0; display: flex; justify-content: center;
-    }
-    .nav-luxury {
-        width: 100%; max-width: 1200px; display: flex; 
-        justify-content: space-between; align-items: center; padding: 0 25px;
-    }
-    .logo-name { font-size: 24px; font-weight: 700; color: #000; text-decoration: none; font-family: sans-serif; }
-    .menu-luxury { display: flex; list-style: none; gap: 25px; margin: 0; }
-    .menu-luxury a { color: #000; text-decoration: none; font-size: 16px; font-family: sans-serif; }
-
-    /* LAYOUT CHÍNH */
-    .full-screen-wrapper {
-        width: 100vw; height: 100vh; position: relative;
-        left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
-        background: #fff; overflow: hidden;
-    }
-    .split-container { display: flex; height: 100%; font-family: 'Montserrat', sans-serif; }
-
-    /* BÊN TRÁI: TEXT */
-    .text-side { 
-        flex: 1; 
-        display: flex; 
-        justify-content: flex-end; 
-        align-items: center; 
-        padding: 60px; 
-        background-color: #ffffff; 
-        z-index: 20; /* Đảm bảo chữ nằm trên */
-    }
-    .content-box { max-width: 550px; width: 100%; padding-right: 50px; }
-
-    /* FIX LỖI CHỮ CHÈN VÀO ẢNH */
-    .main-title { 
-        font-size: clamp(2.5rem, 5vw, 4.5rem); /* Giảm nhẹ size để không tràn */
-        font-weight: 900; 
-        line-height: 1; 
-        margin: 0 0 30px 0; 
-        text-transform: uppercase;
-        white-space: nowrap; /* Giữ chữ không bị vỡ tự do */
-    }
-    .outlined { 
-        display: block; /* Ép dòng SHIP CONFIDENTLY thành block */
-        color: transparent; 
-        -webkit-text-stroke: 1.5px #1a1a1a; 
-    }
-
-    /* BÊN PHẢI: ẢNH */
-    .image-side { flex: 1; position: relative; background-color: #f0f0f0; }
-    .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-    .custom-footer { position: fixed; bottom: 15px; left: 0; width: 100%; text-align: center; z-index: 9999; font-size: 12px; color: #888; }
-
-    @keyframes slideUpFade { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-    .animate-item { opacity: 0; animation: slideUpFade 0.8s forwards; animation-delay: var(--delay, 0s); }
-</style>
-
 <header class="luxury-header">
-    <nav class="nav-luxury">
-        <div class="logo-area">
-            <a href="{{ "" | absURL }}" class="logo-name">Lê Quốc Trọng</a>
+    <nav class="luxury-nav">
+        <div class="luxury-logo">
+            <a href="{{ "" | absURL }}">Lê Quốc Trọng</a>
+            <span class="theme-icon">🌙</span>
         </div>
-        <ul class="menu-luxury">
-            <li><a href="{{ "" | absURL }}">Trang chủ</a></li>
+        <ul class="luxury-menu">
+            <li><a href="{{ "" | absURL }}" class="active">Trang chủ</a></li>
             <li><a href="{{ "about" | absURL }}">Giới thiệu</a></li>
             <li><a href="{{ "posts" | absURL }}">Blog</a></li>
+            <li><a href="{{ "contact" | absURL }}">Liên hệ</a></li>
         </ul>
     </nav>
 </header>
@@ -90,20 +21,98 @@
     <div class="split-container">
         <div class="text-side">
             <div class="content-box">
-                <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG</p>
+                <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG </p>
                 <h1 class="main-title animate-item" style="--delay: 0.4s">
                     BUILD QUIETLY.<br>
-                    <span class="outlined">SHIP<br>CONFIDENTLY.</span>
+                    <span class="outlined">SHIP CONFIDENTLY.</span>
                 </h1>
                 <div class="description-block animate-item" style="--delay: 0.6s">
-                    <p class="bio">Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.</p>
+                    <h3 class="job-title">Java & JavaScript</h3>
+                    <p class="bio">
+                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>. <br>
+                        Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="image-side">
-            <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Portrait">
+
+        <div class="image-side animate-image">
+            <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng Portrait">
+        </div>
+
+        <div class="custom-footer animate-item" style="--delay: 1s">
+            <span>&copy; 2025 Lê Quốc Trọng | Portfolio</span> · 
+            <span>Powered by Hugo & PaperMod</span>
         </div>
     </div>
 </div>
 
+<style>
+    /* =========================================
+       PHẦN DIỆT TAM GIÁC XANH VÀ LỖI THEME
+       ========================================= */
+    /* Ẩn triệt để footer và rác của theme PaperMod */
+    footer, .footer, .page-footer, #top-link, .top-link { 
+        display: none !important; 
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: none !important;
+    }
+
+    /* Diệt cái tam giác xanh (thường là background vỡ) */
+    body, html, .main, main { 
+        background: #ffffff !important; 
+        background-color: #ffffff !important;
+        margin: 0; padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Ép menu mặc định biến mất */
+    .nav, .header, .logo-switches { display: none !important; }
+
+    /* =========================================
+       STYLE GIAO DIỆN LUXURY
+       ========================================= */
+    .luxury-header {
+        position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
+        background: #ffffff; padding: 20px 0; display: flex; justify-content: center;
+    }
+    .luxury-nav {
+        width: 100%; max-width: 1200px; display: flex; 
+        justify-content: space-between; align-items: center; padding: 0 25px;
+    }
+    .luxury-logo a { font-size: 24px; font-weight: 700; color: #000; text-decoration: none; font-family: sans-serif; }
+    .luxury-menu { display: flex; list-style: none; gap: 25px; margin: 0; }
+    .luxury-menu a { color: #000; text-decoration: none; font-size: 16px; font-family: sans-serif; transition: 0.2s; }
+    .luxury-menu a:hover, .luxury-menu a.active { border-bottom: 1.5px solid #000; }
+
+    .full-screen-wrapper {
+        width: 100vw; height: 100vh; position: relative;
+        left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
+        background: #fff; overflow: hidden;
+    }
+    .split-container { display: flex; height: 100%; font-family: 'Montserrat', sans-serif; }
+    .text-side { flex: 1; display: flex; justify-content: flex-end; align-items: center; padding: 60px; background-color: #ffffff; color: #1a1a1a; z-index: 10; }
+    .content-box { max-width: 550px; width: 100%; padding-right: 40px; }
+    .main-title { font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 900; line-height: 0.95; margin: 0 0 40px 0; text-transform: uppercase; }
+    .outlined { color: transparent; -webkit-text-stroke: 2px #1a1a1a; }
+    .image-side { flex: 1.1; position: relative; background-color: #f0f0f0; overflow: hidden; }
+    .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    
+    .custom-footer { position: fixed; bottom: 15px; left: 0; width: 100%; text-align: center; z-index: 9999; font-size: 12px; color: #888; }
+
+    /* ANIMATION */
+    @keyframes slideUpFade { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideInRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }
+    .animate-item { opacity: 0; animation: slideUpFade 0.8s forwards; animation-delay: var(--delay, 0s); }
+    .animate-image { opacity: 0; animation: slideInRight 1s forwards; animation-delay: 0.2s; }
+
+    @media (max-width: 960px) {
+        .split-container { flex-direction: column-reverse; }
+        .image-side { height: 40vh; flex: none; }
+        .text-side { padding: 40px 20px; }
+        .content-box { padding-right: 0; text-align: center; }
+    }
+</style>
 {{ end }}
