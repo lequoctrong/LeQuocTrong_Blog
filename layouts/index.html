@@ -20,17 +20,17 @@
     <div class="split-container">
         <div class="text-side">
             <div class="content-box">
-                <p class="top-tag reveal-text" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
+                <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
                 
                 <h1 class="main-title">
-                    <div class="line-wrapper"><span class="reveal-text" style="--delay: 0.2s">BUILD</span></div>
-                    <div class="line-wrapper"><span class="reveal-text" style="--delay: 0.3s">QUIETLY.</span></div>
-                    <div class="line-wrapper"><span class="reveal-text outlined" style="--delay: 0.4s">SHIP</span></div>
-                    <div class="line-wrapper"><span class="reveal-text outlined" style="--delay: 0.5s">CONFIDEN</span></div>
-                    <div class="line-wrapper"><span class="reveal-text outlined" style="--delay: 0.6s">TLY.</span></div>
+                    <div class="line"><span class="reveal-item" style="--delay: 0.2s">BUILD</span></div>
+                    <div class="line"><span class="reveal-item" style="--delay: 0.3s">QUIETLY.</span></div>
+                    <div class="line"><span class="reveal-item outlined" style="--delay: 0.4s">SHIP</span></div>
+                    <div class="line"><span class="reveal-item outlined" style="--delay: 0.5s">CONFIDEN</span></div>
+                    <div class="line"><span class="reveal-item outlined" style="--delay: 0.6s">TLY.</span></div>
                 </h1>
 
-                <div class="description-block reveal-text" style="--delay: 0.8s">
+                <div class="description-block reveal-item" style="--delay: 0.8s">
                     <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
                     <p class="bio">
                         Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
@@ -40,8 +40,10 @@
             </div>
         </div>
 
-        <div class="image-side reveal-image">
-            <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng">
+        <div class="image-side">
+            <div class="image-wrapper reveal-image">
+                <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng">
+            </div>
         </div>
     </div>
 </div>
@@ -61,70 +63,54 @@
     .luxury-menu { display: flex; list-style: none; gap: 40px; margin: 0; }
     .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
 
-    /* LAYOUT */
+    /* LAYOUT CHUẨN */
     .full-screen-wrapper { width: 100vw; height: 100vh; }
     .split-container { display: flex; height: 100%; }
-
-    .text-side { 
-        flex: 1; display: flex; justify-content: center; align-items: center; 
-        padding-left: 5vw; background: #fff; z-index: 10;
-    }
-    
+    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 5vw; background: #fff; z-index: 10; }
     .content-box { max-width: 600px; width: 100%; }
 
+    /* TYPOGRAPHY NHỎ SANG TRỌNG (THEO ẢNH) */
     .top-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; color: #999; letter-spacing: 6px; margin-bottom: 20px; }
-
-    /* TYPOGRAPHY CHUẨN 100% THEO ẢNH */
     .main-title { 
         font-family: 'Montserrat', sans-serif;
-        font-size: 85px; /* Hạ size xuống cho sang */
-        font-weight: 900; 
-        line-height: 0.82; /* Ép dòng khít */
-        margin: 0 0 40px 0; 
-        text-transform: uppercase;
-        letter-spacing: -5px; /* Chữ dính sát */
-        color: #1a1a1a;
+        font-size: 85px; /* Size nhỏ vừa đủ sang */
+        font-weight: 900; line-height: 0.82; 
+        margin: 0 0 40px 0; text-transform: uppercase;
+        letter-spacing: -5px; color: #1a1a1a;
     }
-
-    .line-wrapper { overflow: hidden; } /* Để tạo hiệu ứng chữ chạy từ dưới lên trong khung */
-
-    .outlined { 
-        display: inline-block;
-        color: transparent; 
-        -webkit-text-stroke: 1.8px #1a1a1a; /* Nét thanh mảnh hơn cho sang */
-        letter-spacing: -4px;
-    }
+    .line { overflow: hidden; height: auto; } /* Để chữ trồi lên từ dưới */
+    .outlined { color: transparent; -webkit-text-stroke: 1.8px #1a1a1a; display: inline-block; }
 
     .description-block { border-left: 4px solid #1a1a1a; padding-left: 25px; margin-top: 20px; }
-    .job-title { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 900; color: #000; margin-bottom: 10px; letter-spacing: 0.5px; }
-    .bio { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.7; color: #777; font-weight: 400; max-width: 350px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 900; margin-bottom: 10px; }
+    .bio { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.7; color: #777; max-width: 350px; }
 
-    .image-side { flex: 1.2; background: #f0f0f0; }
+    /* ẢNH */
+    .image-side { flex: 1.2; background: #f0f0f0; overflow: hidden; }
+    .image-wrapper { width: 100%; height: 100%; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; }
 
-    /* HIỆU ỨNG CHẠY CHỮ (REVEAL ANIMATION) */
-    .reveal-text {
-        display: inline-block;
-        opacity: 0;
+    /* --- HIỆU ỨNG CHẠY (ANIMATIONS) --- */
+    .reveal-item {
+        display: inline-block; opacity: 0;
         transform: translateY(100%);
-        animation: revealUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation: revealUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
         animation-delay: var(--delay);
     }
-
     @keyframes revealUp {
         from { opacity: 0; transform: translateY(100%); }
         to { opacity: 1; transform: translateY(0); }
     }
 
-    /* HIỆU ỨNG ẢNH MỜ DẦN */
     .reveal-image {
         opacity: 0;
-        animation: fadeIn 1.5s ease-out forwards;
+        transform: translateX(30px); /* Trượt từ phải sang */
+        animation: imageIn 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 0.3s;
     }
-
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+    @keyframes imageIn {
+        from { opacity: 0; transform: translateX(30px); }
+        to { opacity: 1; transform: translateX(0); }
     }
 </style>
 {{ end }}
