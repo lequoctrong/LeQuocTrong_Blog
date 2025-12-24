@@ -112,292 +112,120 @@
     </nav>
 </header>
 <main class="main">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
-
-<nav class="top-nav">
-  <div class="nav-container">
-    <a href="#home" class="nav-logo">LÊ QUỐC TRỌNG</a>
-    <ul class="nav-links">
-      <li><a href="#about">Giới thiệu</a></li>
-      <li><a href="#projects">Dự án</a></li>
-      <li><a href="#skills">Kỹ năng</a></li>
-      <li><a href="#contact">Liên hệ</a></li>
-    </ul>
-  </div>
-</nav>
-
-<div class="full-screen-wrapper" id="home">
-  <div class="split-container">
-    <div class="text-side">
-      <div class="content-box">
-        <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG</p>
-        <h1 class="main-title animate-item" style="--delay: 0.4s">
-          BUILD QUIETLY.<br>
-          <span class="highlighted">SHIP CONFIDENTLY.</span>
-        </h1>
-        <div class="description-block animate-item" style="--delay: 0.6s">
-          <h3 class="job-title">Lập trình viên Java & JavaScript</h3>
-          <p class="bio">
-            Sinh viên Công nghệ Thông tin tại <strong>HUTECH</strong>.<br>
-            Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code sạch sẽ, hiệu quả.
-          </p>
+<header class="luxury-header">
+    <nav class="luxury-nav">
+        <div class="luxury-logo">
+            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">LÊ QUỐC TRỌNG</a>
         </div>
-        <div class="cta-buttons animate-item" style="--delay: 0.8s">
-          <a href="#projects" class="btn-primary">Xem dự án</a>
-          <a href="#contact" class="btn-secondary">Liên hệ tôi</a>
-        </div>
-      </div>
-    </div>
-    <div class="image-side animate-image">
-      <img src="/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng Portrait">
-    </div>
-  </div>
+        <ul class="luxury-menu">
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">TRANG CHỦ</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">GIỚI THIỆU</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts">BLOG</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">LIÊN HỆ</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <div class="custom-footer animate-item" style="--delay: 1s">
-    <span>© 2025 Lê Quốc Trọng | Portfolio</span> · <span>Powered by Hugo & PaperMod</span>
-  </div>
+<div class="full-screen-wrapper">
+    <div class="split-container">
+        <div class="text-side">
+            <div class="content-box">
+                <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
+                
+                <h1 class="main-title">
+                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.2s">BUILD</span></div>
+                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.3s">QUIETLY.</span></div>
+                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.4s">SHIP</span></div>
+                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.5s">CONFIDEN</span></div>
+                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.6s">TLY.</span></div>
+                </h1>
+
+                <div class="description-block reveal-item" style="--delay: 0.8s">
+                    <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
+                    <p class="bio">
+                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
+                        Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-side">
+            <div class="image-inner reveal-image">
+                <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng">
+            </div>
+        </div>
+    </div>
 </div>
 
 <style>
-   
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { overflow-x: hidden; }
-
-   
-  @keyframes slideUpFade {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes slideInRight {
-    from { opacity: 0; transform: translateX(40px) scale(1.02); }
-    to { opacity: 1; transform: translateX(0) scale(1); }
-  }
-
-  .animate-item {
-    opacity: 0;
-    animation: slideUpFade 1s ease-out forwards;
-    animation-delay: var(--delay, 0s);
-  }
-  .animate-image {
-    opacity: 0;
-    animation: slideInRight 1.4s ease-out forwards;
-    animation-delay: 0.3s;
-  }
-
-   
-  .top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 10000;
-    padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  }
-  .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1e1e1e;
-    text-decoration: none;
-  }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-  }
-  .nav-links a {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #444;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .nav-links a:hover {
-    color: #000;
-  }
-
-   
-  footer, .footer { display: none !important; }
-  .full-screen-wrapper {
-    width: 100vw;
-    height: 100vh;
-    min-height: 600px;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    background: #ffffff;
-    overflow: hidden;
-    font-family: 'Inter', sans-serif;
-    color: #1e1e1e;
-    padding-top: 100px;  
-  }
-  .split-container {
-    display: flex;
-    height: calc(100% - 100px);
-    align-items: center;
-  }
-
-   
-  .text-side {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 60px;
-    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
-  }
-  .content-box {
-    max-width: 580px;
-    width: 100%;
-  }
-  .top-tag {
-    font-size: 0.9rem;
-    letter-spacing: 4px;
-    color: #666;
-    font-weight: 500;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-  }
-  .main-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(4rem, 7vw, 6.5rem);
-    font-weight: 700;
-    line-height: 0.95;
-    margin: 0 0 50px 0;
-    letter-spacing: -2px;
-  }
-  .highlighted {
-    display: inline-block;
-    background: linear-gradient(180deg, transparent 65%, #d0d0d0 65%);
-    padding: 0 10px;
-    line-height: 1.2;
-  }
-  .description-block {
-    padding-left: 30px;
-    border-left: 3px solid #333;
-    margin-bottom: 50px;
-  }
-  .job-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin: 0 0 15px 0;
-    color: #000;
-    letter-spacing: 0.5px;
-  }
-  .bio {
-    font-size: 1.15rem;
-    line-height: 1.7;
-    color: #444;
-  }
-  .cta-buttons {
-    display: flex;
-    gap: 20px;
-    margin-top: 40px;
-  }
-  .btn-primary, .btn-secondary {
-    padding: 12px 28px;
-    border-radius: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  .btn-primary {
-    background: #000;
-    color: #fff;
-  }
-  .btn-primary:hover { background: #333; }
-  .btn-secondary {
-    background: transparent;
-    color: #000;
-    border: 2px solid #000;
-  }
-  .btn-secondary:hover { background: #000; color: #fff; }
-
-   
-  .image-side {
-    flex: 1;
-    position: relative;
-    background: #f8f8f8;
-    overflow: hidden;
-  }
-  .image-side img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 1s ease;
-  }
-  .image-side:hover img {
-    transform: scale(1.05);
-  }
-
-   
-  .custom-footer {
-    position: fixed;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 9999;
-    pointer-events: none;
-  }
-  .custom-footer span {
-    background: rgba(255, 255, 255, 0.95);
-    color: #666;
-    padding: 8px 18px;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: 500;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    pointer-events: auto;
-    display: inline-block;
-    margin: 0 8px;
-  }
-
-   
-  @media (max-width: 960px) {
-    .top-nav { padding: 15px 0; }
-    .nav-container { padding: 0 20px; }
-    .nav-links { gap: 20px; }
-    .nav-links a { font-size: 0.95rem; }
-
-    .full-screen-wrapper { height: auto; min-height: 100vh; padding-top: 80px; }
-    .split-container { flex-direction: column-reverse; height: auto; }
-    .text-side, .image-side { flex: none; width: 100%; }
-    .image-side { height: 55vh; }
-    .text-side {
-      padding: 60px 30px;
-      text-align: center;
+     
+    footer, .footer, .nav, .header, .logo-switches, #top-link, .top-link { 
+        display: none !important; 
     }
-    .content-box { max-width: 100%; }
-    .description-block {
-      border-left: none;
-      border-top: 3px solid #333;
-      padding-left: 0;
-      padding-top: 30px;
+    body, html { 
+        background: #ffffff !important; 
+        margin: 0 !important; 
+        padding: 0 !important; 
+        overflow: hidden !important;  
     }
-    .cta-buttons { justify-content: center; }
-  }
 
-  @media (max-width: 600px) {
-    .nav-links { gap: 15px; }
-    .main-title { font-size: clamp(3rem, 10vw, 4.5rem); }
-  }
+     
+    .luxury-header {
+        position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
+        background: #fff; padding: 25px 0; display: flex; justify-content: center;
+    }
+    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
+    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -1px; }
+    
+    .luxury-menu { display: flex !important; list-style: none !important; gap: 30px; margin: 0; padding: 0; }
+    .luxury-menu li { list-style: none !important; }
+    .luxury-menu a { 
+        color: #000; text-decoration: none; font-family: sans-serif; 
+        font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+    }
+    .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; }
+
+     
+    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
+    .split-container { display: flex; height: 100%; }
+    
+     
+    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 10%; background: #fff; z-index: 10; }
+    .content-box { max-width: 450px; width: 100%; padding-right: 50px; }  
+
+    .main-title { 
+        font-family: 'Montserrat', sans-serif !important; 
+        font-size: 55px;  
+        font-weight: 900; line-height: 0.85; margin: 0 0 40px 0; 
+        text-transform: uppercase; letter-spacing: -4px; color: #1a1a1a;
+    }
+    .line-wrapper { overflow: hidden; } 
+    .outlined { color: transparent !important; -webkit-text-stroke: 1.2px #1a1a1a; display: inline-block; }
+
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
+    .description-block { border-left: 4px solid #1a1a1a; padding-left: 20px; margin-top: 30px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 900; margin-bottom: 8px; }
+    .bio { font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 1.8; color: #888; max-width: 300px; }
+
+     
+    .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
+    .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+     
+    .reveal-item {
+        display: inline-block; opacity: 0; transform: translateY(100%);
+        animation: revealUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: var(--delay);
+    }
+    @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
+
+    .reveal-image {
+        opacity: 0; animation: fadeIn 1.8s ease forwards; animation-delay: 0.3s;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
 
     </main>
