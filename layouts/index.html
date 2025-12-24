@@ -1,14 +1,13 @@
 {{ define "main" }}
-
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
 
-<header class="header-luxury">
-    <nav class="nav-luxury">
-        <div class="logo-area">
-            <a href="{{ "" | absURL }}" class="logo-name">Lê Quốc Trọng</a>
-            <span class="theme-icon"></span>
+<header class="luxury-header">
+    <nav class="luxury-nav">
+        <div class="luxury-logo">
+            <a href="{{ "" | absURL }}">Lê Quốc Trọng</a>
+            <span class="theme-icon">🌙</span>
         </div>
-        <ul class="menu-luxury">
+        <ul class="luxury-menu">
             <li><a href="{{ "" | absURL }}" class="active">Trang chủ</a></li>
             <li><a href="{{ "about" | absURL }}">Giới thiệu</a></li>
             <li><a href="{{ "posts" | absURL }}">Blog</a></li>
@@ -19,16 +18,13 @@
 
 <div class="full-screen-wrapper">
     <div class="split-container">
-        
         <div class="text-side">
             <div class="content-box">
                 <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG </p>
-                
                 <h1 class="main-title animate-item" style="--delay: 0.4s">
                     BUILD QUIETLY.<br>
                     <span class="outlined">SHIP CONFIDENTLY.</span>
                 </h1>
-
                 <div class="description-block animate-item" style="--delay: 0.6s">
                     <h3 class="job-title">Java & JavaScript</h3>
                     <p class="bio">
@@ -38,125 +34,50 @@
                 </div>
             </div>
         </div>
-
         <div class="image-side animate-image">
             <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng Portrait">
         </div>
-
         <div class="custom-footer animate-item" style="--delay: 1s">
             <span>&copy; 2025 Lê Quốc Trọng | Portfolio</span> · 
             <span>Powered by Hugo & PaperMod</span>
         </div>
-        
     </div>
 </div>
 
 <style>
-    /* --- PHẦN CSS MỚI ĐỂ ĐỒNG BỘ VÀ FIX LỖI GITHUB --- */
-    
-    /* Ẩn menu lỗi của theme PaperMod */
+    /* DIỆT LỖI LIST ĐEN TRÊN GITHUB */
     .nav, .header, .logo-switches { display: none !important; }
 
-    /* Style Menu Luxury */
-    .header-luxury {
+    /* STYLE MENU ĐỒNG BỘ VỚI ABOUT */
+    .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
         background: #fff; padding: 20px 0; display: flex; justify-content: center;
     }
-    .nav-luxury {
+    .luxury-nav {
         width: 100%; max-width: 1200px; display: flex; 
         justify-content: space-between; align-items: center; padding: 0 25px;
     }
-    .logo-name {
-        font-family: -apple-system, sans-serif; font-size: 24px; font-weight: 700;
-        text-decoration: none; color: #000;
-    }
-    .menu-luxury { display: flex; list-style: none; gap: 25px; }
-    .menu-luxury a {
-        color: #000; text-decoration: none; font-size: 16px; 
-        font-family: -apple-system, sans-serif; transition: 0.2s;
-    }
-    .menu-luxury a:hover, .menu-luxury a.active { border-bottom: 1.5px solid #000; }
+    .luxury-logo a { font-size: 24px; font-weight: 700; color: #000; text-decoration: none; font-family: sans-serif; }
+    .luxury-menu { display: flex; list-style: none; gap: 25px; }
+    .luxury-menu a { color: #000; text-decoration: none; font-size: 16px; font-family: sans-serif; }
+    .luxury-menu a:hover, .luxury-menu a.active { border-bottom: 1.5px solid #000; }
 
-    /* --- GIỮ NGUYÊN FORM VÀ ANIMATION CỦA MÀY --- */
-    @keyframes slideUpFade {
-        from { opacity: 0; transform: translateY(40px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideInRight {
-        from { opacity: 0; transform: translateX(50px) scale(1.1); }
-        to { opacity: 1; transform: translateX(0) scale(1); }
-    }
-
-    .animate-item {
-        opacity: 0;
-        animation: slideUpFade 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
-        animation-delay: var(--delay, 0s);
-    }
-
-    .animate-image {
-        opacity: 0;
-        animation: slideInRight 1.2s ease-out forwards;
-        animation-delay: 0.2s;
-    }
-
-    footer, .footer { display: none !important; }
-
-    .custom-footer {
-        position: fixed; bottom: 15px; left: 0; width: 100%;
-        text-align: center; z-index: 9999; pointer-events: none;
-    }
-
-    .custom-footer span {
-        background: rgba(255, 255, 255, 0.9); color: #555;
-        padding: 5px 12px; border-radius: 20px; font-size: 11px;
-        font-family: sans-serif; font-weight: 500;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        pointer-events: auto; display: inline-block;
-    }
-
-    .full-screen-wrapper {
-        width: 100vw; height: 100vh; position: relative;
-        left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
-        background: #fff; overflow: hidden;
-    }
-
+    /* GIỮ NGUYÊN FORM "BUILD QUIETLY" CỦA MÀY */
+    .full-screen-wrapper { width: 100vw; height: 100vh; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background: #fff; overflow: hidden; }
     .split-container { display: flex; height: 100%; font-family: 'Montserrat', sans-serif; }
-
-    .text-side {
-        flex: 1; display: flex; justify-content: flex-end; 
-        align-items: center; padding: 60px; padding-bottom: 80px; 
-        background-color: #ffffff; color: #1a1a1a; z-index: 10;
-    }
-
+    .text-side { flex: 1; display: flex; justify-content: flex-end; align-items: center; padding: 60px; background-color: #ffffff; color: #1a1a1a; z-index: 10; }
     .content-box { max-width: 550px; width: 100%; padding-right: 40px; }
-
-    .top-tag { font-size: 14px; letter-spacing: 3px; color: #888; font-weight: 500; margin-bottom: 20px; text-transform: uppercase; }
-
     .main-title { font-size: clamp(3.5rem, 6vw, 5.5rem); font-weight: 900; line-height: 0.95; margin: 0 0 40px 0; text-transform: uppercase; letter-spacing: -2px; }
-
     .outlined { color: transparent; -webkit-text-stroke: 2px #1a1a1a; }
-
-    .description-block { border-left: 4px solid #1a1a1a; padding-left: 25px; margin-bottom: 40px; }
-
-    .job-title { font-size: 1.2rem; font-weight: 700; margin: 0 0 10px 0; text-transform: uppercase; color: #000; }
-
-    .bio { font-size: 1rem; line-height: 1.6; color: #555; margin: 0; }
-
+    .description-block { border-left: 4px solid #1a1a1a; padding-left: 25px; }
     .image-side { flex: 1.1; position: relative; background-color: #f0f0f0; overflow: hidden; }
+    .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .custom-footer { position: fixed; bottom: 15px; left: 0; width: 100%; text-align: center; z-index: 9999; }
 
-    .image-side img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-
-    @media (max-width: 960px) {
-        .full-screen-wrapper { height: auto; min-height: 100vh; overflow: visible; }
-        .split-container { flex-direction: column-reverse; }
-        .image-side { height: 50vh; flex: none; animation-delay: 0s; }
-        .text-side { justify-content: center; padding: 40px 20px 100px; }
-        .content-box { padding-right: 0; text-align: center; }
-        .description-block { border-left: none; border-top: 3px solid #1a1a1a; padding-left: 0; padding-top: 20px; margin-top: 30px; }
-        .custom-footer { bottom: 10px; }
-        .menu-luxury { gap: 10px; }
-    }
+    /* ANIMATION */
+    @keyframes slideUpFade { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideInRight { from { opacity: 0; transform: translateX(50px) scale(1.1); } to { opacity: 1; transform: translateX(0) scale(1); } }
+    .animate-item { opacity: 0; animation: slideUpFade 0.8s forwards; animation-delay: var(--delay, 0s); }
+    .animate-image { opacity: 0; animation: slideInRight 1.2s forwards; animation-delay: 0.2s; }
 </style>
-
 {{ end }}
