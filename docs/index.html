@@ -135,12 +135,16 @@
         <div class="text-side">
             <div class="content-box">
                 <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG </p>
+                
                 <h1 class="main-title animate-item" style="--delay: 0.4s">
-                    BUILD QUIETLY.<br>
-                    <span class="outlined">SHIP CONFIDENTLY.</span>
+                    BUILD<br>QUIETLY.<br>
+                    <span class="outlined">SHIP</span><br>
+                    <span class="outlined">CONFIDEN</span><br>
+                    <span class="outlined">TLY.</span>
                 </h1>
+
                 <div class="description-block animate-item" style="--delay: 0.6s">
-                    <h3 class="job-title">Java & JavaScript</h3>
+                    <h3 class="job-title">Java Backend & Network Engineer</h3>
                     <p class="bio">
                         Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>. <br>
                         Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
@@ -162,27 +166,16 @@
 
 <style>
      
-     
-    footer, .footer, .page-footer, #top-link, .top-link { 
+    footer, .footer, .page-footer, #top-link, .top-link, .nav, .header, .logo-switches { 
         display: none !important; 
-        height: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        background: none !important;
     }
 
-     
     body, html, .main, main { 
         background: #ffffff !important; 
-        background-color: #ffffff !important;
         margin: 0; padding: 0;
-        overflow-x: hidden;
+        overflow: hidden;  
     }
 
-     
-    .nav, .header, .logo-switches { display: none !important; }
-
-     
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
         background: #ffffff; padding: 20px 0; display: flex; justify-content: center;
@@ -191,38 +184,51 @@
         width: 100%; max-width: 1200px; display: flex; 
         justify-content: space-between; align-items: center; padding: 0 25px;
     }
-    .luxury-logo a { font-size: 24px; font-weight: 700; color: #000; text-decoration: none; font-family: sans-serif; }
-    .luxury-menu { display: flex; list-style: none; gap: 25px; margin: 0; }
-    .luxury-menu a { color: #000; text-decoration: none; font-size: 16px; font-family: sans-serif; transition: 0.2s; }
-    .luxury-menu a:hover, .luxury-menu a.active { border-bottom: 1.5px solid #000; }
+    .luxury-logo a { font-size: 24px; font-weight: 700; color: #000; text-decoration: none; }
+    .luxury-menu { display: flex; list-style: none; gap: 25px; }
+    .luxury-menu a { color: #000; text-decoration: none; font-size: 16px; font-weight: 500; }
 
-    .full-screen-wrapper {
-        width: 100vw; height: 100vh; position: relative;
-        left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
-        background: #fff; overflow: hidden;
-    }
+    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
     .split-container { display: flex; height: 100%; font-family: 'Montserrat', sans-serif; }
-    .text-side { flex: 1; display: flex; justify-content: flex-end; align-items: center; padding: 60px; background-color: #ffffff; color: #1a1a1a; z-index: 10; }
-    .content-box { max-width: 550px; width: 100%; padding-right: 40px; }
-    .main-title { font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 900; line-height: 0.95; margin: 0 0 40px 0; text-transform: uppercase; }
-    .outlined { color: transparent; -webkit-text-stroke: 2px #1a1a1a; }
-    .image-side { flex: 1.1; position: relative; background-color: #f0f0f0; overflow: hidden; }
-    .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .text-side { 
+        flex: 1; display: flex; justify-content: flex-end; align-items: center; 
+        padding-left: 50px; background-color: #ffffff; z-index: 20; 
+    }
     
-    .custom-footer { position: fixed; bottom: 15px; left: 0; width: 100%; text-align: center; z-index: 9999; font-size: 12px; color: #888; }
+     
+    .content-box { 
+        max-width: 600px; width: 100%; padding-right: 80px; 
+    }
 
      
-    @keyframes slideUpFade { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes slideInRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }
-    .animate-item { opacity: 0; animation: slideUpFade 0.8s forwards; animation-delay: var(--delay, 0s); }
-    .animate-image { opacity: 0; animation: slideInRight 1s forwards; animation-delay: 0.2s; }
-
-    @media (max-width: 960px) {
-        .split-container { flex-direction: column-reverse; }
-        .image-side { height: 40vh; flex: none; }
-        .text-side { padding: 40px 20px; }
-        .content-box { padding-right: 0; text-align: center; }
+    .main-title { 
+        font-size: clamp(3.5rem, 8vw, 6.5rem); 
+        font-weight: 900; 
+        line-height: 0.85;  
+        margin: 0 0 30px 0; 
+        text-transform: uppercase;
+        letter-spacing: -3px;  
     }
+
+    .outlined { 
+        color: transparent; 
+        -webkit-text-stroke: 1.5px #1a1a1a; 
+    }
+
+    .description-block { 
+        border-left: 4px solid #1a1a1a; padding-left: 20px; 
+    }
+    .job-title { font-size: 1.1rem; font-weight: 800; margin-bottom: 5px; color: #000; }
+    .bio { font-size: 0.95rem; line-height: 1.5; color: #666; }
+
+    .image-side { flex: 1.2; position: relative; overflow: hidden; }
+    .image-side img { width: 100%; height: 100%; object-fit: cover; }
+
+    .custom-footer { position: fixed; bottom: 15px; left: 0; width: 100%; text-align: center; z-index: 9999; font-size: 11px; color: #bbb; }
+
+    @keyframes slideUpFade { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-item { opacity: 0; animation: slideUpFade 0.8s forwards; animation-delay: var(--delay, 0s); }
 </style>
 
     </main>
