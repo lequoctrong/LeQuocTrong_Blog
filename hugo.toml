@@ -5,58 +5,59 @@ theme = "PaperMod"
 publishDir = "docs"
 
 [params]
-  defaultTheme = "auto" # Tự động theo giao diện máy người dùng (Sáng/Tối)
-  ShowReadingTime = true
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true # Hiện mục lục bài viết (Rất chuyên nghiệp cho blog kỹ thuật)
-  author = "Lê Quốc Trọng"
-  description = "Portfolio và Blog chia sẻ kiến thức Lập trình mạng, Java Backend."
+    defaultTheme = "light" # Để light cho đồng bộ với giao diện Luxury mày đang làm
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowToc = true 
+    author = "Lê Quốc Trọng"
+    description = "Portfolio và Blog chia sẻ kiến thức Lập trình mạng, Java Backend."
 
-  # --- CẤU HÌNH PROFILE (Trang chủ) ---
-  [params.profileMode]
-    enabled = true
-    title = "Hi, I'm Lê Quốc Trọng 👋"
-    subtitle = "Java Backend Developer | Network Engineer"
-    imageUrl = "avatar1.jpg" # Đảm bảo file a2.jpg nằm trong thư mục static
-    imageTitle = "Lê Quốc Trọng"
-    imageWidth = 150
-    imageHeight = 150
+    # --- CẤU HÌNH PROFILE ---
+    # Lưu ý: Vì mày đang dùng file index.html tùy biến (Build Quietly), 
+    # cái profileMode này sẽ bị đè bởi code của mày, nhưng cứ để đây cho chuẩn.
+    [params.profileMode]
+        enabled = true
+        title = "Hi, I'm Lê Quốc Trọng 👋"
+        subtitle = "Java Backend Developer | Network Engineer"
+        imageUrl = "anhdaidien.jpg" 
+        imageWidth = 150
+        imageHeight = 150
 
-# --- MENU ĐIỀU HƯỚNG (Chuẩn Professional) ---
+# --- MENU ĐIỀU HƯỚNG ---
 [menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Trang chủ"
-    url = "/"
-    weight = 10
+    [[menu.main]]
+        identifier = "home"
+        name = "Trang chủ"
+        url = "/"
+        weight = 10
 
-  [[menu.main]]
-    identifier = "about"
-    name = "Giới thiệu"
-    url = "/about"
-    weight = 20
+    [[menu.main]]
+        identifier = "about"
+        name = "Giới thiệu"
+        url = "about"
+        weight = 20
 
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog" # Đổi tên từ "Bài Viết" sang BLOG cho đồng bộ
-    url = "/posts"
-    weight = 60
+    [[menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "posts"
+        weight = 30
 
-  [[menu.main]]
-    identifier = "contact"
-    name = "Liên hệ"
-    url = "/contact"
-    weight = 70
+    [[menu.main]]
+        identifier = "contact"
+        name = "Liên hệ"
+        url = "contact"
+        weight = 40
 
-  [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true # Cho phép dùng HTML trong file Markdown bài viết
 
-  canonifyURLs = true
-  relativeURLs = false
-
-  
+# --- FIX LỖI MẤT CSS TRÊN GITHUB PAGES ---
+# Hai dòng này là "cứu cánh" để web không bị list đen thui
+canonifyURLs = true
+relativeURLs = true
