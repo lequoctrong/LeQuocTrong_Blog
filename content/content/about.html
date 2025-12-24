@@ -47,18 +47,21 @@ editPost:
 </div>
 
 <style>
-/* FIX 2: Ép tất cả về nền trắng, xóa bỏ màu xám mặc định của theme */
+/* 1. XÓA NỀN XÁM CỦA MENU MẶC ĐỊNH THEME */
 .nav, header, .header, nav, body, .main, main {
     background-color: #ffffff !important; 
     background: #ffffff !important;
 }
 
-/* Xóa các thành phần thừa của theme PaperMod để giữ nguyên Form mày thiết kế */
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Mulish:wght@300;400;600&display=swap');
+
+/* XÓA CÁC THÀNH PHẦN THỪA CỦA PAPERMOD TRÊN TRANG NÀY */
 header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-buttons, .toc, footer.page-footer { 
   display: none !important; 
 }
 
-/* KHUNG BAO NGOÀI - Căn giữa và tràn màn hình */
+/* 2. KHUNG BAO NGOÀI */
 .story-container {
   width: 100vw;
   position: relative;
@@ -70,9 +73,11 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   min-height: 100vh;
   background: #fff;
   overflow: hidden;
-  padding-top: 60px; /* Chừa chỗ cho thanh menu */
+  /* Đẩy nội dung xuống dưới thanh Menu ngang */
+  padding-top: 80px; 
 }
 
+/* 3. CỘT ẢNH */
 .visual-side {
   flex: 5; 
   background-color: #f8f9fa;
@@ -96,14 +101,23 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   width: 100%;
   height: auto;
   display: block;
+  filter: grayscale(20%);
+  transition: 0.5s;
 }
 
+.photo-frame:hover img {
+    filter: grayscale(0%);
+}
+
+/* 4. CỘT CHỮ */
 .text-side {
   flex: 6; 
   display: flex;
   padding: 60px 80px; 
   background: #fff;
 }
+
+.text-wrapper { max-width: 700px; }
 
 .main-title {
   font-family: 'Playfair Display', serif;
@@ -112,7 +126,7 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   margin-bottom: 10px;
 }
 
-/* ANIMATION - GIỮ NGUYÊN NHƯ MÀY MUỐN */
+/* ANIMATION - GIỮ NGUYÊN FORM CỦA MÀY */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
