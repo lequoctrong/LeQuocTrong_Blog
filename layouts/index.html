@@ -6,13 +6,13 @@
 <header class="luxury-header">
     <nav class="luxury-nav">
         <div class="luxury-logo">
-            <a href="{{ "" | absURL }}">Lê Quốc Trọng</a>
+            <a href="{{ "" | absURL }}">LÊ QUỐC TRỌNG</a>
         </div>
         <ul class="luxury-menu">
-            <li><a href="{{ "" | absURL }}" class="active">TRANG CHỦ</a></li>
-            <li><a href="{{ "about" | absURL }}">GIỚI THIỆU</a></li>
+            <li><a href="{{ "" | absURL }}" class="active">HOME</a></li>
+            <li><a href="{{ "about" | absURL }}">ABOUT</a></li>
             <li><a href="{{ "posts" | absURL }}">BLOG</a></li>
-            <li><a href="{{ "contact" | absURL }}">LIÊN HỆ</a></li>
+            <li><a href="{{ "contact" | absURL }}">CONTACT</a></li>
         </ul>
     </nav>
 </header>
@@ -57,48 +57,71 @@
 
 <style>
     /* 1. DIỆT TẬN GỐC TAM GIÁC XANH VÀ RÁC THEME */
-    footer, .footer, .nav, .header, .logo-switches, #top-link { display: none !important; }
-    body, html { 
-        background: #fff !important; 
-        margin: 0; padding: 0; 
-        overflow: hidden; /* San phẳng layout */
+    footer, .footer, .nav, .header, .logo-switches, #top-link, .top-link { 
+        display: none !important; 
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+    
+    body, html, .main, main { 
+        background: #ffffff !important; 
+        margin: 0 !important; 
+        padding: 0 !important; 
+        overflow: hidden !important; /* Triệt hạ tam giác xanh bằng cách chặn cuộn */
     }
 
-    /* 2. THANH MENU THANH MẢNH */
+    /* 2. MENU THANH MẢNH, NẰM NGANG CHUẨN */
     .luxury-header {
-        position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #fff; padding: 25px 0; display: flex; justify-content: center;
+        position: fixed; top: 0; left: 0; width: 100%; z-index: 99999;
+        background: #fff; padding: 30px 0; display: flex; justify-content: center;
     }
     .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-    .luxury-logo a { font-family: -apple-system, sans-serif; font-size: 18px; font-weight: 800; color: #000; text-decoration: none; text-transform: uppercase; }
+    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 900; color: #000; text-decoration: none; }
     
-    /* Ép menu nằm ngang, không bị gạch đầu dòng */
-    .luxury-menu { display: flex !important; list-style: none !important; gap: 30px; margin: 0; padding: 0; }
-    .luxury-menu li { list-style: none !important; }
-    .luxury-menu a { color: #000; text-decoration: none; font-family: -apple-system, sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 1px; }
-    .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; }
+    .luxury-menu { 
+        display: flex !important; /* Ép nằm ngang, sửa lỗi image_80d9a2.png */
+        list-style: none !important; 
+        gap: 35px; margin: 0; padding: 0; 
+    }
+    .luxury-menu li { list-style: none !important; margin: 0; padding: 0; }
+    .luxury-menu a { 
+        color: #000; text-decoration: none; 
+        font-family: sans-serif; font-size: 11px; font-weight: 600; 
+        letter-spacing: 1px; text-transform: uppercase;
+    }
+    .luxury-menu a.active { border-bottom: 2px solid #000; padding-bottom: 5px; }
 
     /* 3. TYPOGRAPHY PERFECT THEO ẢNH */
-    .full-screen-wrapper { width: 100vw; height: 100vh; }
+    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
     .split-container { display: flex; height: 100%; }
-    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 10%; background: #fff; z-index: 20; }
-    .content-box { max-width: 450px; width: 100%; }
+    
+    .text-side { 
+        flex: 1; display: flex; justify-content: center; align-items: center; 
+        padding-left: 8%; background: #fff; z-index: 20; 
+    }
+    .content-box { max-width: 480px; width: 100%; padding-right: 30px; }
 
     .main-title { 
         font-family: 'Montserrat', sans-serif !important; 
         font-size: 56px; /* Nhỏ gọn sang trọng */
         font-weight: 900 !important; line-height: 0.82; 
-        margin: 0 0 40px 0; text-transform: uppercase; letter-spacing: -3.5px; color: #1a1a1a;
+        margin: 0 0 40px 0; text-transform: uppercase; 
+        letter-spacing: -3.5px; color: #1a1a1a;
     }
-    .overflow-hidden { overflow: hidden; }
-    .outlined { color: transparent !important; -webkit-text-stroke: 1.3px #1a1a1a; display: inline-block; }
+    .overflow-hidden { overflow: hidden; display: block; }
+    .outlined { 
+        color: transparent !important; 
+        -webkit-text-stroke: 1.3px #1a1a1a; 
+        display: inline-block; 
+        letter-spacing: -3px;
+    }
 
     .top-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
     .description-block { border-left: 4px solid #1a1a1a; padding-left: 20px; margin-top: 30px; }
     .job-title { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 900; margin-bottom: 10px; }
     .bio { font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 1.8; color: #888; max-width: 320px; }
 
-    /* 4. HIỆU ỨNG CHẠY (REVEAL) */
+    /* 4. ẢNH VÀ HIỆU ỨNG CHẠY */
     .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
