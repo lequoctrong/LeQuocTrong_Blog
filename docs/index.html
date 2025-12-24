@@ -113,7 +113,7 @@
 </header>
 <main class="main">
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 
 <header class="luxury-header">
     <nav class="luxury-nav">
@@ -134,7 +134,7 @@
     <div class="split-container">
         <div class="text-side">
             <div class="content-box">
-                <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG </p>
+                <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG</p>
                 
                 <h1 class="main-title animate-item" style="--delay: 0.4s">
                     BUILD<br>QUIETLY.<br>
@@ -144,9 +144,9 @@
                 </h1>
 
                 <div class="description-block animate-item" style="--delay: 0.6s">
-                    <h3 class="job-title">Java Backend & Network Engineer</h3>
+                    <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
                     <p class="bio">
-                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>. <br>
+                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
                         Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
                     </p>
                 </div>
@@ -154,7 +154,7 @@
         </div>
 
         <div class="image-side animate-image">
-            <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng Portrait">
+            <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng">
         </div>
 
         <div class="custom-footer animate-item" style="--delay: 1s">
@@ -166,69 +166,65 @@
 
 <style>
      
-    footer, .footer, .page-footer, #top-link, .top-link, .nav, .header, .logo-switches { 
-        display: none !important; 
-    }
+    footer, .footer, .nav, .header, .logo-switches { display: none !important; }
+    body, html { background: #fff !important; margin: 0; padding: 0; overflow: hidden; }
 
-    body, html, .main, main { 
-        background: #ffffff !important; 
-        margin: 0; padding: 0;
-        overflow: hidden;  
-    }
-
+     
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #ffffff; padding: 20px 0; display: flex; justify-content: center;
+        background: #fff; padding: 25px 0; display: flex; justify-content: center;
     }
-    .luxury-nav {
-        width: 100%; max-width: 1200px; display: flex; 
-        justify-content: space-between; align-items: center; padding: 0 25px;
-    }
-    .luxury-logo a { font-size: 24px; font-weight: 700; color: #000; text-decoration: none; }
-    .luxury-menu { display: flex; list-style: none; gap: 25px; }
-    .luxury-menu a { color: #000; text-decoration: none; font-size: 16px; font-weight: 500; }
+    .luxury-nav { width: 100%; max-width: 1300px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
+    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: #000; text-decoration: none; text-transform: uppercase; letter-spacing: -1px; }
+    .luxury-menu { display: flex; list-style: none; gap: 30px; margin: 0; }
+    .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
 
-    .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
-    .split-container { display: flex; height: 100%; font-family: 'Montserrat', sans-serif; }
+     
+    .full-screen-wrapper { width: 100vw; height: 100vh; }
+    .split-container { display: flex; height: 100%; }
 
     .text-side { 
-        flex: 1; display: flex; justify-content: flex-end; align-items: center; 
-        padding-left: 50px; background-color: #ffffff; z-index: 20; 
+        flex: 1; display: flex; justify-content: center; align-items: center; 
+        padding-left: 80px; background: #fff; z-index: 10;
     }
     
-     
-    .content-box { 
-        max-width: 600px; width: 100%; padding-right: 80px; 
-    }
+    .content-box { max-width: 650px; }
+
+    .top-tag { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 500; color: #aaa; letter-spacing: 4px; margin-bottom: 20px; }
 
      
     .main-title { 
-        font-size: clamp(3.5rem, 8vw, 6.5rem); 
+        font-family: 'Montserrat', sans-serif;
+        font-size: 110px;  
         font-weight: 900; 
-        line-height: 0.85;  
-        margin: 0 0 30px 0; 
+        line-height: 0.8;  
+        margin: 0 0 40px 0; 
         text-transform: uppercase;
-        letter-spacing: -3px;  
+        letter-spacing: -6px;  
+        color: #1a1a1a;
     }
 
     .outlined { 
+        display: inline-block;
         color: transparent; 
-        -webkit-text-stroke: 1.5px #1a1a1a; 
+        -webkit-text-stroke: 2px #1a1a1a;  
     }
 
-    .description-block { 
-        border-left: 4px solid #1a1a1a; padding-left: 20px; 
-    }
-    .job-title { font-size: 1.1rem; font-weight: 800; margin-bottom: 5px; color: #000; }
-    .bio { font-size: 0.95rem; line-height: 1.5; color: #666; }
+    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; }
+    .job-title { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; color: #000; margin-bottom: 8px; letter-spacing: -0.5px; }
+    .bio { font-family: 'Montserrat', sans-serif; font-size: 15px; line-height: 1.5; color: #666; font-weight: 400; }
 
-    .image-side { flex: 1.2; position: relative; overflow: hidden; }
+    .image-side { flex: 1; background: #eee; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; }
 
-    .custom-footer { position: fixed; bottom: 15px; left: 0; width: 100%; text-align: center; z-index: 9999; font-size: 11px; color: #bbb; }
+    .custom-footer { position: fixed; bottom: 20px; width: 100%; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 10px; color: #ccc; }
 
-    @keyframes slideUpFade { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    .animate-item { opacity: 0; animation: slideUpFade 0.8s forwards; animation-delay: var(--delay, 0s); }
+     
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-item { opacity: 0; animation: slideUp 0.8s ease-out forwards; animation-delay: var(--delay); }
+
+     
+    @media (max-width: 1200px) { .main-title { font-size: 80px; letter-spacing: -4px; } }
 </style>
 
     </main>
