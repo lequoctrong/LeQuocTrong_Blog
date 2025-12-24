@@ -133,21 +133,18 @@
 </div>
 
 <style>
-/* 1. XÓA NỀN XÁM CỦA MENU */
+/* FIX 2: Ép tất cả về nền trắng, xóa bỏ màu xám mặc định của theme */
 .nav, header, .header, nav, body, .main, main {
     background-color: #ffffff !important; 
     background: #ffffff !important;
 }
 
-/* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Mulish:wght@300;400;600&display=swap');
-
-/* XÓA RÁC THEME */
+/* Xóa các thành phần thừa của theme PaperMod để giữ nguyên Form mày thiết kế */
 header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-buttons, .toc, footer.page-footer { 
   display: none !important; 
 }
 
-/* 2. KHUNG BAO NGOÀI */
+/* KHUNG BAO NGOÀI - Căn giữa và tràn màn hình */
 .story-container {
   width: 100vw;
   position: relative;
@@ -159,10 +156,9 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   min-height: 100vh;
   background: #fff;
   overflow: hidden;
-  margin-top: -20px; 
+  padding-top: 60px; /* Chừa chỗ cho thanh menu */
 }
 
-/* 3. CỘT ẢNH (BÊN TRÁI) */
 .visual-side {
   flex: 5; 
   background-color: #f8f9fa;
@@ -170,7 +166,6 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   justify-content: flex-end; 
   align-items: flex-start; 
   padding-top: 60px; 
-  padding-bottom: 40px;
   padding-right: 60px;
 }
 
@@ -179,7 +174,6 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   max-width: 380px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   border-radius: 4px;
-  overflow: hidden;
   background: #fff;
   padding: 10px;
 }
@@ -188,139 +182,47 @@ header.page-header, .post-title, .post-meta, .post-footer, .breadcrumbs, .share-
   width: 100%;
   height: auto;
   display: block;
-  filter: grayscale(20%);
-  transition: filter 0.5s;
 }
 
-.photo-frame:hover img {
-    filter: grayscale(0%);
-}
-
-/* 4. CỘT CHỮ (BÊN PHẢI) */
 .text-side {
   flex: 6; 
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; 
-  padding: 60px 80px 60px 80px; 
+  padding: 60px 80px; 
   background: #fff;
-}
-
-.text-wrapper {
-  max-width: 700px;
-}
-
-/* Typography */
-.intro-label {
-  font-family: 'Mulish', sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 3px;
-  color: #999;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 0; 
-  margin-bottom: 15px;
 }
 
 .main-title {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   color: #222;
-  margin: 0 0 10px 0;
-  line-height: 1.1;
+  margin-bottom: 10px;
 }
 
-.subtitle {
-  font-family: 'Mulish', sans-serif;
-  font-size: 1.1rem;
-  color: #666;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-
-.separator {
-  width: 60px;
-  height: 2px;
-  background-color: #222;
-  margin-bottom: 40px;
-}
-
-.narrative-content p {
-  font-family: 'Mulish', sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.9;
-  color: #444;
-  margin-bottom: 25px;
-  text-align: justify;
-}
-
-.signature-quote {
-  margin-top: 40px;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #555;
-  text-align: right;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .story-container {
-    flex-direction: column-reverse;
-    height: auto;
-    margin-top: 0;
-  }
-  .visual-side {
-    justify-content: center;
-    align-items: center; 
-    padding: 40px 20px;
-  }
-  .text-side {
-    padding: 40px 30px;
-    justify-content: center;
-  }
-  .main-title {
-    font-size: 2.5rem;
-  }
-}
-
-/* =========================================
-   PHẦN CSS HIỆU ỨNG CHẠY (ANIMATION) MỚI THÊM
-   ========================================= */
-
-/* Định nghĩa chuyển động: Từ mờ và thấp -> Rõ và lên cao */
+/* ANIMATION - GIỮ NGUYÊN NHƯ MÀY MUỐN */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px); /* Bắt đầu ở vị trí thấp hơn 30px */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Kết thúc ở vị trí gốc */
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* Class cơ bản để áp dụng hiệu ứng */
 .animated-element {
-    opacity: 0; /* Ẩn đi trước khi chạy */
-    animation-name: fadeInUp; /* Tên hiệu ứng */
-    animation-duration: 0.8s; /* Thời gian chạy 0.8 giây (mượt mà) */
-    animation-fill-mode: forwards; /* Giữ nguyên trạng thái sau khi chạy xong */
-    animation-timing-function: ease-out; /* Chạy nhanh lúc đầu, chậm dần lúc cuối */
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Các mức độ trễ (Delay) để tạo hiệu ứng xuất hiện lần lượt */
-/* Càng số to thì càng xuất hiện trễ */
-.delay-1 { animation-delay: 0.1s; } /* Ảnh hiện đầu tiên */
-.delay-2 { animation-delay: 0.2s; } /* Lời tự bạch */
-.delay-3 { animation-delay: 0.3s; } /* Tên chính */
-.delay-4 { animation-delay: 0.4s; } /* Subtitle */
-.delay-5 { animation-delay: 0.5s; } /* Gạch ngang */
-.delay-6 { animation-delay: 0.6s; } /* Đoạn văn 1 */
-.delay-7 { animation-delay: 0.7s; } /* Đoạn văn 2 */
-.delay-8 { animation-delay: 0.8s; } /* Đoạn văn 3 */
-.delay-9 { animation-delay: 0.9s; } /* Quote cuối cùng */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
+.delay-7 { animation-delay: 0.7s; }
+.delay-8 { animation-delay: 0.8s; }
+.delay-9 { animation-delay: 0.9s; }
 
+@media (max-width: 900px) {
+  .story-container { flex-direction: column-reverse; height: auto; }
+  .visual-side, .text-side { padding: 40px 20px; }
+}
 </style>
 
   </div>
