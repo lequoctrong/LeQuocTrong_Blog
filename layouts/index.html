@@ -7,10 +7,10 @@
             <a href="{{ "" | absURL }}">LÊ QUỐC TRỌNG</a>
         </div>
         <ul class="luxury-menu">
-            <li><a href="{{ "" | absURL }}" class="active">Trang chủ</a></li>
-            <li><a href="{{ "about" | absURL }}">Giới thiệu</a></li>
-            <li><a href="{{ "posts" | absURL }}">Blog</a></li>
-            <li><a href="{{ "contact" | absURL }}">Liên hệ</a></li>
+            <li><a href="{{ "" | absURL }}" class="active">TRANG CHỦ</a></li>
+            <li><a href="{{ "about" | absURL }}">GIỚI THIỆU</a></li>
+            <li><a href="{{ "posts" | absURL }}">BLOG</a></li>
+            <li><a href="{{ "contact" | absURL }}">LIÊN HỆ</a></li>
         </ul>
     </nav>
 </header>
@@ -48,7 +48,7 @@
 </div>
 
 <style>
-    /* 1. TRIỆT HẠ TAM GIÁC XANH VÀ RÁC THEME */
+    /* 1. DIỆT TẬN GỐC TAM GIÁC XANH VÀ RÁC THEME */
     footer, .footer, .nav, .header, .logo-switches, #top-link, .top-link { 
         display: none !important; 
     }
@@ -59,7 +59,7 @@
         overflow: hidden !important; /* Chặn cuộn trang để diệt tam giác xanh */
     }
 
-    /* 2. MENU THANH MẢNH, NẰM NGANG */
+    /* 2. MENU TIẾNG VIỆT, NẰM NGANG */
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
         background: #fff; padding: 25px 0; display: flex; justify-content: center;
@@ -71,12 +71,12 @@
         color: #000; text-decoration: none; letter-spacing: -1px;
     }
     
-    /* ÉP MENU NẰM NGANG CHUẨN */
+    /* FIX LỖI MENU DỌC */
     .luxury-menu { display: flex !important; list-style: none !important; gap: 30px; margin: 0; padding: 0; }
     .luxury-menu li { list-style: none !important; }
     .luxury-menu a { 
         color: #000; text-decoration: none; font-family: sans-serif; 
-        font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;
+        font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
     }
     .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; }
 
@@ -91,7 +91,7 @@
         font-weight: 900; line-height: 0.85; margin: 0 0 40px 0; 
         text-transform: uppercase; letter-spacing: -4px; color: #1a1a1a;
     }
-    .line-wrapper { overflow: hidden; } /* Để tạo hiệu ứng trồi lên */
+    .line-wrapper { overflow: hidden; } 
     .outlined { color: transparent; -webkit-text-stroke: 1.2px #1a1a1a; display: inline-block; }
 
     .top-tag { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
@@ -99,7 +99,7 @@
     .job-title { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 900; margin-bottom: 8px; }
     .bio { font-family: 'Montserrat', sans-serif; font-size: 12px; line-height: 1.8; color: #888; max-width: 300px; }
 
-    /* 4. ẢNH VÀ HIỆU ỨNG */
+    /* 4. ẢNH VÀ HIỆU ỨNG REVEAL */
     .image-side { flex: 1.2; background: #f9f9f9; overflow: hidden; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
