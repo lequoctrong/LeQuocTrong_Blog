@@ -4,6 +4,16 @@ url: "/about"
 layout: "single"
 ---
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Xóa sạch các thẻ header, footer, button thừa của theme PaperMod
+        const trash = document.querySelectorAll('header:not(.ultimate-nav-bar), footer, .top-link, #top-link, .logo-switches, .breadcrumbs');
+        trash.forEach(el => el.remove());
+        // Ép body không được scroll để diệt tam giác xanh
+        document.body.style.overflow = 'hidden';
+    });
+</script>
+
 <div class="ultimate-about-wrapper">
     <header class="ultimate-nav-bar">
         <div class="nav-content">
@@ -47,24 +57,12 @@ layout: "single"
 </div>
 
 <style>
-    /* 1. DIỆT SẠCH TAM GIÁC XANH VÀ RÁC THEME */
-    header, footer, .header, .footer, .nav, #top-link, .top-link, .logo-switches, 
-    .breadcrumbs, header.page-header, .post-header { 
-        display: none !important; 
-        visibility: hidden !important;
-        opacity: 0 !important;
-        height: 0 !important;
-        width: 0 !important;
-        pointer-events: none !important;
-    }
-
-    /* TRIỆT TIÊU SCROLL ĐỂ KHÔNG HIỆN TAM GIÁC */
+    /* 1. ÉP PHẲNG TOÀN BỘ LAYOUT */
     html, body { 
         background: #ffffff !important; 
-        margin: 0 !important; 
-        padding: 0 !important; 
-        overflow: hidden !important; 
-        height: 100vh !important;
+        margin: 0 !important; padding: 0 !important; 
+        overflow: hidden !important; height: 100vh !important; 
+        width: 100vw !important;
     }
 
     /* 2. MENU ĐỒNG BỘ TRANG CHỦ */
@@ -73,6 +71,7 @@ layout: "single"
         width: 100% !important; z-index: 99999 !important;
         background: #fff !important; padding: 25px 0 !important; 
         display: flex !important; justify-content: center !important;
+        box-shadow: none !important; border: none !important;
     }
     .nav-content { 
         width: 100% !important; max-width: 1300px !important; 
@@ -85,7 +84,7 @@ layout: "single"
     .nav-links a.active { border-bottom: 2.5px solid #000 !important; padding-bottom: 3px !important; }
 
     /* 3. LAYOUT CHIA ĐÔI */
-    .ultimate-about-wrapper { width: 100vw !important; height: 100vh !important; background: #fff !important; }
+    .ultimate-about-wrapper { width: 100vw !important; height: 100vh !important; background: #fff !important; position: relative !important; z-index: 1 !important; }
     .split-screen { display: flex !important; width: 100% !important; height: 100% !important; }
     
     .left-text { flex: 4.5 !important; display: flex !important; justify-content: flex-end !important; align-items: center !important; padding-right: 80px !important; }
@@ -103,7 +102,12 @@ layout: "single"
     /* 4. FIX LẤY THÂN NGƯỜI */
     .right-image { flex: 5.5 !important; background: #f9f9f9 !important; overflow: hidden !important; }
     .img-wrapper { width: 100% !important; height: 100% !important; }
-    .img-wrapper img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center 15% !important; display: block !important; }
+    .img-wrapper img { 
+        width: 100% !important; height: 100% !important; 
+        object-fit: cover !important; 
+        object-position: center 15% !important; /* Đảm bảo thấy vai và thân */
+        display: block !important; 
+    }
 
     /* 5. ANIMATIONS */
     @keyframes revealUp { from { transform: translateY(110%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
