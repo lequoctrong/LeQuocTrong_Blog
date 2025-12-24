@@ -1,6 +1,5 @@
 {{ define "main" }}
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 
 <header class="luxury-header">
     <nav class="luxury-nav">
@@ -20,17 +19,16 @@
     <div class="split-container">
         <div class="text-side">
             <div class="content-box">
-                <p class="top-tag animate-item" style="--delay: 0.2s">LÊ QUỐC TRỌNG </p>
+                <p class="top-tag animate-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
                 
-                <h1 class="main-title animate-item" style="--delay: 0.4s">
-                    <div class="line">BUILD</div>
-                    <div class="line">QUIETLY.</div>
-                    <div class="line outlined">SHIP</div>
-                    <div class="line outlined">CONFIDEN</div>
-                    <div class="line outlined">TLY.</div>
+                <h1 class="main-title animate-item" style="--delay: 0.2s">
+                    BUILD<br>QUIETLY.<br>
+                    <span class="outlined">SHIP</span><br>
+                    <span class="outlined">CONFIDEN</span><br>
+                    <span class="outlined">TLY.</span>
                 </h1>
 
-                <div class="description-block animate-item" style="--delay: 0.6s">
+                <div class="description-block animate-item" style="--delay: 0.4s">
                     <h3 class="job-title">JAVA BACKEND & NETWORK ENGINEER</h3>
                     <p class="bio">
                         Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>. <br>
@@ -41,68 +39,62 @@
         </div>
 
         <div class="image-side animate-image">
-            <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng Portrait">
-        </div>
-
-        <div class="custom-footer animate-item" style="--delay: 1s">
-            <span>&copy; 2025 Lê Quốc Trọng | Portfolio</span> · 
-            <span>Powered by Hugo & PaperMod</span>
+            <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng">
         </div>
     </div>
 </div>
 
 <style>
-    /* 1. DIỆT TRIỆT ĐỂ TAM GIÁC XANH VÀ RÁC THEME */
+    /* 1. DIỆT TẬN GỐC TAM GIÁC XANH VÀ RÁC THEME */
     footer, .footer, .page-footer, #top-link, .top-link, .nav, .header, .logo-switches { 
         display: none !important; 
         background: none !important;
-        border: none !important;
     }
-    body, html { 
-        background: #ffffff !important; 
-        margin: 0; padding: 0; 
-        overflow: hidden; /* Chặn cuộn trang để mất tam giác xanh */
+    body, html, .main, main { 
+        background-color: #ffffff !important; 
+        margin: 0; padding: 0; overflow: hidden;
     }
 
-    /* 2. THANH MENU KHÔNG LỖI */
+    /* 2. THANH MENU SANG TRỌNG (SỬA LẠI THEO Ý MÀY) */
     .luxury-header {
         position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
-        background: #fff; padding: 25px 0; display: flex; justify-content: center;
+        background: #fff; padding: 30px 0; display: flex; justify-content: center;
     }
     .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-    .luxury-logo a { font-family: sans-serif; font-size: 20px; font-weight: 700; color: #000; text-decoration: none; }
-    .luxury-menu { display: flex; list-style: none; gap: 30px; margin: 0; }
-    .luxury-menu a { color: #000; text-decoration: none; font-family: sans-serif; font-size: 14px; font-weight: 400; }
-    .luxury-menu a.active { font-weight: 700; border-bottom: 1px solid #000; }
+    .luxury-logo a { font-family: sans-serif; font-size: 20px; font-weight: 800; color: #000; text-decoration: none; text-transform: uppercase; }
+    .luxury-menu { display: flex; list-style: none; gap: 40px; margin: 0; }
+    .luxury-menu a { color: #000; text-decoration: none; font-family: sans-serif; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+    .luxury-menu a.active { font-weight: 800; border-bottom: 2px solid #000; }
 
-    /* 3. LAYOUT CHỮ NHỎ SANG TRỌNG THEO ẢNH */
+    /* 3. LAYOUT FORM CHỮ NHỎ SANG TRỌNG */
     .full-screen-wrapper { width: 100vw; height: 100vh; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background: #fff; overflow: hidden; }
     .split-container { display: flex; height: 100%; font-family: 'Montserrat', sans-serif; }
-    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 8%; background-color: #ffffff; z-index: 10; }
-    .content-box { max-width: 450px; width: 100%; }
+    .text-side { flex: 1; display: flex; justify-content: center; align-items: center; padding-left: 8%; background-color: #ffffff; z-index: 20; }
+    .content-box { max-width: 480px; width: 100%; padding-right: 20px; }
 
+    /* FORM CHỮ ÉP DÀY VÀ SÁT DÒNG */
     .main-title { 
-        font-size: 58px; /* Giảm size cho sang */
-        font-weight: 900; line-height: 0.82; /* Ép dòng sát rạt */
-        margin: 0 0 35px 0; text-transform: uppercase; letter-spacing: -3px; 
+        font-size: 65px; /* Size vừa đủ sang, không bị bự thô */
+        font-weight: 900; 
+        line-height: 0.8; /* Ép dòng cực sát y chang ảnh */
+        margin: 0 0 40px 0; text-transform: uppercase; letter-spacing: -4px; color: #1a1a1a;
     }
-    .line { display: block; }
-    .outlined { color: transparent; -webkit-text-stroke: 1.2px #1a1a1a; }
+    .outlined { color: transparent; -webkit-text-stroke: 1.5px #1a1a1a; display: inline-block; }
 
-    /* GIỮ NGUYÊN CÁC ANIMATION CỦA MÀY */
-    @keyframes slideUpFade { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-    .animate-item { opacity: 0; animation: slideUpFade 0.8s ease-out forwards; animation-delay: var(--delay, 0s); }
-    
-    .image-side { flex: 1.2; position: relative; background-color: #f0f0f0; overflow: hidden; }
+    .top-tag { font-size: 10px; letter-spacing: 5px; color: #aaa; margin-bottom: 20px; text-transform: uppercase; }
+    .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; }
+    .job-title { font-size: 14px; font-weight: 900; margin-bottom: 10px; color: #000; }
+    .bio { font-size: 13px; line-height: 1.7; color: #777; max-width: 320px; }
+
+    /* ẢNH KHÔNG BỊ CẮT VỚ VẨN */
+    .image-side { flex: 1.2; position: relative; background-color: #f5f5f5; overflow: hidden; }
     .image-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    .custom-footer { position: fixed; bottom: 15px; width: 100%; text-align: center; z-index: 9999; }
-    .custom-footer span { background: rgba(255, 255, 255, 0.9); color: #555; padding: 5px 12px; border-radius: 20px; font-size: 11px; }
-
-    @media (max-width: 960px) {
-        .split-container { flex-direction: column-reverse; }
-        .image-side { height: 40vh; flex: none; }
-        .text-side { padding: 40px 20px 100px; }
-    }
+    /* HIỆU ỨNG CHẠY */
+    @keyframes slideUpFade { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-item { opacity: 0; animation: slideUpFade 1s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: var(--delay, 0s); }
+    
+    .animate-image { opacity: 0; animation: fadeIn 1.5s ease forwards; animation-delay: 0.3s; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
 {{ end }}
