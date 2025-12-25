@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Trang chủ on Lê Quốc Trọng</title>
-    <link>http://localhost:56230/LeQuocTrong_Blog/content/</link>
+    <link>https://lequoctrong.github.io/LeQuocTrong_Blog/content/</link>
     <description>Recent content in Trang chủ on Lê Quốc Trọng</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi-vn</language>
-    <atom:link href="http://localhost:56230/LeQuocTrong_Blog/content/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lequoctrong.github.io/LeQuocTrong_Blog/content/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giới Thiệu</title>
-      <link>http://localhost:56230/LeQuocTrong_Blog/about/</link>
+      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56230/LeQuocTrong_Blog/about/</guid>
+      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Liên Hệ</title>
-      <link>http://localhost:56230/LeQuocTrong_Blog/contact/</link>
+      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56230/LeQuocTrong_Blog/contact/</guid>
+      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/contact/</guid>
       <description></description>
     </item>
   </channel>
