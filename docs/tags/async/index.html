@@ -6,64 +6,23 @@
     <title>Async - Lê Quốc Trọng</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="/LeQuocTrong_Blog/css/style.css">
 </head>
 <body>
-
-    <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" accesskey="h" title="Lê Quốc Trọng (Alt + H)">Lê Quốc Trọng</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" title="Trang chủ">
-                    <span>Trang chủ</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about/" title="Giới thiệu">
-                    <span>Giới thiệu</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/" title="Blog">
-                    <span>Blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact" title="Liên hệ">
-                    <span>Liên hệ</span>
-                </a>
-            </li>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<header class="luxury-header">
+    <nav class="luxury-nav">
+        <div class="luxury-logo"><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">LÊ QUỐC TRỌNG</a></div>
+        <ul class="luxury-menu">
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">TRANG CHỦ</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">GIỚI THIỆU</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts" class="active">BLOG</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">LIÊN HỆ</a></li>
         </ul>
     </nav>
 </header>
 
-
-    <main>
 <div class="blog-wrapper">
     <div class="blog-container">
         <h1 class="blog-title">LATEST ARTICLES.</h1>
@@ -80,7 +39,29 @@
     </div>
 </div>
 
-    </main>
+<style>
+     
+    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: #fff; }
+    .luxury-header { position: fixed; top: 0; width: 100%; background: #fff; padding: 25px 0; z-index: 1000; border-bottom: 1px solid #eee; display: flex; justify-content: center; }
+    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
+    .luxury-logo a { font-weight: 900; color: #000; text-decoration: none; font-size: 20px; }
+    .luxury-menu { display: flex; list-style: none; gap: 35px; }
+    .luxury-menu a { color: #000; text-decoration: none; font-size: 13px; font-weight: 700; }
+    .luxury-menu a.active { border-bottom: 2px solid #000; }
+
+     
+    .blog-wrapper { margin-top: 100px; padding: 60px 20px; display: flex; justify-content: center; }
+    .blog-container { max-width: 1000px; width: 100%; }
+    .blog-title { font-size: 60px; font-weight: 900; margin-bottom: 50px; letter-spacing: -2px; }
+    
+    .post-grid { display: grid; gap: 40px; }
+    .post-card { display: block; text-decoration: none; color: #000; border-bottom: 1px solid #eee; padding-bottom: 30px; transition: 0.3s; }
+    .post-card:hover { transform: translateX(10px); }
+    .post-date { font-size: 12px; color: #888; margin-bottom: 10px; letter-spacing: 2px; }
+    .post-heading { font-size: 28px; font-weight: 700; margin: 0 0 15px 0; }
+    .post-summary { color: #555; line-height: 1.6; font-size: 15px; }
+    .read-btn { font-size: 12px; font-weight: 900; margin-top: 15px; display: inline-block; border-bottom: 2px solid #000; }
+</style>
 
 </body>
 </html>
