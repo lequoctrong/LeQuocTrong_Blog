@@ -11,8 +11,55 @@
     <link rel="stylesheet" href="/LeQuocTrong_Blog/css/style.css">
 </head>
 <body>
+
+    <header class="luxury-header">
+        <nav class="luxury-nav">
+            <div class="luxury-logo">
+                <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">LÊ QUỐC TRỌNG</a>
+            </div>
+            <ul class="luxury-menu">
+                <li>
+                    <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" 
+                       class="active">TRANG CHỦ</a>
+                </li>
+                
+                <li>
+                    <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about" 
+                       class="">GIỚI THIỆU</a>
+                </li>
+
+                <li>
+                    <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts" 
+                       class="">BLOG</a>
+                </li>
+
+                <li>
+                    <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact" 
+                       class="">LIÊN HỆ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<div class="full-screen-wrapper"></div>
+<header class="luxury-header">
+    <nav class="luxury-nav">
+        <div class="luxury-logo">
+            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">LÊ QUỐC TRỌNG</a>
+        </div>
+        <ul class="luxury-menu">
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/" class="active">TRANG CHỦ</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">GIỚI THIỆU</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts">BLOG</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">LIÊN HỆ</a></li>
+        </ul>
+    </nav>
+</header>
+
 <div class="full-screen-wrapper">
     <div class="split-container">
+        
         <div class="text-side">
             <div class="content-box">
                 <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p>
@@ -38,6 +85,7 @@
                 <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/anhdaidien.jpg" alt="Lê Quốc Trọng">
             </div>
         </div>
+        
     </div>
 </div>
 
@@ -46,29 +94,67 @@
     footer, .footer, .nav, .header, .logo-switches, #top-link { display: none !important; }
     body, html { background: #fff !important; margin: 0; padding: 0; overflow: hidden; }
 
+     
+    .luxury-header {
+        position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
+        background: #fff; padding: 25px 0; display: flex; justify-content: center;
+    }
+    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
+    .luxury-logo a { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: #000; text-decoration: none; letter-spacing: -1px; }
+    .luxury-menu { display: flex !important; list-style: none !important; gap: 35px; }
+    .luxury-menu a { color: #000; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; }
+    .luxury-menu a.active { border-bottom: 2.5px solid #000; padding-bottom: 3px; }
+
+     
     .full-screen-wrapper { width: 100vw; height: 100vh; background: #fff; }
     .split-container { display: flex; height: 100%; width: 100%; }
     
-    .text-side { flex: 4.5; display: flex; justify-content: flex-end; align-items: center; padding-right: 80px; background: #fff; }
+    .text-side { 
+        flex: 4.5; display: flex; justify-content: flex-end; align-items: center; 
+        padding-right: 80px; background: #fff;
+    }
     .content-box { max-width: 550px; width: 100%; }
 
-    .main-title { font-family: 'Montserrat', sans-serif !important; font-size: 85px; font-weight: 900; line-height: 0.82; margin: 0 0 40px 0; text-transform: uppercase; letter-spacing: -6px; color: #1a1a1a; }
+    .main-title { 
+        font-family: 'Montserrat', sans-serif !important; 
+        font-size: 85px; font-weight: 900; line-height: 0.82; 
+        margin: 0 0 40px 0; text-transform: uppercase; letter-spacing: -6px; color: #1a1a1a;
+    }
     .line-wrapper { overflow: hidden; } 
     .outlined { color: transparent !important; -webkit-text-stroke: 2px #1a1a1a; display: inline-block; }
 
-    .image-side { flex: 5.5; background: #f9f9f9; overflow: hidden; }
-    .image-side img { width: 70%; height: 50%; object-fit: cover; object-position: center 15%; display: block; }
+     
+    .image-side { 
+        flex: 5.5; 
+        background: #f9f9f9; 
+        overflow: hidden; 
+    }
+    .image-side img { 
+        width: 70%; 
+        height: 50%; 
+        object-fit: cover; 
+         
+        object-position: center 15%; 
+        display: block; 
+    }
 
+     
     .top-tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; color: #bbb; letter-spacing: 5px; margin-bottom: 20px; }
     .description-block { border-left: 5px solid #1a1a1a; padding-left: 25px; margin-top: 35px; }
     .job-title { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 900; color: #000; }
     .bio { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.6; color: #666; max-width: 400px; }
 
-    .reveal-item { display: inline-block; opacity: 0; transform: translateY(100%); animation: revealUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards; animation-delay: var(--delay); }
+    .reveal-item {
+        display: inline-block; opacity: 0; transform: translateY(100%);
+        animation: revealUp 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: var(--delay);
+    }
     @keyframes revealUp { to { opacity: 1; transform: translateY(0); } }
     .reveal-image { opacity: 0; animation: fadeIn 1.5s ease forwards; animation-delay: 0.4s; }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
+
+    </main>
 
 </body>
 </html>
