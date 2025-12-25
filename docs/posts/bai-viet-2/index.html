@@ -4,69 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080? - Lê Quốc Trọng</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/LeQuocTrong_Blog/css/style.css">
 </head>
 <body>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<header class="luxury-header">
+    <nav class="luxury-nav">
+        <div class="luxury-logo"><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">LÊ QUỐC TRỌNG</a></div>
+        <ul class="luxury-menu">
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">TRANG CHỦ</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">GIỚI THIỆU</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts" class="active">BLOG</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">LIÊN HỆ</a></li>
+        </ul>
+    </nav>
+</header>
 
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">Home</a>&nbsp;»&nbsp;<a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/">Posts</a></div>
-    <h1 class="post-title entry-hint-parent">
-      Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?
-    </h1>
-    <div class="post-meta"><span title='2025-12-16 00:00:00 +0000 UTC'>December 16, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Lê Quốc Trọng</span>
-
-</div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#c%c3%a1c-lo%e1%ba%a1i-port-ph%e1%bb%95-bi%e1%ba%bfn" aria-label="Các loại Port phổ biến">Các loại Port phổ biến</a></li>
-                <li>
-                    <a href="#l%e1%bb%97i-th%c6%b0%e1%bb%9dng-g%e1%ba%b7p-address-already-in-use" aria-label="Lỗi thường gặp: &ldquo;Address already in use&rdquo;">Lỗi thường gặp: &ldquo;Address already in use&rdquo;</a>
-                </li>
-            </ul>
-        </div>
-    </details>
-</div>
-
-  <div class="post-content"><p>Nếu IP là địa chỉ nhà, thì <strong>Port</strong> chính là số phòng.
+<div class="article-wrapper">
+    <article class="main-article">
+        <header class="article-header">
+            <p class="article-meta">16 JANUARY 2025 — [Network Theory]</p>
+            <h1 class="article-title">Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?</h1>
+        </header>
+        
+        <div class="article-content">
+            <p>Nếu IP là địa chỉ nhà, thì <strong>Port</strong> chính là số phòng.
 Một máy tính có thể chạy nhiều chương trình mạng (Web, Game, Chat&hellip;), mỗi chương trình phải có một Port riêng.</p>
-<h3 id="các-loại-port-phổ-biến">Các loại Port phổ biến<a hidden class="anchor" aria-hidden="true" href="#các-loại-port-phổ-biến">#</a></h3>
+<h3 id="các-loại-port-phổ-biến">Các loại Port phổ biến</h3>
 <ul>
 <li><strong>Port 80:</strong> Dành cho Web (HTTP).</li>
 <li><strong>Port 443:</strong> Dành cho Web bảo mật (HTTPS).</li>
 <li><strong>Port 3306:</strong> Dành cho MySQL Database.</li>
 </ul>
-<h3 id="lỗi-thường-gặp-address-already-in-use">Lỗi thường gặp: &ldquo;Address already in use&rdquo;<a hidden class="anchor" aria-hidden="true" href="#lỗi-thường-gặp-address-already-in-use">#</a></h3>
+<h3 id="lỗi-thường-gặp-address-already-in-use">Lỗi thường gặp: &ldquo;Address already in use&rdquo;</h3>
 <p>Lỗi này xảy ra khi bạn cố mở Server ở một Port đang bị thằng khác chiếm dụng.
 =&gt; Cách sửa: Đổi sang số khác, ví dụ đổi từ 8080 sang 9999.</p>
 
+        </div>
+    </article>
+</div>
 
-  </div>
+<style>
+     
+    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: #fff; color: #1a1a1a; }
+    .luxury-header { position: fixed; top: 0; width: 100%; background: #fff; padding: 25px 0; z-index: 1000; border-bottom: 1px solid #eee; display: flex; justify-content: center; }
+    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
+    .luxury-logo a { font-weight: 900; color: #000; text-decoration: none; font-size: 20px; }
+    .luxury-menu { display: flex; list-style: none; gap: 35px; }
+    .luxury-menu a { color: #000; text-decoration: none; font-size: 13px; font-weight: 700; }
 
-  <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/network/">Network</a></li>
-      <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/theory/">Theory</a></li>
-    </ul>
-<nav class="paginav">
-  <a class="prev" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-1/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>Bài 1: Làm sao biết máy mình đang dùng IP gì trong Java?</span>
-  </a>
-  <a class="next" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-3/">
-    <span class="title">Next »</span>
-    <br>
-    <span>Bài 3: Callback Hell trong JavaScript và cách né tránh</span>
-  </a>
-</nav>
+     
+    .article-wrapper { margin-top: 120px; display: flex; justify-content: center; padding-bottom: 100px; }
+    .main-article { max-width: 800px; width: 90%; padding: 0 20px; }
+    
+    .article-header { text-align: center; margin-bottom: 60px; }
+    .article-meta { color: #888; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
+    .article-title { font-size: 40px; font-weight: 900; line-height: 1.3; }
+    
+     
+    .article-content { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 18px; line-height: 1.8; text-align: justify; }
+    .article-content h2, .article-content h3 { font-family: 'Montserrat', sans-serif; font-weight: 900; margin-top: 40px; }
+    .article-content pre { background: #f4f4f4; padding: 20px; border-radius: 5px; overflow-x: auto; font-size: 14px; border: 1px solid #ddd; }
+    .article-content code { font-family: 'Courier New', monospace; color: #d63384; }
+    .article-content img { max-width: 100%; height: auto; display: block; margin: 30px auto; }
+</style>
 
-  </footer>
-</article>
 </body>
 </html>

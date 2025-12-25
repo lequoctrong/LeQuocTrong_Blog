@@ -4,48 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Network - Lê Quốc Trọng</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/LeQuocTrong_Blog/css/style.css">
 </head>
-<body> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">Home</a>&nbsp;»&nbsp;<a href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/">Tags</a></div>
-  <h1>
-    Network
-  </h1>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<header class="luxury-header">
+    <nav class="luxury-nav">
+        <div class="luxury-logo"><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">LÊ QUỐC TRỌNG</a></div>
+        <ul class="luxury-menu">
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/">TRANG CHỦ</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/about">GIỚI THIỆU</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts" class="active">BLOG</a></li>
+            <li><a href="https://lequoctrong.github.io/LeQuocTrong_Blog/contact">LIÊN HỆ</a></li>
+        </ul>
+    </nav>
 </header>
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Bài 1: Làm sao biết máy mình đang dùng IP gì trong Java?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Sử dụng class InetAddress để định danh máy tính.</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-15 00:00:00 +0000 UTC'>December 15, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Lê Quốc Trọng</span></footer>
-  <a class="entry-link" aria-label="post link to Bài 1: Làm sao biết máy mình đang dùng IP gì trong Java?" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-1/"></a>
-</article>
+<div class="blog-wrapper">
+    <div class="blog-container">
+        <h1 class="blog-title">LATEST ARTICLES.</h1>
+        <div class="post-grid">
+            
+            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-1/" class="post-card">
+                <div class="post-date">15 Dec 2025</div>
+                <h2 class="post-heading">Bài 1: Làm sao biết máy mình đang dùng IP gì trong Java?</h2>
+                <p class="post-summary">Sử dụng class InetAddress để định danh máy tính.</p>
+                <span class="read-btn">READ MORE →</span>
+            </a>
+            
+            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-2/" class="post-card">
+                <div class="post-date">16 Dec 2025</div>
+                <h2 class="post-heading">Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?</h2>
+                <p class="post-summary">Hiểu về khái niệm Port (Cổng) để tránh xung đột khi chạy phần mềm.</p>
+                <span class="read-btn">READ MORE →</span>
+            </a>
+            
+            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-5/" class="post-card">
+                <div class="post-date">19 Dec 2025</div>
+                <h2 class="post-heading">Bài 5: WebSocket - Công nghệ sau các ứng dụng Chat Realtime</h2>
+                <p class="post-summary">Tại sao Facebook, Zalo lại dùng WebSocket thay vì HTTP thông thường?</p>
+                <span class="read-btn">READ MORE →</span>
+            </a>
+            
+        </div>
+    </div>
+</div>
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Hiểu về khái niệm Port (Cổng) để tránh xung đột khi chạy phần mềm.</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-16 00:00:00 +0000 UTC'>December 16, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Lê Quốc Trọng</span></footer>
-  <a class="entry-link" aria-label="post link to Bài 2: Port là gì? Tại sao Server hay dùng cổng 8080?" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-2/"></a>
-</article>
+<style>
+     
+    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: #fff; }
+    .luxury-header { position: fixed; top: 0; width: 100%; background: #fff; padding: 25px 0; z-index: 1000; border-bottom: 1px solid #eee; display: flex; justify-content: center; }
+    .luxury-nav { width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; padding: 0 60px; }
+    .luxury-logo a { font-weight: 900; color: #000; text-decoration: none; font-size: 20px; }
+    .luxury-menu { display: flex; list-style: none; gap: 35px; }
+    .luxury-menu a { color: #000; text-decoration: none; font-size: 13px; font-weight: 700; }
+    .luxury-menu a.active { border-bottom: 2px solid #000; }
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Bài 5: WebSocket - Công nghệ sau các ứng dụng Chat Realtime
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Tại sao Facebook, Zalo lại dùng WebSocket thay vì HTTP thông thường?</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-19 00:00:00 +0000 UTC'>December 19, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Lê Quốc Trọng</span></footer>
-  <a class="entry-link" aria-label="post link to Bài 5: WebSocket - Công nghệ sau các ứng dụng Chat Realtime" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-5/"></a>
-</article>
+     
+    .blog-wrapper { margin-top: 100px; padding: 60px 20px; display: flex; justify-content: center; }
+    .blog-container { max-width: 1000px; width: 100%; }
+    .blog-title { font-size: 60px; font-weight: 900; margin-bottom: 50px; letter-spacing: -2px; }
+    
+    .post-grid { display: grid; gap: 40px; }
+    .post-card { display: block; text-decoration: none; color: #000; border-bottom: 1px solid #eee; padding-bottom: 30px; transition: 0.3s; }
+    .post-card:hover { transform: translateX(10px); }
+    .post-date { font-size: 12px; color: #888; margin-bottom: 10px; letter-spacing: 2px; }
+    .post-heading { font-size: 28px; font-weight: 700; margin: 0 0 15px 0; }
+    .post-summary { color: #555; line-height: 1.6; font-size: 15px; }
+    .read-btn { font-size: 12px; font-weight: 900; margin-top: 15px; display: inline-block; border-bottom: 2px solid #000; }
+</style>
+
 </body>
 </html>
