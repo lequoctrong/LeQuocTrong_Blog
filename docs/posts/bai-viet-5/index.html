@@ -69,8 +69,50 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">onopen</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Hello Server, I am Trọng!&#34;</span>);
 </span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>  
+        </div>
+        <div class="article-content">
+            <h3 id="vấn-đề-của-http">Vấn đề của HTTP</h3>
+<p>HTTP hoạt động kiểu &ldquo;Hỏi - Đáp&rdquo;. Client hỏi thì Server mới trả lời. Nếu Client im lặng, Server cũng im. Điều này không làm Chat được vì tin nhắn phải đến ngay lập tức.</p>
+<h3 id="giải-pháp-websocket">Giải pháp: WebSocket</h3>
+<p>WebSocket tạo ra một &ldquo;đường ống&rdquo; kết nối liên tục 2 chiều.</p>
+<ul>
+<li>Server có tin nhắn mới -&gt; Bắn ngay về Client.</li>
+<li>Client không cần hỏi (Request) liên tục.</li>
+</ul>
+<p>Trong JS, khởi tạo rất dễ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Kết nối đến Server
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">socket</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">WebSocket</span>(<span style="color:#e6db74">&#39;ws://localhost:8080&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Lắng nghe sự kiện khi có tin nhắn đến
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">onmessage</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Có tin nhắn mới: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">data</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Gửi tin nhắn đi
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">onopen</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Hello Server, I am Trọng!&#34;</span>);
+</span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div>
         </div>
+
+        <div class="post-navigation">
+            
+            <a class="nav-btn prev" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-4/">
+                <span class="nav-label">← BÀI TRƯỚC</span>
+                
+            </a>
+            
+
+            
+            <a class="nav-btn next" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-6/">
+                <span class="nav-label">BÀI TIẾP THEO →</span>
+                
+            </a>
+            
+        </div>
+        </article>
+</div>
     </article>
 </div>
 

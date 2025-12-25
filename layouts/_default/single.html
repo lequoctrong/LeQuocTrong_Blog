@@ -7,8 +7,33 @@
         </header>
         
         <div class="article-content">
+            {{ .Content }}  
+        </div>
+        <div class="article-content">
             {{ .Content }}
         </div>
+
+        <div class="post-navigation">
+            {{ if .NextInSection }}
+            <a class="nav-btn prev" href="{{ .NextInSection.Permalink }}">
+                <span class="nav-label">← BÀI TRƯỚC</span>
+                <!-- <span class="nav-title">{{ .NextInSection.Title }}</span> -->
+            </a>
+            {{ else }}
+            <div class="nav-placeholder"></div>
+            {{ end }}
+
+            {{ if .PrevInSection }}
+            <a class="nav-btn next" href="{{ .PrevInSection.Permalink }}">
+                <span class="nav-label">BÀI TIẾP THEO →</span>
+                <!-- <span class="nav-title">{{ .PrevInSection.Title }}</span> -->
+            </a>
+            {{ else }}
+            <div class="nav-placeholder"></div>
+            {{ end }}
+        </div>
+        </article>
+</div>
     </article>
 </div>
 

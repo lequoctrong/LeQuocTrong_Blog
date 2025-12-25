@@ -62,8 +62,43 @@
 <li>-&gt; Nếu không: Đi làm việc khác, lát quay lại kiểm tra tiếp.</li>
 </ul>
 <p><strong>Kết luận:</strong> Muốn Server chịu tải cao (hàng ngàn user) như Zalo/Facebook thì bắt buộc phải dùng Non-Blocking.</p>
+  
+        </div>
+        <div class="article-content">
+            <h3 id="blocking-io-java-io-cổ-điển">Blocking IO (Java IO cổ điển)</h3>
+<p>Khi chương trình chạy lệnh <code>socket.accept()</code> hoặc <code>in.read()</code>, nó sẽ <strong>DỪNG LẠI</strong> (Block) và chờ đợi.</p>
+<ul>
+<li>Nếu mạng lag hoặc Client chưa gửi gì, chương trình sẽ đứng hình ở đó luôn.</li>
+<li><strong>Hậu quả:</strong> Server chỉ phục vụ được 1 người tại 1 thời điểm (nếu không dùng đa luồng).</li>
+</ul>
+<h3 id="non-blocking-io-java-nio">Non-Blocking IO (Java NIO)</h3>
+<p>Chương trình không bao giờ bị dừng. Nó sẽ kiểm tra liên tục:</p>
+<ul>
+<li>&ldquo;Có dữ liệu không?&rdquo;</li>
+<li>-&gt; Nếu có: Xử lý ngay.</li>
+<li>-&gt; Nếu không: Đi làm việc khác, lát quay lại kiểm tra tiếp.</li>
+</ul>
+<p><strong>Kết luận:</strong> Muốn Server chịu tải cao (hàng ngàn user) như Zalo/Facebook thì bắt buộc phải dùng Non-Blocking.</p>
 
         </div>
+
+        <div class="post-navigation">
+            
+            <a class="nav-btn prev" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-5/">
+                <span class="nav-label">← BÀI TRƯỚC</span>
+                
+            </a>
+            
+
+            
+            <a class="nav-btn next" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-7/">
+                <span class="nav-label">BÀI TIẾP THEO →</span>
+                
+            </a>
+            
+        </div>
+        </article>
+</div>
     </article>
 </div>
 

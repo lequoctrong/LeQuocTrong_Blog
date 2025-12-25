@@ -62,8 +62,43 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> ((bytesRead <span style="color:#f92672">=</span> fis.<span style="color:#a6e22e">read</span>(buffer)) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1) {
 </span></span><span style="display:flex;"><span>    os.<span style="color:#a6e22e">write</span>(buffer, 0, bytesRead);
 </span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>  
+        </div>
+        <div class="article-content">
+            <p>Để gửi một file ảnh từ Client lên Server, chúng ta không dùng <code>BufferedReader</code> được (vì nó đọc text), mà phải dùng dòng byte.</p>
+<h3 id="code-phía-client-gửi">Code phía Client (Gửi)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Đọc file từ ổ cứng</span>
+</span></span><span style="display:flex;"><span>FileInputStream fis <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileInputStream(<span style="color:#e6db74">&#34;anh-meo.jpg&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Lấy luồng gửi ra mạng</span>
+</span></span><span style="display:flex;"><span>OutputStream os <span style="color:#f92672">=</span> socket.<span style="color:#a6e22e">getOutputStream</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> buffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">byte</span><span style="color:#f92672">[</span>4096<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> bytesRead;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Vừa đọc file vừa đẩy ra mạng</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> ((bytesRead <span style="color:#f92672">=</span> fis.<span style="color:#a6e22e">read</span>(buffer)) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1) {
+</span></span><span style="display:flex;"><span>    os.<span style="color:#a6e22e">write</span>(buffer, 0, bytesRead);
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div>
         </div>
+
+        <div class="post-navigation">
+            
+            <a class="nav-btn prev" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-3/">
+                <span class="nav-label">← BÀI TRƯỚC</span>
+                
+            </a>
+            
+
+            
+            <a class="nav-btn next" href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-5/">
+                <span class="nav-label">BÀI TIẾP THEO →</span>
+                
+            </a>
+            
+        </div>
+        </article>
+</div>
     </article>
 </div>
 
