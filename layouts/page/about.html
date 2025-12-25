@@ -138,7 +138,10 @@
 
         <div class="luxury-image-side">
             <div class="luxury-img-frame image-anim">
-                <img src="{{ "anh3.jpg" | absURL }}" alt="Lê Quốc Trọng" onerror="this.src='{{ "anhdaidien.jpg" | absURL }}'">
+                <!-- ✅ FIX: absURL đặt đúng chỗ -->
+                <img src="{{ "anh3.jpg" | absURL }}"
+                     alt="Lê Quốc Trọng"
+                     onerror="this.src='{{ "anhdaidien.jpg" | absURL }}'">
             </div>
         </div>
     </div>
