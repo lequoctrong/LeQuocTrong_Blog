@@ -79,10 +79,17 @@
       <description>Báo cáo tổng kết quá trình thực hiện, các kết quả đạt được và kiến thức tích lũy từ đồ án xây dựng Blog cá nhân.</description>
     </item>
     <item>
-      <title>Trang chủ</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/content/</link>
+      <title>Giới Thiệu</title>
+      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/content/</guid>
+      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Liên Hệ</title>
+      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/contact/</guid>
       <description></description>
     </item>
   </channel>
