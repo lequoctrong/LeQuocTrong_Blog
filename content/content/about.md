@@ -1,5 +1,5 @@
 ---
 title: "Giới Thiệu"
-url: "/about"
+url: "/about/"
 layout: "about"
 ---

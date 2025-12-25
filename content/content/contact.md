@@ -1,5 +1,5 @@
 ---
 title: "Liên Hệ"
+url: "/contact/"
 layout: "contact"
-url: "/contact"
 ---
