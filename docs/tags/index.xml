@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Lê Quốc Trọng</title>
-    <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/</link>
+    <link>http://localhost:1313/LeQuocTrong_Blog/tags/</link>
     <description>Recent content in Tags on Lê Quốc Trọng</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi-vn</language>
     <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lequoctrong.github.io/LeQuocTrong_Blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/LeQuocTrong_Blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/java/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/java/</link>
       <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/java/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Server</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/server/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/server/</link>
       <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/server/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/server/</guid>
       <description></description>
     </item>
     <item>
       <title>Thread</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/thread/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/thread/</link>
       <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/thread/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/thread/</guid>
       <description></description>
     </item>
     <item>
       <title>Best Practice</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/best-practice/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/best-practice/</link>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/best-practice/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/best-practice/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/javascript/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/javascript/</link>
       <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/javascript/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>JSON</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/json/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/json/</link>
       <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/json/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/json/</guid>
       <description></description>
     </item>
     <item>
       <title>Theory</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/theory/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/theory/</link>
       <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/theory/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/theory/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/network/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/network/</link>
       <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/network/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>File Transfer</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/file-transfer/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/file-transfer/</link>
       <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/file-transfer/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/file-transfer/</guid>
       <description></description>
     </item>
     <item>
       <title>Socket</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/socket/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/socket/</link>
       <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/socket/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/socket/</guid>
       <description></description>
     </item>
     <item>
       <title>Async</title>
-      <link>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/async/</link>
+      <link>http://localhost:1313/LeQuocTrong_Blog/tags/async/</link>
       <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://lequoctrong.github.io/LeQuocTrong_Blog/tags/async/</guid>
+      <guid>http://localhost:1313/LeQuocTrong_Blog/tags/async/</guid>
       <description></description>
     </item>
   </channel>
