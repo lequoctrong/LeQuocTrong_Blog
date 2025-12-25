@@ -58,6 +58,19 @@ publishDir = "docs"
             unsafe = true # Cho phép dùng HTML trong file Markdown bài viết
 
 # --- FIX LỖI MẤT CSS TRÊN GITHUB PAGES ---
-# Hai dòng này là "cứu cánh" để web không bị list đen thui
 canonifyURLs = true
 relativeURLs = true
+
+# --- FIX LỖI INTEGRITY ATTRIBUTE ---
+[build]
+  writeStats = false
+  noJSConfigInAssets = true
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = false
