@@ -1,34 +1,169 @@
 {{ define "main" }}
+
+<style>
+/* ===== FIX LAYOUT KHÔNG BỊ CẮT ===== */
+.luxury-page-wrapper {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+.luxury-split-layout {
+    min-height: 100vh;
+}
+
+/* ===== CERTIFICATIONS SECTION ===== */
+.luxury-certifications {
+    margin-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.luxury-cert-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.luxury-cert-desc {
+    max-width: 820px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+    line-height: 1.8;
+    opacity: 0.85;
+}
+
+/* GRID */
+.luxury-cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ===== KHUNG ẢNH CHỨNG CHỈ (KHÔNG NỀN ĐEN) ===== */
+.luxury-cert-grid .luxury-img-frame {
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;              /* ❌ bỏ nền đen */
+    border-radius: 16px;
+    overflow: hidden;
+
+    border: 1px solid rgba(0,0,0,0.08);   /* viền nhẹ kiểu giấy */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+/* HOVER NHẸ */
+.luxury-cert-grid .luxury-img-frame:hover {
+    transform: translateY(-6px);
+}
+
+/* ẢNH CHỨNG CHỈ – HIỆN TRỌN */
+.luxury-cert-grid img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;                  /* 🔥 quan trọng */
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .luxury-cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .luxury-cert-grid .luxury-img-frame {
+        height: 220px;
+    }
+}
+</style>
+
 <div class="luxury-page-wrapper">
+
+    <!-- ===== ABOUT SECTION ===== -->
     <div class="luxury-split-layout">
+
         <div class="luxury-text-side">
             <div class="luxury-content">
-                <!-- <p class="top-tag reveal-item" style="--delay: 0.1s">LÊ QUỐC TRỌNG</p> -->
-                
-                <h1 class="luxury-main-title">
-                    <div class="hider"><span class="reveal-anim" style="--d: 0.2s">Về</span></div>
-                    <div class="hider"><span class="reveal-anim" style="--d: 0.3s">Bản Thân.</span></div>
-                </h1>
-                <div class="luxury-bio reveal-anim" style="--d: 0.5s">
-                    <h3 class="luxury-job">LÊ QUỐC TRỌNG — Java&JavaSrcipt</h3>
-                    
-                    <p>Tôi là sinh viên năm 3 khoa <strong>Công Nghệ Thông Tin - HUTECH</strong>. Trong khi bạn bè đồng trang lứa còn đang loay hoay với "Hello World", tôi đã chọn dấn thân vào những tầng sâu nhất của hệ thống máy tính.</p>
 
-                    <p>Tôi không chỉ viết code, tôi <strong>kiến tạo giải pháp</strong>. Với nền tảng vững chắc về <strong>Lập trình mạng</strong> và <strong>Java Concurrency</strong>, tôi bị ám ảnh bởi việc tối ưu hóa từng mili-giây độ trễ (Latency) và xử lý hàng nghìn luồng dữ liệu song song.</p>
-                    
-                    <p>Tư duy của tôi là hướng tới <strong>Enterprise Level</strong>: Code không chỉ chạy được, mà phải sạch (Clean), dễ bảo trì (Maintainable) và có khả năng mở rộng (Scalable). Những đêm thức trắng debug Socket hay tối ưu hóa thuật toán không làm tôi mệt mỏi, chúng tôi luyện tôi thành một kỹ sư bản lĩnh.</p>
+                <h1 class="luxury-main-title">
+                    <div class="hider">
+                        <span class="reveal-anim" style="--d:0.2s">Về</span>
+                    </div>
+                    <div class="hider">
+                        <span class="reveal-anim" style="--d:0.3s">Bản Thân.</span>
+                    </div>
+                </h1>
+
+                <div class="luxury-bio reveal-anim" style="--d:0.5s">
+                    <h3 class="luxury-job">LÊ QUỐC TRỌNG — Java & JavaScript</h3>
+
+                    <p>
+                        Tôi là sinh viên năm 3 khoa <strong>Công Nghệ Thông Tin - HUTECH</strong>,
+                        định hướng phát triển theo chiều sâu hệ thống, đặc biệt là
+                        <strong>lập trình mạng</strong> và <strong>xử lý song song</strong>.
+                    </p>
+
+                    <p>
+                        Tôi theo đuổi tư duy <strong>Enterprise Level</strong>:
+                        code sạch, hiệu năng cao, dễ bảo trì và sẵn sàng mở rộng lâu dài.
+                    </p>
                 </div>
-                <div class="luxury-quote reveal-anim" style="--d: 0.8s">
-                    "Đừng code như một thợ xây, hãy tư duy như một kiến trúc sư."
+
+                <div class="luxury-quote reveal-anim" style="--d:0.8s">
+                    “Đừng code như một thợ xây, hãy tư duy như một kiến trúc sư.”
                 </div>
+
             </div>
         </div>
 
         <div class="luxury-image-side">
             <div class="luxury-img-frame image-anim">
-                <img src="anh3.jpg" alt="Lê Quốc Trọng" onerror="this.src='/LeQuocTrong_Blog/anh3.jpg'">
+                <img src="anh3.jpg"
+                     alt="Lê Quốc Trọng"
+                     onerror="this.src='/LeQuocTrong_Blog/anh3.jpg'">
             </div>
         </div>
+
     </div>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section class="luxury-certifications reveal-anim">
+
+        <h2 class="luxury-cert-title">Chứng Chỉ Chuyên Môn</h2>
+
+        <p class="luxury-cert-desc">
+            Các chứng chỉ dưới đây thể hiện nền tảng của tôi về
+            <strong>mạng máy tính</strong>, <strong>bảo mật</strong> và
+            <strong>tư duy hệ thống</strong>, được đào tạo và xác thực bởi
+            <strong>Cisco Networking Academy</strong>.
+        </p>
+
+        <div class="luxury-cert-grid">
+
+            <div class="luxury-img-frame image-anim">
+                <img src="cc1.jpg"
+                     alt="Cisco Certificate 1"
+                     onerror="this.src='/LeQuocTrong_Blog/cc1.jpg'">
+            </div>
+
+            <div class="luxury-img-frame image-anim">
+                <img src="cc2.jpg"
+                     alt="Cisco Certificate 2"
+                     onerror="this.src='/LeQuocTrong_Blog/cc2.jpg'">
+            </div>
+
+            <div class="luxury-img-frame image-anim">
+                <img src="cc3.jpg"
+                     alt="Cisco Certificate 3"
+                     onerror="this.src='/LeQuocTrong_Blog/cc3.jpg'">
+            </div>
+
+        </div>
+
+    </section>
+
 </div>
+
 {{ end }}
