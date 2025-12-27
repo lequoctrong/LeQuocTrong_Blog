@@ -41,7 +41,7 @@
 
 /* ===== KHUNG ẢNH CHỨNG CHỈ (KHÔNG NỀN ĐEN) ===== */
 .luxury-cert-grid .luxury-img-frame {
-    height: 260px;
+    height: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +77,61 @@
         height: 220px;
     }
 }
+/* ===== FIX ẢNH PROFILE – HIỆN ĐẦY ĐỦ ĐẦU ===== */
+.luxury-image-side {
+    display: flex;
+    align-items: flex-start;   /* không center dọc */
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.luxury-image-side .luxury-img-frame {
+    width: 100%;
+    max-width: 420px;
+
+    height: auto !important;        /* 🔥 KHÔNG ÉP CAO */
+    overflow: visible !important;   /* 🔥 KHÔNG CẮT */
+
+    display: block;
+}
+
+.luxury-image-side .luxury-img-frame img {
+    width: 100% !important;
+    height: auto !important;        /* 🔥 ẢNH TỰ SCALE */
+    max-height: none !important;
+
+    object-fit: unset !important;   /* 🔥 HỦY MỌI CROP */
+    display: block;
+}
+/* ===== CĂN GIỮA ẢNH THEO CHIỀU DỌC ===== */
+.luxury-image-side {
+    display: flex;
+    align-items: center;       /* 🔥 CĂN GIỮA DỌC */
+    justify-content: center;
+    padding-top: 0;
+}
+
+/* Khung ảnh */
+.luxury-img-frame {
+    width: 100%;
+    max-width: 420px;
+
+    height: auto;
+    overflow: visible;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Ảnh */
+.luxury-img-frame img {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;       /* 🔥 KHÔNG CROP */
+    display: block;
+}
+
 </style>
 
 <div class="luxury-page-wrapper">
@@ -145,9 +200,9 @@
 
         <div class="luxury-image-side">
             <div class="luxury-img-frame image-anim">
-                <img src="anh3.jpg"
+                <img src="AI.png"
                      alt="Lê Quốc Trọng"
-                     onerror="this.src='/LeQuocTrong_Blog/anh3.jpg'">
+                     onerror="this.src='/LeQuocTrong_Blog/AI.png'">
             </div>
         </div>
 
@@ -190,5 +245,6 @@
     </section>
 
 </div>
+
 
 {{ end }}
