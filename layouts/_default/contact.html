@@ -203,23 +203,32 @@ html, body {
 /* ================= MOBILE – ẢNH TRÁI / TEXT PHẢI ================= */
 @media (max-width: 900px) {
 
+    .split-container {
+        display: flex;
+        align-items: stretch; /* 👈 QUAN TRỌNG */
+    }
+
     .image-side {
         flex: 0 0 35%;
         padding: 20px 10px;
         background: #f9f9f9;
 
         display: flex;
-        align-items: flex-end;   /* 👈 ĐẨY ẢNH XUỐNG DƯỚI */
+        align-items: center;     /* ❌ bỏ flex-end */
         justify-content: center;
+
+        min-height: 250px;       /* 🔥 CỨU ẢNH */
     }
 
     .image-side img {
         width: 100%;
         height: auto;
-        max-height: 60vh;        /* 👈 GIỚI HẠN CHIỀU CAO */
+        max-height: 40vh;        /* an toàn hơn 60vh */
         object-fit: contain;
+        display: block;
     }
 }
+
 
 </style>
 {{ end }}
