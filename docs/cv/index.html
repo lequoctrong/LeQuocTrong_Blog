@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON - Lê Quốc Trọng</title>
+    <title>CV - Lê Quốc Trọng - Lê Quốc Trọng</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     
@@ -38,7 +38,7 @@
                 </li>
                 <li>
                 <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/cv/"
-                   class="">
+                   class="active">
                     CV
                 </a>
             </li>
@@ -46,21 +46,68 @@
         </nav>
     </header>
     <main>
-<div class="blog-wrapper">
-    <div class="blog-container">
-        <h1 class="blog-title">Java&JavaScript.</h1>
-        <div class="post-grid">
-            
-            <a href="https://lequoctrong.github.io/LeQuocTrong_Blog/posts/bai-viet-7/" class="post-card">
-                <div class="post-date">21 Dec 2025</div>
-                <h2 class="post-heading">Bài 7: Xử lý dữ liệu JSON trong JavaScript</h2>
-                <p class="post-summary">Hai hàm quan trọng nhất khi làm việc với API.</p>
-                <span class="read-btn">Xem bài →</span>
-            </a>
-            
-        </div>
-    </div>
+
+<style>
+     
+    .cv-container {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #f4f4f4;  
+        display: flex;
+        flex-direction: column;  
+        align-items: center;     
+        
+         
+        padding-top: 150px;      
+        padding-bottom: 60px;
+    }
+
+     
+    .cv-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;        
+        font-weight: 900;      
+        color: #2c3e50;        
+        margin-bottom: 40px;    
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+     
+    .cv-image-link {
+        display: block;
+        width: 90%;             
+        max-width: 1000px;      
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);  
+        transition: transform 0.3s ease; 
+        background-color: white;  
+    }
+
+     
+    .cv-image-link:hover {
+        transform: translateY(-5px);  
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .cv-image-link img {
+        width: 100%;
+        height: auto;       
+        display: block;     
+        border-radius: 4px; 
+    }
+</style>
+
+<div class="cv-container">
+    
+    <h1 class="cv-title">CV - Lê Quốc Trọng</h1>
+
+    <div class="image-inner reveal-image">
+                <img src="https://lequoctrong.github.io/LeQuocTrong_Blog/cv1.jpg" alt="Lê Quốc Trọng">
+            </div>
+
 </div>
+
 
     </main>
 

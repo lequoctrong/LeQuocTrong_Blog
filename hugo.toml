@@ -52,6 +52,12 @@ publishDir = "docs"
         url = "contact"
         weight = 40
 
+    [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv/"
+    weight = 38
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
