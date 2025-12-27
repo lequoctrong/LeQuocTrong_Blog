@@ -244,57 +244,24 @@ html, body {
  
 @media (max-width: 900px) {
 
-    html, body {
-        overflow-y: auto;
-        overflow-x: hidden;
-        height: auto;
-    }
-
-    .full-screen-wrapper {
-        height: auto;
-    }
-
-    .split-container {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-     
     .image-side {
         flex: 0 0 35%;
         padding: 20px 10px;
         background: #f9f9f9;
-        align-items: flex-start;
+
+        display: flex;
+        align-items: flex-end;    
+        justify-content: center;
     }
 
     .image-side img {
         width: 100%;
         height: auto;
+        max-height: 60vh;         
         object-fit: contain;
     }
-
-     
-    .text-side {
-        flex: 0 0 45%;
-        padding: 80px 15px 30px;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .content-box {
-        max-width: 100%;
-    }
-
-    .main-title {
-        font-size: 42px;
-        letter-spacing: -2px;
-    }
-
-    .send-btn {
-        align-self: stretch;
-        text-align: center;
-    }
 }
+
 </style>
 
     </main>
