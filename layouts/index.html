@@ -1,50 +1,24 @@
-{{ define "main" }}
-<div class="full-screen-wrapper">
-    <div class="split-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Le Quoc Trong</title>
 
-        <div class="text-side">
-            <div class="content-box">
-                <h1 class="main-title">
-                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.2s">BUILD</span></div>
-                    <div class="line-wrapper"><span class="reveal-item" style="--delay: 0.3s">QUIETLY.</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.4s">SHIP</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.5s">CONFIDEN</span></div>
-                    <div class="line-wrapper"><span class="reveal-item outlined" style="--delay: 0.6s">TLY.</span></div>
-                </h1>
-
-                <div class="description-block reveal-item" style="--delay: 0.8s">
-                    <h3 class="job-title">Java & JavaScript</h3>
-                    <p class="bio">
-                        Sinh viên Công Nghệ Thông Tin tại <strong>HUTECH</strong>.<br>
-                        Tôi xây dựng hệ thống vững chắc từ bên trong và kết nối thế giới qua những dòng code.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="image-side">
-            <div class="image-inner reveal-image">
-                <img src="{{ "anhdaidien.jpg" | absURL }}" alt="Lê Quốc Trọng">
-            </div>
-        </div>
-
-    </div>
-</div>
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
-/* ================= RESET ================= */
-footer, .footer, .nav, .logo-switches, #top-link {
-    display: none !important;
-}
 
-html, body {
+/* RESET */
+body {
     margin: 0;
-    padding: 0;
-    background: #fff !important;
-    overflow: hidden; /* desktop only */
+    background: #0f0f0f;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* ================= DESKTOP ================= */
+/* LAYOUT */
 .full-screen-wrapper {
     width: 100vw;
     height: 100vh;
@@ -52,15 +26,15 @@ html, body {
 
 .split-container {
     display: flex;
-    width: 100%;
     height: 100%;
 }
 
+/* LEFT */
 .text-side {
-    flex: 4.5;
+    flex: 5;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     padding-right: 80px;
 }
 
@@ -68,129 +42,151 @@ html, body {
     max-width: 550px;
 }
 
+/* TITLE */
 .main-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 85px;
+    font-size: 80px;
     font-weight: 900;
-    line-height: 0.82;
-    letter-spacing: -6px;
+    line-height: 0.85;
+    letter-spacing: -4px;
     margin-bottom: 40px;
-    text-transform: uppercase;
 }
 
-.line-wrapper { overflow: hidden; }
-
-.outlined {
-    color: transparent;
-    -webkit-text-stroke: 2px #1a1a1a;
-}
-
-.image-side {
-    flex: 5.5;
-    background: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.line-wrapper {
     overflow: hidden;
 }
 
-.image-inner {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.outlined {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
 }
 
-.image-side img {
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    object-position: center 10%;
-}
-
-/* ================= TEXT ================= */
+/* DESCRIPTION */
 .description-block {
-    border-left: 5px solid #1a1a1a;
-    padding-left: 25px;
+    border-left: 3px solid #00ffd5;
+    padding-left: 20px;
 }
 
 .job-title {
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 700;
+    color: #00ffd5;
 }
 
 .bio {
     font-size: 14px;
-    line-height: 1.6;
-    color: #666;
-    max-width: 400px;
+    color: #aaa;
 }
 
-/* ================= ANIMATION ================= */
+/* RIGHT */
+.image-side {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #1a1a1a, #0f0f0f);
+}
+
+.image-side img {
+    width: 65%;
+    border-radius: 20px;
+    filter: grayscale(100%) contrast(110%);
+    transition: 0.5s;
+}
+
+.image-side img:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+/* ANIMATION */
 .reveal-item {
     opacity: 0;
-    transform: translateY(100%);
-    animation: revealUp 1s cubic-bezier(0.19,1,0.22,1) forwards;
-    animation-delay: var(--delay);
+    transform: translateY(50px);
+    animation: revealUp 1s ease forwards;
 }
 
+.reveal-item:nth-child(1) { animation-delay: 0.2s; }
+.reveal-item:nth-child(2) { animation-delay: 0.3s; }
+.reveal-item:nth-child(3) { animation-delay: 0.4s; }
+.reveal-item:nth-child(4) { animation-delay: 0.5s; }
+.reveal-item:nth-child(5) { animation-delay: 0.6s; }
+
 @keyframes revealUp {
-    to { opacity: 1; transform: translateY(0); }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .reveal-image {
     opacity: 0;
-    animation: fadeIn 1.5s ease forwards;
-    animation-delay: 0.4s;
+    animation: fadeIn 1.5s forwards;
 }
 
 @keyframes fadeIn {
     to { opacity: 1; }
 }
 
-/* ================= MOBILE FIX – QUAN TRỌNG ================= */
+/* MOBILE */
 @media (max-width: 900px) {
-
-    /* 🔥 BỎ FULLSCREEN + OVERFLOW TRÊN MOBILE */
-    html, body {
-        overflow-y: auto !important;
-        overflow-x: hidden !important;
-        height: auto !important;
-    }
-
-    .full-screen-wrapper {
-        height: auto !important;
-    }
-
     .split-container {
         flex-direction: column-reverse;
     }
 
-    .image-side {
-        height: auto;
-        padding: 24px 0;
-        overflow: visible;
+    .text-side {
+        padding: 40px 20px;
+        justify-content: center;
+    }
+
+    .main-title {
+        font-size: 42px;
     }
 
     .image-side img {
         width: 90%;
-        height: auto;
-        object-fit: contain; /* ❗ KHÔNG BAO GIỜ CẮT ẢNH */
-        object-position: center;
-        display: block;
-    }
-
-    .text-side {
-        padding: 50px 20px;
-        justify-content: center;
-        flex: none;
-    }
-
-    .main-title {
-        font-size: 48px;
-        letter-spacing: -3px;
     }
 }
+
 </style>
-{{ end }}
+</head>
+
+<body>
+
+<div class="full-screen-wrapper">
+    <div class="split-container">
+
+        <!-- LEFT -->
+        <div class="text-side">
+            <div class="content-box">
+
+                <h1 class="main-title">
+                    <div class="line-wrapper"><span class="reveal-item">BUILD</span></div>
+                    <div class="line-wrapper"><span class="reveal-item">SYSTEMS.</span></div>
+                    <div class="line-wrapper"><span class="reveal-item outlined">SOLVE</span></div>
+                    <div class="line-wrapper"><span class="reveal-item outlined">PROBLEMS.</span></div>
+                    <div class="line-wrapper"><span class="reveal-item outlined">SHIP IMPACT.</span></div>
+                </h1>
+
+                <div class="description-block">
+                    <h3 class="job-title">Aspiring Backend Developer</h3>
+                    <p class="bio">
+                        I design and build scalable systems using Java & JavaScript.<br>
+                        Focused on clean architecture, performance, and real-world impact.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="image-side">
+            <div class="image-inner reveal-image">
+                <img src="anhdaidien.jpg" alt="Le Quoc Trong">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
